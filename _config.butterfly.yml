@@ -42,7 +42,7 @@ hide_sidebar_menu_child: false
 # --------------------------------------
 
 highlight_theme: mac #  darker / pale night / light / ocean / mac / mac light / false
-highlight_copy: true # copy button
+highlight_copy: false # copy button
 highlight_lang: true # show the code language
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
 highlight_height_limit: false # unit: px
@@ -79,7 +79,7 @@ swiper:
 # copy settings
 # copyright: Add the copyright information after copied content (複製的內容後面加上版權信息)
 copy:
-  enable: true
+  enable: false
   copyright:
     enable: true
     limit_count: 50
@@ -166,20 +166,26 @@ category_per_img:
 
 categoryBar:
   enable: true
-  column: odd # 显示列数,odd：3列 | even：4列
-  row: 1 #显示行数，默认两行，超过行数切换为滚动显示
+  column: even # 显示列数,odd：3列 | even：4列
+  row: 2 #显示行数，默认两行，超过行数切换为滚动显示
   descr:
-    - HTML常见知识
-    - 数据、函数、对象、异步
+    - 网络Ajax的诞生
     - CSS的酷炫多彩
-    - React神秘世界
-    - Vue的轻快
+    - 数据、函数、对象、异步
+    - Vue&&React的世界
     - 前端工程化
+    - 协作开发git
+    - 计算机网络
+    - 项目总结收获
   cover:
     - url('https://cdn.jsdelivr.net/npm/akilar-candyassets/image/cover1.webp')
     - url('https://images.unsplash.com/photo-1639048759545-07cdc2fc63e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80')
     - url('https://images.unsplash.com/photo-1614891264575-4385b57101c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1313&q=80')
     - url('https://images.unsplash.com/photo-1597432580321-b0d7eab51dee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')
+    - url('https://images.unsplash.com/photo-1637776895052-86e559e887b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')
+    - url('https://images.unsplash.com/photo-1633759918773-2a0c12b7cc31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80')
+    - url('https://images.unsplash.com/photo-1636071659269-b796a1b56b9d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')
+    - url('https://images.unsplash.com/photo-1639183813792-f17ae5736d33?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')
     - '#abcdef' # HEX格式色值需要用''包裹，不然会被识别成注释
     - rgba(45,67,89,0.7)
     - linear-gradient(rgba(0, 0, 0, 0.4) 25%, rgba(200,16 , 16, 0) 100%)
@@ -244,7 +250,7 @@ index_post_content:
 # toc (目錄)
 toc:
   enable: true
-  number: true
+  number: false
   style_simple: false
 
 post_copyright:
@@ -479,7 +485,7 @@ footer:
     enable: true
     since: 2020
   custom_text: '很高兴认识你'
-  copyright: false # Copyright of theme and framework
+  copyright: true # Copyright of theme and framework
 
 # Analysis
 # --------------------------------------
