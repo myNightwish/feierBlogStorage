@@ -1,7 +1,7 @@
 ---
-title: messageboard
+title: comments
 date: 2021-12-11 01:12:17
-type: messageboard
+type: comments
 --- 
 
 # 留言板：
