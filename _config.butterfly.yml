@@ -169,23 +169,24 @@ categoryBar:
   column: even # 显示列数,odd：3列 | even：4列
   row: 2 #显示行数，默认两行，超过行数切换为滚动显示
   descr:
-    - 网络Ajax的诞生
+    - Ajax的诞生
     - CSS的酷炫多彩
-    - 数据、函数、对象、异步
-    - Vue&&React的世界
+    - 数据、函数、异步
+    - Vue&React的世界
     - 前端工程化
-    - 协作开发git
-    - 计算机网络
-    - 项目总结收获
+    - 浏览器的渲染
+    - 计算机4大件
+    - 项目总结反思
   cover:
-    - url('https://cdn.jsdelivr.net/npm/akilar-candyassets/image/cover1.webp')
-    - url('https://images.unsplash.com/photo-1639048759545-07cdc2fc63e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80')
+    - url('https://images.unsplash.com/photo-1633759918773-2a0c12b7cc31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80')
     - url('https://images.unsplash.com/photo-1614891264575-4385b57101c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1313&q=80')
     - url('https://images.unsplash.com/photo-1597432580321-b0d7eab51dee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')
     - url('https://images.unsplash.com/photo-1637776895052-86e559e887b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')
-    - url('https://images.unsplash.com/photo-1633759918773-2a0c12b7cc31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80')
+   
+    - url('https://images.unsplash.com/photo-1639218690253-f2f69df61251?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')
     - url('https://images.unsplash.com/photo-1636071659269-b796a1b56b9d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')
-    - url('https://images.unsplash.com/photo-1639183813792-f17ae5736d33?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')
+    - url('https://images.unsplash.com/photo-1628214457196-676766da086e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=385&q=80')
+    - url('https://images.unsplash.com/photo-1639245709307-3e17de649b43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')
     - '#abcdef' # HEX格式色值需要用''包裹，不然会被识别成注释
     - rgba(45,67,89,0.7)
     - linear-gradient(rgba(0, 0, 0, 0.4) 25%, rgba(200,16 , 16, 0) 100%)
@@ -910,9 +911,11 @@ inject:
   head:
     - <link rel="stylesheet" href="/css/custom/fixed_comment.css"  media="defer" onload="this.media='all'">
     - <link rel="stylesheet" href="/css/custom.css"  media="defer" onload="this.media='all'">
+    - <link rel="stylesheet" href="/css/custom/twikoo-beautify.css"  media="defer" onload="this.media='all'">
   bottom:
     - <script data-pjax defer src="/js/custom/fixed_comment.js"></script>
     - <script async src="//at.alicdn.com/t/font_2264842_3izu8i5eoc2.js"></script>
+    
 # CDN
 # Don't modify the following settings unless you know how they work
 # 非必要請不要修改
@@ -1001,3 +1004,6 @@ CDN:
   prismjs_js: https://cdn.jsdelivr.net/npm/prismjs/prism.min.js
   prismjs_lineNumber_js: https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js
   prismjs_autoloader: https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js
+
+
+  

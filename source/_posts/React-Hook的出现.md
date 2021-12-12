@@ -12,7 +12,7 @@ license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ---
 ## Hooks ##
 
-### why ###
+### 一、 why ###
 
 * Hooks是React团队在实践中逐渐认知的一个改进点，背后设计到**类组件、函数组件**两种组件形式的思考和侧重
 
@@ -84,7 +84,7 @@ license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 * 是一套使函数组件更强大、更灵活的钩子。函数组件相比于类组件少了很多东西，而Hooks的出现就是帮助函数式组件补齐这种缺陷。函数式组件可以自由的使用Hooks提供的丰富工具
 
-### what ###
+### 二、what ###
 
 #### 1、useState：引入状态 ####
 
@@ -214,7 +214,7 @@ Hooks并非万能，在认识到Hooks利好的同时，也需要认识到他的�
 
    耦合和内聚的边界很难把握，函数式组件给了更多自由，却对开发者代码能力提了更高的要求。
 
-### how：深入React-Hooks工作机制 ###
+### 三、how：深入React-Hooks工作机制 ###
 
 #### 1、HOOKS的使用原则2个： ####
 
