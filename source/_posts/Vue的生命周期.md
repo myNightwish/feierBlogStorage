@@ -73,7 +73,7 @@ license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ##### 7）beforeDestroy： #####
 
 * 时机：实例销毁之前调用，实例仍然完全可用
-* 工作：做一些善后工作，例如**清除计时器、数据和事件的监听等 ** √  面试遇到
+* 工作：做一些善后工作，例如**清除计时器、数据和事件的监听等 ** 
 
 ##### 8）destroyed： #####
 
