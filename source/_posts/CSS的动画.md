@@ -3,7 +3,7 @@ title: CSS的动画
 date: 2021-12-11 22:44:19
 tags:
 - 动画
-categories: JS
+categories: CSS
 description: '动画'
 cover: https://images.unsplash.com/photo-1638720772346-b745bcd72f5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=577&q=80
 copyright_author: 飞儿 # 作者覆写

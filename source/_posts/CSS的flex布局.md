@@ -3,7 +3,7 @@ title: CSS的flex布局
 date: 2021-12-11 22:43:56
 tags:
 - flex
-categories: JS
+categories: CSS
 description: '弹性盒模型'
 cover: https://images.unsplash.com/photo-1629186235045-80d4147d90dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80
 copyright_author: 飞儿 # 作者覆写
