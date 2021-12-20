@@ -10,3 +10,4 @@ public/
 .deploy_git*/
 .idea
 themes/butteryfly/.git
+.nojekyll
