@@ -29,10 +29,10 @@ license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ### 2、几种异步解决方案 ###
 
 * 回调函数
-* 事件监听(发布/订阅)解析
-* Promise解析及从0～1的源码体验
-* Generator全面解析
-* Async/Await解析
+* 事件监听(发布/订阅)
+* Promise
+* Generator
+* Async/Await
 
 ### 3.1、方式1：回调函数 ###
 
@@ -82,12 +82,12 @@ license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
   ```js
   function f1(){
-  　　　　setTimeout(function () {
-        // f1的任务代码
-        ....
-        // f1.trigger('done')手动触发done事件，从而开始执行f2
-  　　　　　　f1.trigger('done');
-  　　　　}, 1000);
+　　　　setTimeout(function () {
+      // f1的任务代码
+      ....
+      // f1.trigger('done')手动触发done事件，从而开始执行f2
+　　　　　　f1.trigger('done');
+　　　　}, 1000);
   　　}
   ```
 
