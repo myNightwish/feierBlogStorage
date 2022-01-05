@@ -1,6 +1,5 @@
 ---
 title: 移动端适配
-date: 2021-12-09 22:47:12
 tags: 移动端适配
 categories: CSS
 description: '移动端适配方案及基础'

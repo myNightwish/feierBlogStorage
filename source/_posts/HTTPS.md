@@ -6,7 +6,6 @@ tags:
 - 证书
 - 数字签名
 categories: 计算机基础
-hide: true
 description: 'HTTPS的加密方法'
 cover: https://images.unsplash.com/photo-1639218690253-f2f69df61251?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
 copyright_author: 飞儿 # 作者覆写

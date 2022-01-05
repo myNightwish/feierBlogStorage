@@ -16,7 +16,9 @@ menu:
     音乐: /music/ || fas fa-music
     视频: /movies/ || fas fa-video
     书籍: /books || fas fa-book
+    图册: /gallery/ || fas fa-heart
   留言板: /comments/ || fas fa-comments
+  统计: /charts/ || fas fa-comments
   友情链接: /link/ || fas fa-link
   关于: /about/ || fas fa-heart
 # envelope_comment
@@ -76,6 +78,15 @@ swiper:
   default_descr: 再怎么看我也不知道怎么描述它的啦！
   custom_css: https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/css/swiper.min.css #自定义swiper css依赖
   custom_js: https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.min.js #自定义swiper js依赖
+history_calendar:
+  priority: 4
+  enable: true
+  enable_page: all
+  layout:
+    type: class
+    name: sticky_layout
+    index: 0
+  temple_html: '<div class="card-widget card-history"><div class="card-content"><div class="item-headline"><i class="fas fa-clock fa-spin"></i><span>那年今日</span></div><div id="history-baidu" style="height: 100px;overflow: hidden"><div class="history_swiper-container" id="history-container" style="width: 100%;height: 100%"><div class="swiper-wrapper" id="history_container_wrapper" style="height:20px"></div></div></div></div>'
 # copy settings
 # copyright: Add the copyright information after copied content (複製的內容後面加上版權信息)
 copy:
@@ -488,19 +499,22 @@ footer:
   owner:
     enable: true
     since: 2020
-  custom_text: '很高兴认识你'
-  copyright: true # Copyright of theme and framework
+  custom_text: <p><a style="margin-inline:5px"target="_blank" href="https://hexo.io/"><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&logo=hexo" title="博客框架为 Hexo" alt="HEXO"></a><a style="margin-inline:5px"target="_blank" href="https://butterfly.js.org/"><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&logo=bitdefender" title="主题采用 Butterfly" alt="Butterfly"></a><a style="margin-inline:5px"target="_blank" href="https://www.jsdelivr.com/"><img src="https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr" title="本站使用 Jsdelivr 为静态资源提供CDN加速" alt="Jsdelivr"></a><a style="margin-inline:5px"target="_blank" href="https://github.com/"><img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&logo=GitHub" title="本站项目由 GitHub 托管" alt="GitHub"></a><a style="margin-inline:5px"target="_blank"href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&logo=Claris" alt="img" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"></a></p>
+  copyright: false  #Hexo那句不显示
+  ICP: # Chinese ICP License   #最后一句
+    enable: true
+    url: http://www.beian.gov.cn
+    text: 豫ICP备20001666号
 
 # Analysis
 # --------------------------------------
 
 # Baidu Analytics
 # https://tongji.baidu.com/web/welcome/login
-baidu_analytics:
-
+baidu_analytics: 41dc163acde19f0f2684b23f1468c5dc #百度的分析 id
 # Google Analytics
 # https://analytics.google.com/analytics/web/
-google_analytics:
+google_analytics: 
 
 # Tencent Analytics ID
 # https://mta.qq.com
@@ -584,7 +598,7 @@ tag_ui: # 留空或 index
 background: url(https://images.unsplash.com/photo-1516715094483-75da7dee9758?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80)
 
 # Footer Background
-footer_bg: true
+footer_bg: false
 
 post_beautify:
   enable: true
@@ -603,7 +617,7 @@ enter_transitions: true
 # canvas_ribbon (靜止彩帶背景)
 # See: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: true
+  enable: false
   size: 150
   alpha: 0.6
   zIndex: -1
@@ -852,7 +866,7 @@ pjax:
 
 # Inject the css and script (aplayer/meting)
 aplayerInject:
-  enable: false
+  enable: true
   per_page: true
 
 # Snackbar (Toast Notification 彈窗)
@@ -906,12 +920,17 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
+    - <script src="https://cdn.jsdelivr.net/npm/echarts@4.7.0/dist/echarts.min.js"></script>
     - <link rel="stylesheet" href="/css/custom/fixed_comment.css"  media="defer" onload="this.media='all'">
     - <link rel="stylesheet" href="/css/custom.css"  media="defer" onload="this.media='all'">
+    - <link rel="stylesheet" href="/css/background.css"  media="defer" onload="this.media='all'">
+    - '<style type="text/css">#toggle-sidebar {left:100px}</style>'
   bottom:
     - <script data-pjax defer src="/js/custom/fixed_comment.js"></script>
+    - <script async src="/js/newAdd.js"></script>
     - <script async src="//at.alicdn.com/t/font_2264842_3izu8i5eoc2.js"></script>
-    - <img alt="doraemon_to_top" id="doraemon_to_top" onclick="fly_to_top()" src="https://cdn.jsdelivr.net/gh/hassanblog/CDN/img/Doraemon.png"></a>
+    - <div class="aplayer no-destroy" data-id="000PeZCQ1i4XVs" data-server="tencent" data-type="artist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="true" muted></div>
+    # - <img alt="doraemon_to_top" id="doraemon_to_top" onclick="fly_to_top()" src="https://cdn.jsdelivr.net/gh/hassanblog/CDN/img/Doraemon.png"></a>
 # CDN
 # Don't modify the following settings unless you know how they work
 # 非必要請不要修改
@@ -1000,6 +1019,7 @@ CDN:
   prismjs_js: https://cdn.jsdelivr.net/npm/prismjs/prism.min.js
   prismjs_lineNumber_js: https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js
   prismjs_autoloader: https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js
+
 
 
   
