@@ -18,10 +18,10 @@ jobs:
       uses: actions/checkout@main 
       
     # from: https://github.com/actions/setup-node  
-    - name: Setup Node.js 10.x 
+    - name: Setup Node.js 14.18.2 
       uses: actions/setup-node@main
       with:
-        node-version: "10.x"
+        node-version: "14.18.2"
     
     - name: Setup Hexo Dependencies
       run: |
