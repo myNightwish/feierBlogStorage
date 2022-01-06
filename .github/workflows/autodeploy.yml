@@ -1,67 +1,8 @@
-# 当有改动推送到master分支时，启动Action
-name: 自动部署
-
-on:
-  push:
-    branches:
-      - main #2020年10月后github新建仓库默认分支改为main，注意更改
-
-  release:
-    types:
-      - published
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-    - name: 检查分支
-      uses: actions/checkout@v2
-      with:
-        ref: main #2020年10月后github新建仓库默认分支改为main，注意更改
-
-    - name: 安装 Node
-      uses: actions/setup-node@v1
-      with:
-        node-version: "12.x"
-
-    - name: 安装 Hexo
-      run: |
-        export TZ='Asia/Shanghai'
-        npm install hexo-cli -g
-
-    - name: 缓存 Hexo
-      uses: actions/cache@v1
-      id: cache
-      with:
-        path: node_modules
-        key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
-
-    - name: 安装依赖
-      if: steps.cache.outputs.cache-hit != 'true'
-      run: |
-        npm install --save
-
-    - name: 生成静态文件
-      run: |
-        hexo clean
-        hexo generate
-
-    - name: 部署
-      run: |
-        git config --global user.name "myNightwish"
-        git config --global user.email "zml_byr@bupt.edu.cn"
-        git clone https://github.com/myNightwish/myNightwish.github.io.git .deploy_git
-        # 此处务必用HTTPS链接。SSH链接可能有权限报错的隐患
-        # =====注意.deploy_git前面有个空格=====
-        # 这行指令的目的是clone博客静态文件仓库，防止Hexo推送时覆盖整个静态文件仓库，而是只推送有更改的文件
-        hexo deploy
-
-
 name: deploying Hexo project to GitHub pages
 on:
   push:
     branches:
-      - main # master 分支有 push 行为时就触发这个 action
+      - master # master 分支有 push 行为时就触发这个 action
 
 jobs:
   build-and-deploy:
@@ -73,7 +14,7 @@ jobs:
       - name: Build and Deploy
         uses: theme-keep/hexo-deploy-github-pages-action@master # 使用专门部署 Hexo 到 GitHub pages 的 action
         env:
-          PERSONAL_TOKEN: ${{ secrets.HEXO_DEPLOY }} # secret 名
-          PUBLISH_REPOSITORY: XPoet/keep-blog # 公共仓库，格式：GitHub 用户名/仓库名
-          BRANCH: gh-pages # 分支，填 gh-pages 就行
+          PERSONAL_TOKEN: ${{ secrets.HEXO_DEPLOY_PRIVATE_KEY }} # secret 名
+          PUBLISH_REPOSITORY: myNightwish/myNightwish.github.io.git # 公共仓库，格式：GitHub 用户名/仓库名
+          BRANCH: master # 分支，填 gh-pages 就行
           PUBLISH_DIR: ./public # 部署 public 目录下的文件
