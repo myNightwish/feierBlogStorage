@@ -50,5 +50,5 @@ jobs:
       run: |
         git config --global user.name "myNightwish"
         git config --global user.email "zml_byr@bupt.edu.cn"
-        git clone https://github.com/myNightwish/feierBlogStorage.git .deploy_git
+        git clone git@github.com:myNightwish/myNightwish.github.io.git .deploy_git
         hexo deploy
