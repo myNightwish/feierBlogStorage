@@ -45,7 +45,6 @@ jobs:
       run: |
         hexo clean
         hexo generate
-        gulp
 
     - name: 部署
       run: |
@@ -55,5 +54,26 @@ jobs:
         # 此处务必用HTTPS链接。SSH链接可能有权限报错的隐患
         # =====注意.deploy_git前面有个空格=====
         # 这行指令的目的是clone博客静态文件仓库，防止Hexo推送时覆盖整个静态文件仓库，而是只推送有更改的文件
-        gulp
         hexo deploy
+
+
+name: deploying Hexo project to GitHub pages
+on:
+  push:
+    branches:
+      - main # master 分支有 push 行为时就触发这个 action
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: Build and Deploy
+        uses: theme-keep/hexo-deploy-github-pages-action@master # 使用专门部署 Hexo 到 GitHub pages 的 action
+        env:
+          PERSONAL_TOKEN: ${{ secrets.HEXO_DEPLOY }} # secret 名
+          PUBLISH_REPOSITORY: XPoet/keep-blog # 公共仓库，格式：GitHub 用户名/仓库名
+          BRANCH: gh-pages # 分支，填 gh-pages 就行
+          PUBLISH_DIR: ./public # 部署 public 目录下的文件
