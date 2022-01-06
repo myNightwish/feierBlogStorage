@@ -106,10 +106,14 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://myNightwish.top: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@github.com/myNightwish/myNightwish.github.io.git
+  repo: git@github.com:myNightwish/myNightwish.github.io.git
+  branch: master
+  name: myNightwish
+  email: zml_byr@bupt.edu.cn
 search:
   path: search.xml
   field: post
   format: html
   limit: 10000
+
 
