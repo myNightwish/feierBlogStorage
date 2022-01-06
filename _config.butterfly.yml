@@ -380,6 +380,7 @@ livere:
   uid:
 live2d:
   enable: true
+  pluginRootPath:  live2dw/
 # gitalk
 # https://github.com/gitalk/gitalk
 gitalk:
