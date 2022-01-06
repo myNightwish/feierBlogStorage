@@ -106,7 +106,7 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/myNightwish: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@github.com/myNightwish/myNightwish.github.io.git
+  repo: git@github.com:myNightwish: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@github.com/myNightwish/myNightwish.github.io.git
 
 search:
   path: search.xml
