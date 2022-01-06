@@ -27,7 +27,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: '12'
+          node-version: '14.18.2'
 
       # 缓存 Node 模块，提高构建速度
       - name: Get yarn cache directory path
