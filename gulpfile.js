@@ -1,9 +1,16 @@
-var gulp = require('gulp');
-var cleanCSS = require('gulp-clean-css');
-var htmlmin = require('gulp-html-minifier-terser');
-var htmlclean = require('gulp-htmlclean');
-var uglify = require('gulp-uglify')
-var babel = require('gulp-babel')
+
+import gulp from 'gulp';
+import cleanCSS from 'gulp-clean-css';
+import htmlmin from 'gulp-html-minifier-terser';
+import htmlclean from 'gulp-htmlclean';
+import uglify from 'gulp-uglify';
+import babel from 'gulp-babel'
+// var gulp = require('gulp');
+// var cleanCSS = require('gulp-clean-css');
+// var htmlmin = require('gulp-html-minifier-terser');
+// var htmlclean = require('gulp-htmlclean');
+// var uglify = require('gulp-uglify')
+// var babel = require('gulp-babel')
 // 压缩js
 gulp.task('compress', () =>
   gulp.src(['./public/**/*.js', '!./public/**/*.min.js'])
