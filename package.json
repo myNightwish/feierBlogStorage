@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.16.7",
-    "@babel/preset-env": "^7.16.7",
+    "@babel/preset-env": "^7.16.8",
     "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-htmlclean": "^2.7.22",
