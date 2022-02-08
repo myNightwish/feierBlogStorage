@@ -708,7 +708,7 @@ subtitle:
   # 循环或者只打字一次
   loop: false
   sub:
-    - Never put off till tomorrow what you can do today
+    - value yourself
 # Loading Animation (加載動畫)
 preloader: false
 
