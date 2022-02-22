@@ -9,3 +9,5 @@ date: 2022-01-06 02:13:45
 <div id="trends-chart" style="border-radius: 8px; height: 300px; padding: 10px;"></div>
 <!-- 访问来源 -->
 <div id="sources-chart" style="border-radius: 8px; height: 300px; padding: 10px;"></div>
+
+<script defer data-pjax src="/source/js/census.js"></script>
