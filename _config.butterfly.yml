@@ -21,7 +21,6 @@ menu:
     视频: /movies/ || fas fa-video
     书籍: /books || fas fa-book
     图册: /gallery/ || fas fa-camera-retro
-    友情链接: /link/ || fas fa-link
 # envelope_comment
 # see https://akilar.top/posts/58900a8/
 envelope_comment:
@@ -152,7 +151,7 @@ disable_top_img: false
 index_img: https://images.unsplash.com/photo-1638989668631-d6f4ba96fbcd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1229&q=80
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: https://images.unsplash.com/photo-1639005747853-ab4b8e22b35a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
+default_top_img: https://images.unsplash.com/photo-1469050624972-f03b8678e363?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
 
 # The banner image of archive page
 archive_img: https://images.unsplash.com/photo-1609639643505-3c158a56de42?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1112&q=80
@@ -165,11 +164,11 @@ tag_img: https://images.unsplash.com/photo-1603739421258-4aa79ad860df?ixlib=rb-1
 # The banner image of tag page
 # format:
 #   - tag name: fenfen
-tag_per_img: https://images.unsplash.com/photo-1609639643505-3c158a56de42?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1112&q=80
+tag_per_img: 
 
 # If the banner of category page not setting, it will show the top_img
 # note: category page, not categories page (子分類頁面的 top_img)
-category_img: https://images.unsplash.com/photo-1638985787285-46f05ff063f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80
+category_img: 
 
 # The banner image of category page
 # format:
@@ -920,8 +919,8 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    - <script src="https://cdn.jsdelivr.net/npm/echarts@4.7.0/dist/echarts.min.js"></script>
-    - <script src="https://cdn.jsdelivr.net/npm/echarts@4.7.0/map/js/china.js"></script>
+    - <script src="https://cdn.jsdelivr.net/npm/echarts@4.9.0/dist/echarts.min.js"></script>
+    - <script src="https://cdn.jsdelivr.net/npm/echarts@4.9.0/map/js/china.js"></script> ## 绘制地图需要另外添加 china.js
     - <link rel="stylesheet" href="/css/custom/fixed_comment.css"  media="defer" onload="this.media='all'">
     - <link rel="stylesheet" href="/css/custom.css"  media="defer" onload="this.media='all'">
     - <link rel="stylesheet" href="/css/background.css"  media="defer" onload="this.media='all'">
