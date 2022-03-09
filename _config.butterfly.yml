@@ -141,7 +141,8 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page
-index_img: https://images.unsplash.com/photo-1485186337913-a42c84d7ffcc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2372&q=80
+index_img: https://images.unsplash.com/photo-1536768985709-5d31c1621e92?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80
+#https://images.unsplash.com/photo-1485186337913-a42c84d7ffcc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2372&q=80
 
 # If the banner of page not setting, it will show the top_img
 default_top_img: https://images.unsplash.com/photo-1526344966-89049886b28d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2274&q=80
