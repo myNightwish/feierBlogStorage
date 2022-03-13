@@ -120,7 +120,7 @@ butterfly_article_double_row:
 magnet:
   enable: true
   priority: 1
-  enable_page: /
+  enable_page: /categories/
   type: categories
   devide: 2
   display:
