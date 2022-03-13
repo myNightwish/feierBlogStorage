@@ -111,10 +111,6 @@ search:
   field: post
   format: html
   limit: 10000
-# 解决：每次部署完都需要重新绑定域名
-skip_render: 
-  - '404/index.html'
-  - 'CNAME'
 
 # 新增文章卡片式
 butterfly_article_double_row:
