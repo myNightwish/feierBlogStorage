@@ -1,0 +1,9 @@
+#article-container
+  if top_img === false
+    h1.page-title= page.title
+  != page.content
+  .tag_share
+    if theme.addThis.enable || theme.sharejs.enable || theme.addtoany.enable && page.share !== false
+      include ./../third-party/share/index.pug
+  if theme.rating.enable && page.rating !== false
+    include ./../post/rating.pug
