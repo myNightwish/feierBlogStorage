@@ -1,10 +1,12 @@
 ---
 title: 对象 - Object.create
-date: 2021-12-11 01:43:18
 tags: JS
 categories: JS
-description: 'Object.create用途、实现'
-cover: https://images.unsplash.com/photo-1638990590633-f67f3a8dbed5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMzZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60
+description: Object.create用途、实现
+cover: >-
+  https://images.unsplash.com/photo-1638990590633-f67f3a8dbed5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMzZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60
+abbrlink: 775935900
+date: 2021-12-11 01:43:18
 ---
 
 ### Object.create() ###

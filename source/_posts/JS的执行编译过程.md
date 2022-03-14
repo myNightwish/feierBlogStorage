@@ -1,15 +1,17 @@
 ---
 title: JS的执行编译过程
-date: 2021-12-11 22:07:47
 tags:
-- 编译执行
+  - 编译执行
 categories: JS
-description: '关于JS引擎的编译、执行阶段'
-cover: https://images.unsplash.com/photo-1554727267-c24af00c3253?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=509&q=80
-copyright_author: 飞儿 # 作者覆写
-copyright_url: https://www.nesxc.com/post/hexocc.html 
+description: 关于JS引擎的编译、执行阶段
+cover: >-
+  https://images.unsplash.com/photo-1554727267-c24af00c3253?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=509&q=80
+copyright_author: 飞儿
+copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0
-license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+license_url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
+abbrlink: 3783644122
+date: 2021-12-11 22:07:47
 ---
 ## JS执行过程、垃圾、内存泄漏 ##
 

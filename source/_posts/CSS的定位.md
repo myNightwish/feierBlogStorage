@@ -1,12 +1,13 @@
 ---
 title: CSS的定位
-date: 2021-12-11 22:38:13
 tags:
-- position
+  - position
 categories: CSS
-description: '关于css中的定位'
-cover: https://images.unsplash.com/photo-1633113093730-47449a1a9c6e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80
-
+description: 关于css中的定位
+cover: >-
+  https://images.unsplash.com/photo-1633113093730-47449a1a9c6e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80
+abbrlink: 619926249
+date: 2021-12-11 22:38:13
 ---
 ## 定位 ##
 

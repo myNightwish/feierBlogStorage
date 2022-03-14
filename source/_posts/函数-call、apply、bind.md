@@ -1,10 +1,12 @@
 ---
 title: 函数- call、apply、bind
-date: 2021-12-11 00:53:00
 tags: JS
 categories: JS
-description: '箭头函数出现之前解决this的丢失方案'
-cover: https://images.unsplash.com/photo-1638977557338-15b7774688d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMDZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60
+description: 箭头函数出现之前解决this的丢失方案
+cover: >-
+  https://images.unsplash.com/photo-1638977557338-15b7774688d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMDZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60
+abbrlink: 4184919567
+date: 2021-12-11 00:53:00
 ---
 ### call、apply、bind √ ###
 

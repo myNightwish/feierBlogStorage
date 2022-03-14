@@ -1,13 +1,15 @@
 ---
 title: 我不允许你还不知道什么是HTTP缓存
-date: 2021-12-22 15:31:27
 categories: 浏览器
-description: 'Http缓存原理'
-cover: https://images.unsplash.com/photo-1593642532744-d377ab507dc8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80
-copyright_author: 飞儿 # 作者覆写
-copyright_url: https://www.nesxc.com/post/hexocc.html 
+description: Http缓存原理
+cover: >-
+  https://images.unsplash.com/photo-1593642532744-d377ab507dc8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80
+copyright_author: 飞儿
+copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0
-license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+license_url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
+abbrlink: 588825314
+date: 2021-12-22 15:31:27
 ---
 ## HTTP缓存 ##
 

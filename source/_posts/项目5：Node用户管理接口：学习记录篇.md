@@ -1,13 +1,15 @@
 ---
 title: 项目5：Node用户管理接口：学习记录篇
-date: 2021-12-12 00:42:57
 tags: Node、MySQL2
 categories: 项目总结
-cover: https://images.unsplash.com/photo-1638645671264-82cae622dada?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDUwfHhIeFlUTUhMZ09jfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60
-copyright_author: 飞儿 
-copyright_url: https://www.nesxc.com/post/hexocc.html 
+cover: >-
+  https://images.unsplash.com/photo-1638645671264-82cae622dada?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDUwfHhIeFlUTUhMZ09jfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60
+copyright_author: 飞儿
+copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0
-license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+license_url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
+abbrlink: 310999178
+date: 2021-12-12 00:42:57
 ---
 
 * 项目时间： 2021年2月

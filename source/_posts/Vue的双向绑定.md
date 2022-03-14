@@ -1,14 +1,16 @@
 ---
 title: Vue的双向绑定
-date: 2021-12-13 15:44:12
 tags: 双向绑定
 categories: React&&Vue
-description: 'Vue中的双向绑定原理实现'
-cover: https://images.unsplash.com/photo-1639330721108-fcce4394f608?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80
-copyright_author: 飞儿 # 作者覆写
-copyright_url: https://www.nesxc.com/post/hexocc.html 
+description: Vue中的双向绑定原理实现
+cover: >-
+  https://images.unsplash.com/photo-1639330721108-fcce4394f608?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80
+copyright_author: 飞儿
+copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0
-license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+license_url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
+abbrlink: 3598970227
+date: 2021-12-13 15:44:12
 ---
 总结：Vue 内部通过 `Object.defineProperty`方法属性拦截的方式，把 `data` 对象里每个数据的读写转化成 `getter`/`setter`，当数据变化时通知视图更新
 

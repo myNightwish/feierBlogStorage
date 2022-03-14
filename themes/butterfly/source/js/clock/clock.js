@@ -7,14 +7,14 @@ fetch('https://wttr.in/'+returnCitySN["cip"]+'?format="%l+\\+%c+\\+%t+\\+%h"').t
         var clock_box = document.getElementById('hexo_electric_clock');
         clock_box_html = `
           <div class="clock-row">
-            <span class="card-clock-weather">${res_list[2]} ${res_list[3]} *C</span>
+            <span class="card-clock-weather">${res_list[2]} ${res_list[3]} °C</span>
             <span class="card-clock-humidity">💧 ${res_list[4]}</span>
           </div>
           <div class="clock-row">
             <span id="card-clock-time" class="card-clock-time"></span>
           </div>
           <div class="clock-row">
-            <span class="card-clock-ip">Ip address: ${returnCitySN["cip"]}</span>
+            <span class="card-clock-ip">Ip: ${returnCitySN["cip"]}</span>
             <span id="card-clock-dackorlight" class="card-clock-dackorlight"></span>
           </div>
           `;

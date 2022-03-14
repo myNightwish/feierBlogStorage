@@ -1,14 +1,16 @@
 ---
 title: CSS的盒模型
-date: 2021-12-09 22:49:41
 tags: 盒模型
 categories: CSS
-description: '盒子模型的分类'
-cover: https://img-blog.csdnimg.cn/20200718094809469.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNDc1MzM2,size_16,color_FFFFFF,t_70
-copyright_author: 飞儿 # 作者覆写
-copyright_url: https://www.nesxc.com/post/hexocc.html 
+description: 盒子模型的分类
+cover: >-
+  https://img-blog.csdnimg.cn/20200718094809469.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNDc1MzM2,size_16,color_FFFFFF,t_70
+copyright_author: 飞儿
+copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0
-license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+license_url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
+abbrlink: 282252185
+date: 2021-12-09 22:49:41
 ---
 
 ## 二、盒模型 ##

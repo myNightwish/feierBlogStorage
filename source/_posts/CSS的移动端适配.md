@@ -1,14 +1,16 @@
 ---
 title: 移动端适配
-date: 2021-12-09 22:47:12
 tags: 移动端适配
 categories: CSS
-description: '移动端适配方案及基础'
-cover: https://images.unsplash.com/photo-1638914130169-5bd5240f6ea2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80
-copyright_author: 飞儿 # 作者覆写
-copyright_url: https://www.nesxc.com/post/hexocc.html 
+description: 移动端适配方案及基础
+cover: >-
+  https://images.unsplash.com/photo-1638914130169-5bd5240f6ea2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80
+copyright_author: 飞儿
+copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0
-license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+license_url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
+abbrlink: 2017257642
+date: 2021-12-09 22:47:12
 ---
 ## 移动端适配 ##
 ### 1、媒体查询 ###

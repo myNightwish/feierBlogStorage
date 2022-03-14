@@ -1,14 +1,16 @@
 ---
 title: webpack基础-使用
-date: 2022-01-26 10:32:19
 tags: webpack
 categories: 前端工程化
 description: '为什么会有webpack,loader在做什么'
-cover: https://images.unsplash.com/photo-1639301643974-0ff1efaeff87?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80
-copyright_author: 飞儿 # 作者覆写
-copyright_url: https://www.nesxc.com/post/hexocc.html 
+cover: >-
+  https://images.unsplash.com/photo-1639301643974-0ff1efaeff87?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80
+copyright_author: 飞儿
+copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0
-license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+license_url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
+abbrlink: 2131155013
+date: 2022-01-26 10:32:19
 ---
 
 ## 一、背景知识 ##

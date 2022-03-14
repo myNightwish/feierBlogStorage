@@ -1,14 +1,16 @@
 ---
 title: 跨域中的CORS、JSONP
-date: 2021-12-27 21:27:13
 tags: 跨域解决方案
 categories: Ajax、Axios
-description: '跨域解决方案中的CORS、JSONP'
-cover: https://images.unsplash.com/photo-1593642532871-8b12e02d091c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1112&q=80
-copyright_author: 飞儿 # 作者覆写
-copyright_url: https://www.nesxc.com/post/hexocc.html 
+description: 跨域解决方案中的CORS、JSONP
+cover: >-
+  https://images.unsplash.com/photo-1593642532871-8b12e02d091c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1112&q=80
+copyright_author: 飞儿
+copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0
-license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+license_url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
+abbrlink: 2971665882
+date: 2021-12-27 21:27:13
 ---
 
 ### 方案1、CORS（跨域资源共享） ###

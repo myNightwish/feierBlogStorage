@@ -1,13 +1,15 @@
 ---
 title: CSS的样式隔离
-date: 2021-12-11 22:23:40
 tags:
-- 样式污染
-- cssModule
-- CSS-in-JS
+  - 样式污染
+  - cssModule
+  - CSS-in-JS
 categories: CSS
-description: '关于样式污染的解决方案'
-cover: https://images.unsplash.com/photo-1605525933485-647411098629?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80
+description: 关于样式污染的解决方案
+cover: >-
+  https://images.unsplash.com/photo-1605525933485-647411098629?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80
+abbrlink: 710205459
+date: 2021-12-11 22:23:40
 ---
 ### 1、为什么需要css隔离 ###
 

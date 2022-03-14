@@ -1,14 +1,16 @@
 ---
 title: CSS的浮动及其应用问题
-date: 2021-12-11 22:32:46
 tags:
-- 浮动
-- 高度塌陷
-- BFC
-- IFC
+  - 浮动
+  - 高度塌陷
+  - BFC
+  - IFC
 categories: CSS
-description: '浮动、常见问题、BFC、IFC'
-cover: https://images.unsplash.com/photo-1638217335430-24415af7c2af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=399&q=80
+description: 浮动、常见问题、BFC、IFC
+cover: >-
+  https://images.unsplash.com/photo-1638217335430-24415af7c2af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=399&q=80
+abbrlink: 2007769797
+date: 2021-12-11 22:32:46
 ---
 ## 浮动 ##
 

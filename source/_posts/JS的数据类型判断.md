@@ -1,10 +1,12 @@
 ---
 title: JS的数据类型判断
+tags: JS
+categories: JS
+description: 常见的数据类型判断
+cover: >-
+  https://images.unsplash.com/photo-1639128107506-21cb4c6a2f90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80
+abbrlink: 611441247
 date: 2021-12-10 23:09:53
-tags: 'JS'
-categories: 'JS'
-description: '常见的数据类型判断'
-cover: https://images.unsplash.com/photo-1639128107506-21cb4c6a2f90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80
 ---
 ### 类型判断5种       ###
 

@@ -1,20 +1,22 @@
 ---
 title: JS的EventLoop
-date: 2021-12-11 20:41:33
 tags:
-- EventLoop
-- 异步任务
-- 同步
-- 宏任务
-- 微任务
-categories: 'JS'
-description: '异步与同步、宏任务、微任务'
-cover: https://images.unsplash.com/photo-1555930254-f837962bc58f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
-copyright_author: 飞儿 # 作者覆写
+  - EventLoop
+  - 异步任务
+  - 同步
+  - 宏任务
+  - 微任务
+categories: JS
+description: 异步与同步、宏任务、微任务
+cover: >-
+  https://images.unsplash.com/photo-1555930254-f837962bc58f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
+copyright_author: 飞儿
 swiper_index: 7
-copyright_url: https://www.nesxc.com/post/hexocc.html # 原文链接覆写
+copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0
-license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+license_url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
+abbrlink: 656350506
+date: 2021-12-11 20:41:33
 ---
 
 ### 1、JS执行机制 ###

@@ -1,14 +1,16 @@
 ---
 title: Vue&&React的路由管理
-date: 2021-12-11 22:55:57
 tags: 路由管理
 categories: React&&Vue
-description: '路由到底是什么，主流实现思路'
-cover: https://images.unsplash.com/photo-1638518716535-955899d18a19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=363&q=80
-copyright_author: 飞儿 # 作者覆写
-copyright_url: https://www.nesxc.com/post/hexocc.html 
+description: 路由到底是什么，主流实现思路
+cover: >-
+  https://images.unsplash.com/photo-1638518716535-955899d18a19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=363&q=80
+copyright_author: 飞儿
+copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0
-license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+license_url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
+abbrlink: 2071900220
+date: 2021-12-11 22:55:57
 ---
 ## react-router ##
 

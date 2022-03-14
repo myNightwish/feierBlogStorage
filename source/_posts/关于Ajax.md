@@ -1,17 +1,19 @@
 ---
 title: 关于Ajax
-date: 2021-12-11 20:42:15
 categories: Ajax、Axios
 tags:
-- ajax
-- 网络请求
-- 跨域
-description: 'Ajax的诞生为前端带来了什么'
-cover: https://images.unsplash.com/photo-1606210109305-8f56c21327d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
-copyright_author: 飞儿 # 作者覆写
-copyright_url: https://www.nesxc.com/post/hexocc.html # 原文链接覆写
+  - ajax
+  - 网络请求
+  - 跨域
+description: Ajax的诞生为前端带来了什么
+cover: >-
+  https://images.unsplash.com/photo-1606210109305-8f56c21327d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
+copyright_author: 飞儿
+copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0
-license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+license_url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
+abbrlink: 1078088869
+date: 2021-12-11 20:42:15
 ---
 
 ## 一、Ajax是什么 ##

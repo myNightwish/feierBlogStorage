@@ -1,14 +1,16 @@
 ---
 title: React-Hook的出现
-date: 2021-12-11 22:55:37
 tags: Hooks
 categories: React&&Vue
-description: '为何Hooks是React的未来'
-cover: https://images.unsplash.com/photo-1638936020382-143f464e0a8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80
-copyright_author: 飞儿 # 作者覆写
-copyright_url: https://www.nesxc.com/post/hexocc.html 
+description: 为何Hooks是React的未来
+cover: >-
+  https://images.unsplash.com/photo-1638936020382-143f464e0a8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80
+copyright_author: 飞儿
+copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0
-license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+license_url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
+abbrlink: 3755117922
+date: 2021-12-11 22:55:37
 ---
 ## Hooks ##
 

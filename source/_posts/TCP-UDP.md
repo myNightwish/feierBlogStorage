@@ -1,16 +1,18 @@
 ---
 title: TCP && UDP传输
-date: 2021-12-11 23:30:34
 tags:
-- TCP
-- UDP
+  - TCP
+  - UDP
 categories: 计算机基础
-description: '传输层的TCP、UDP介绍'
-cover: https://images.unsplash.com/photo-1639044678744-d3a0ed8a53c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8aG1lbnZRaFVteE18fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60
-copyright_author: 飞儿 # 作者覆写
-copyright_url: https://www.nesxc.com/post/hexocc.html 
+description: 传输层的TCP、UDP介绍
+cover: >-
+  https://images.unsplash.com/photo-1639044678744-d3a0ed8a53c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8aG1lbnZRaFVteE18fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60
+copyright_author: 飞儿
+copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0
-license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+license_url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
+abbrlink: 2124882507
+date: 2021-12-11 23:30:34
 ---
 ## 传输层 ##
 

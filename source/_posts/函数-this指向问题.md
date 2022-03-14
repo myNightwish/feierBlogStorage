@@ -1,10 +1,12 @@
 ---
 title: 函数- this指向问题
-date: 2021-12-11 00:54:28
 tags: JS
 categories: JS
-description: 'this的4大指向归纳'
-cover: https://images.unsplash.com/photo-1633113088942-99089f4abffa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMTZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60
+description: this的4大指向归纳
+cover: >-
+  https://images.unsplash.com/photo-1633113088942-99089f4abffa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMTZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60
+abbrlink: 1207877865
+date: 2021-12-11 00:54:28
 ---
 
 ### this指向问题 ###

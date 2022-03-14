@@ -1,14 +1,16 @@
 ---
 title: Vue的虚拟DOM
-date: 2021-12-13 15:43:57
 tags: 虚拟DOM
 categories: React&&Vue
-description: 'Vue的虚拟DOM，还有兄弟篇React的虚拟DOM'
-cover: https://images.unsplash.com/photo-1639327771356-e2bde8814883?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1333&q=80
-copyright_author: 飞儿 # 作者覆写
-copyright_url: https://www.nesxc.com/post/hexocc.html 
+description: Vue的虚拟DOM，还有兄弟篇React的虚拟DOM
+cover: >-
+  https://images.unsplash.com/photo-1639327771356-e2bde8814883?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1333&q=80
+copyright_author: 飞儿
+copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0
-license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+license_url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
+abbrlink: 4285860800
+date: 2021-12-13 15:43:57
 ---
 
 # 虚拟DOM #

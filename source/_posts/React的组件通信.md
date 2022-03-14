@@ -1,14 +1,16 @@
 ---
 title: React的组件通信
-date: 2021-12-11 22:59:46
 tags: 组件通信
 categories: React&&Vue
-description: '数据是如何在react组件上流动'
-cover: https://images.unsplash.com/photo-1639031659180-a38c4f4f638d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80
-copyright_author: 飞儿 # 作者覆写
-copyright_url: https://www.nesxc.com/post/hexocc.html 
+description: 数据是如何在react组件上流动
+cover: >-
+  https://images.unsplash.com/photo-1639031659180-a38c4f4f638d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80
+copyright_author: 飞儿
+copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0
-license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+license_url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
+abbrlink: 2559768829
+date: 2021-12-11 22:59:46
 ---
 ## 数据是如何在react组件上流动 ##
 
