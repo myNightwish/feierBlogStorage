@@ -1,11 +1,12 @@
 //用到的各个插件
-var gulp = require('gulp');
-var cleanCSS = require('gulp-clean-css');
-var htmlmin = require('gulp-html-minifier-terser');
-var htmlclean = require('gulp-htmlclean');
-var fontmin = require('gulp-fontmin');
+import gulp from 'gulp';
+import cleanCSS from 'gulp-clean-css';
+import htmlmin from 'gulp-html-minifier-terser';
+import htmlclean from 'gulp-htmlclean';
+import fontmin from 'gulp-fontmin';
 // gulp-tester
-var terser = require('gulp-terser');
+import terser from 'gulp-terser';
+
 // 压缩js
 gulp.task('compress', () =>
   gulp.src(['./public/**/*.js', '!./public/**/*.min.js'])
