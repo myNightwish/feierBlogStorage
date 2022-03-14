@@ -1,59 +1,57 @@
-# 工作流名称
-name: Hexo Blog Deploy
+# This is a basic workflow to help you get started with Actions
 
-# 只在push到master分支的时候启动
+name: CI
+
+# Controls when the workflow will run
 on:
+  # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches:
-      - master
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
-# 使用ubuntu虚拟机
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+  # This workflow contains a single job called "build"
   build:
+    # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-    # 工作流步骤
+    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    - name: Checkout repository master branch
-      uses: actions/checkout@master
-      with:
-        submodules: true
+      - name: Checkout source
+        uses: actions/checkout@v1
+        with:
+            ref: main
 
-    # 安装Node.js
-    - name: Install node.js
-      uses: actions/setup-node@master
-      with:
-        node-version: "14.18.2"
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+              node-version: '12'
 
-    # 安装Hexo
-    - name: Install hexo
-      run: |
-        npm install hexo-cli -g
-        npm install
-        npm uninstall hexo-renderer-marked
-        npm install hexo-renderer-markdown-it
 
-    # 设置SSH密钥，读取HEXO_DEPLOY_KEY
-    - name: Setup private key
-      env:
-        HEXO_DEPLOY_KEY: ${{ secrets.HEXO_DEPLOY_KEY }}
-      run: |
-        mkdir -p ~/.ssh/
-        echo "$HEXO_DEPLOY_KEY" > ~/.ssh/id_rsa
-        chmod 600 ~/.ssh/id_rsa
-        ssh-keyscan github.com >> ~/.ssh/known_hosts
+      - name: Setup Hexo
+        env: 
+                # HEXO_DEPLOY_PRI_XIAOXIN_WINDOW 这个就是配置hexo仓库secrets的name，一定要对应上
+                ACTION_DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+        run: |
+                    mkdir -p ~/.ssh/
+                    echo "$ACTION_DEPLOY_KEY"> ~/.ssh/id_rsa
+                    chmod 700 ~/.ssh
+                    chmod 600 ~/.ssh/id_rsa
+                    ssh-keyscan github.com >> ~/.ssh/known_hosts
+                    git config --global user.email 'zml_byr@bupt.edu.cn'
+                    git config --global user.name 'myNightwish'
+                    npm install hexo-cli -g
+                    npm install
+                    npm uninstall hexo-renderer-marked
+                    npm install hexo-renderer-markdown-it
+      - name: Deploy
+        run: |
+            hexo clean
+            hexo generate
+            hexo deploy
 
-    # 配置Git设置
-    - name: Setup git settings
-      run: |
-        git config --global user.name "myNightwish"
-        git config --global user.email "zml_byr@bupt.edu.cn"
-    # 更改上面的用户名和邮箱
-
-    # 部署
-    - name: Deploy hexo
-      run: |
-        hexo clean
-        hexo generate
-        gulp
-        hexo deploy
