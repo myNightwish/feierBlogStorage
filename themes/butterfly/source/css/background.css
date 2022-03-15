@@ -91,7 +91,7 @@
 }
 /* 博主昵称颜色 */
 .author-info__name {
-  color: #ff7242;
+  color: #66baf0
 }
 
 
@@ -228,22 +228,6 @@ a
 span:first-child {
     width: auto;
     min-width: 50%;
-}
-
-/*  首页字体 */
-@font-face{
-  font-family:'Candyhome' ;  /* 字体名自定义即可 */
-  src:url('/fonts/Candy.ttf'); /* 字体文件路径 */
-  font-display : swap;
-}
-h1#site-title {
-  font-family: 'Candyhome', sans-serif; 
-}
-span#subtitle {
-  font-family: 'Candyhome', sans-serif; 
-}
-a#site-name {
-  font-family: 'Candyhome', sans-serif; 
 }
 
 [data-theme="dark"]

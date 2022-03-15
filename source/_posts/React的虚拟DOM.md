@@ -3,6 +3,7 @@ title: React的虚拟DOM
 tags: 虚拟DOM
 categories: React&&Vue
 description: 兄弟篇React的虚拟DOM，包括了栈调和
+swiper_index: 5
 cover: >-
   https://images.unsplash.com/photo-1639327771356-e2bde8814883?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1333&q=80
 copyright_author: 飞儿

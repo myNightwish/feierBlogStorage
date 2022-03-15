@@ -3,6 +3,7 @@ title: React的生命周期
 tags: 生命周期
 categories: React&&Vue
 description: 生命周期是什么，与库本身的关系
+swiper_index: 3
 cover: >-
   https://images.unsplash.com/photo-1637401608113-4d17d2dad2f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80
 copyright_author: 飞儿

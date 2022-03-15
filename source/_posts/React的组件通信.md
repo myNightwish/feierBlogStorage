@@ -3,6 +3,7 @@ title: React的组件通信
 tags: 组件通信
 categories: React&&Vue
 description: 数据是如何在react组件上流动
+swiper_index: 6
 cover: >-
   https://images.unsplash.com/photo-1639031659180-a38c4f4f638d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80
 copyright_author: 飞儿

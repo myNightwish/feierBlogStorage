@@ -118,74 +118,14 @@ search:
 # 新增文章卡片式
 butterfly_article_double_row:
   enable: true
-# Markdown-it config
-## Docs: https://github.com/celsomiranda/hexo-renderer-markdown-it/wiki
-markdown:
-  render:
-    html: true
-    xhtmlOut: false
-    breaks: true
-    linkify: true
-    typographer: true
-    quotes: '“”‘’'
-  plugins:
-    - markdown-it-abbr
-    - markdown-it-footnote
-    - markdown-it-ins
-    - markdown-it-sub
-    - markdown-it-sup
-  anchors:
-    level: 2
-    collisionSuffix: 'v'
-    permalink: true
-    permalinkClass: header-anchor
-    permalinkSide: 'left'
-    permalinkSymbol: ¶
-# 新增分类
-magnet:
-  enable: true
-  priority: 1
-  enable_page: /categories/
-  type: categories
-  devide: 2
-  display:
-    - name: 教程
-      display_name: 魔改教程
-      icon: 📚
-    - name: 游戏评测
-      display_name: 游戏评测
-      icon: 🎮
-    - name: 生活趣闻
-      display_name: 生活趣闻
-      icon: 🐱‍👓
-    - name: vue
-      display_name: 编程学习
-      icon: 👩‍💻
-    - name: 学习
-      display_name: 读书笔记
-      icon: 📒
-    - name: 随想
-      display_name: 胡思乱想
-      icon: 💡
-  color_setting:
-    text_color: black
-    text_hover_color: white
-    background_color: "#f2f2f2"
-    background_hover_color: "#b30070"
-  layout:
-    type: id
-    name: recent-posts
-    index: 0
-  temple_html: '<div class="recent-post-item" style="width:100%;height: auto"><div id="catalog_magnet">${temple_html_item}</div></div>'
-  plus_style: ""
 
 # 豆瓣
 douban:
   user: {252185753}
   builtin: true
   book:
-    title: 'This is my book title'
-    quote: 'This is my book quote'
+    title: 'My book title'
+    quote: 'My book quote'
     meta: true
     comments: true
     top_img: https://cdn.jsdelivr.net/gh/Amnesia-f/CDN/img.jpg
@@ -200,3 +140,70 @@ service_worker:
   - public/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff,woff2}
   stripPrefix: public
   verbose: true
+
+# git日历
+githubcalendar:
+  enable: true
+  enable_page: /archives/
+  priority: 3 # 这里加上参数
+  user: myNightwish
+  layout:
+    type: id
+    name: archive
+    index: 0
+  githubcalendar_html: '<div class="recent-post-item" style="width:100%;height:auto;padding:10px;"><div id="github_loading" style="width:10%;height:100%;margin:0 auto;display: block"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animateTransform></path></svg></div><div id="github_container"></div></div>'
+  pc_minheight: 280px
+  mobile_minheight: 0px
+  color: "['#ebedf0', '#fdcdec', '#fc9bd9', '#fa6ac5', '#f838b2', '#f5089f', '#c4067e', '#92055e', '#540336', '#48022f', '#30021f']"
+  api: https://python-github-calendar-api.vercel.app/api
+  # api: https://python-gitee-calendar-api.vercel.app/api
+  calendar_js: https://cdn.jsdelivr.net/gh/Zfour/hexo-github-calendar@1.21/hexo_githubcalendar.js
+  plus_style: ""
+
+# 新增分类
+magnet:
+  enable: true
+  priority: 2
+  enable_page: /categories/
+  type: categories
+  devide: 2
+  display:
+    - name: Ajax、Axios
+      display_name: Ajax、Axios
+      icon: 🥝
+    - name: CSS
+      display_name: CSS
+      icon: 🍭
+    - name: JS
+      display_name: JS、ES
+      icon: 🥑
+    - name: React&&Vue
+      display_name: React、Vue框架
+      icon: 🍡
+    - name: 前端工程化
+      display_name: 前端基建:webpack、Git、CICD
+      icon: 🍉
+    - name: 浏览器
+      display_name: 浏览器工作原理
+      icon: 💡
+    - name: 计算机基础
+      display_name: 计算机网络
+      icon: 🧊
+    - name: 项目总结
+      display_name: 过往需求的梳理
+      icon: 🔮
+    - name: bidaoTalk
+      display_name: 碎碎念
+      icon: 💫
+  color_setting:
+    text_color: black
+    text_hover_color: white
+    background_color: "#f2f2f2"
+    background_hover_color: "#b30070"
+  layout:
+    type: class
+    name: category-lists
+    index: 0
+  temple_html: '<div class="recent-post-item" style="width:100%;height: auto"><div id="catalog_magnet">${temple_html_item}</div></div>'
+  plus_style: ""
+

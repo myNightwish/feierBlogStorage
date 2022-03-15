@@ -1,7 +1,7 @@
 ---
 title: 网站访问统计
 date: 2022-01-06 02:13:45
-top_img: https://images.unsplash.com/photo-1554477717-cad0b36509e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80
+top_img: https://images.unsplash.com/photo-1622720757991-6590da48aa50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=997&q=80
 ---
 
 <!-- 访问地图 -->

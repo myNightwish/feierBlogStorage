@@ -3,6 +3,7 @@ title: React-Hook的出现
 tags: Hooks
 categories: React&&Vue
 description: 为何Hooks是React的未来
+swiper_index: 4
 cover: >-
   https://images.unsplash.com/photo-1638936020382-143f464e0a8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80
 copyright_author: 飞儿

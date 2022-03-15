@@ -169,3 +169,5 @@ function switchVisitChart () {
   }
 }
 document.getElementById("mode-button").addEventListener("click", function () { setTimeout(switchVisitChart, 100) })
+
+

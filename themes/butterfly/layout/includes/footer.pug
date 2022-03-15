@@ -6,6 +6,7 @@
       .copyright!= `&copy;${theme.footer.owner.since} - ${nowYear} By ${config.author}`
     else
       .copyright!= `&copy;${nowYear} By ${config.author}`
+  #running-time
   if theme.footer.copyright
     .framework-info
       span= _p('footer.framework') + ' '
@@ -17,3 +18,4 @@
       <a href = "https://beian.miit.gov.cn/" target="_blank">你的备案号</a>
   if theme.footer.custom_text
     .footer_custom_text!=`${theme.footer.custom_text}`
+  

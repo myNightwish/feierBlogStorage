@@ -30,7 +30,7 @@ if hexo-config('categoryBar.enable')
   a
     &.categoryBar-list-link
       color white!important
-      font-size 20px!important
+      font-size 30px!important
       &::before
         content '|'!important
         color white!important
@@ -91,10 +91,10 @@ if hexo-config('categoryBar.enable')
 
   $caterow =  hexo-config('categoryBar.row')?hexo-config('categoryBar.row'):2
   .categoryBar-list
-    max-height 190px * $caterow
+    max-height 190px * $caterow + 100px
     overflow auto
     &::-webkit-scrollbar
       width 0!important
   @media screen and (max-width: 650px)
     .categoryBar-list
-      max-height 160px * $caterow
+      max-height 160px * $caterow + 100px

@@ -1,7 +1,7 @@
 ---
 title: 文章统计详情
 date: 2022-01-05 23:18:34
-top_img: https://images.unsplash.com/photo-1554477717-cad0b36509e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80
+top_img: https://images.unsplash.com/photo-1622720757991-6590da48aa50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=997&q=80
 ---
 <!-- 文章发布时间统计图 -->
 <div id="posts-chart" style="background-color: rgba(119,156,156,0.714); border-radius: 8px; height: 300px; padding: 0.5rem;"></div>
