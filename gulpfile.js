@@ -4,7 +4,6 @@ import cleanCSS from 'gulp-clean-css';
 import htmlmin from 'gulp-html-minifier-terser';
 import htmlclean from 'gulp-htmlclean';
 import fontmin from 'gulp-fontmin';
-// gulp-tester
 import terser from 'gulp-terser';
 
 // 压缩js

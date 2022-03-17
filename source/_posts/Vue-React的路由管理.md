@@ -3,8 +3,7 @@ title: Vue&&React的路由管理
 tags: 路由管理
 categories: React&&Vue
 description: 路由到底是什么，主流实现思路
-cover: >-
-  https://images.unsplash.com/photo-1638518716535-955899d18a19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=363&q=80
+cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/img/sweet1.avif
 copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0

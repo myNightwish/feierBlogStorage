@@ -3,11 +3,9 @@ title: JS的异步解决方案
 tags:
   - JS
   - Promsie、Async、await
-  - 发布订阅
 categories: JS
 description: 从回调->promise->async+await，漫长的前端异步之路
-cover: >-
-  https://images.unsplash.com/photo-1594616389213-f3c7ce522896?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80
+cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/img/异步.avif
 copyright_author: 飞儿
 swiper_index: 1
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'

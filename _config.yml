@@ -192,8 +192,8 @@ magnet:
     - name: 项目总结
       display_name: 过往需求的梳理
       icon: 🔮
-    - name: bidaoTalk
-      display_name: 碎碎念
+    - name: 碎碎念
+      display_name: 碎碎念~
       icon: 💫
   color_setting:
     text_color: black
