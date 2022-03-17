@@ -13,7 +13,7 @@ menu:
     时间轴: /archives/ || fas fa-paper-plane
     标签: /tags/ || fas fa-tags
   访问足迹||fas fa-paw:
-    文章统计: /charts/ || fas fa-boombox
+    文章统计: /charts/ || fas fa-camera-retro
     网站统计: /census/ || fas fa-globe
   留言板: /comments/ || fas fa-comments
   媒体||fas fa-photo-video:
@@ -667,7 +667,7 @@ subtitle:
   # 循环或者只打字一次
   loop: false
   sub:
-    - be yourself & value yourself
+    - value yourself and be yourself
 # Loading Animation (加載動畫)
 preloader: false
 
@@ -898,7 +898,7 @@ inject:
     - '<div id="live3d" class="live3d" style="position: fixed; left: -100px; bottom: 30px; width: 500px !important;height: 437.5px !important;z-index: 98;"><canvas id="live2dm" class="live3d"style="max-width:500px;max-height:437.5px;"></canvas></div>'
     # - <script defer src="https://cdn.jsdelivr.net/gh/milkdue/cdn@2.2/js/live2dcubismcore.min.js"></script> # live3d的核心js
     - <script defer src="https://cdn.jsdelivr.net/npm/hexo-beautiful-page@latest/lib/asyncmodel.min.js"></script> # 异步加载live3d模型
-    - <script>setInterval(()=>{let create_time=Math.round(new Date("2021-12-01-20:14:00").getTime()/1000);let timestamp=Math.round((new Date().getTime()+8*60*60*1000)/1000);let second=timestamp-create_time;let time=new Array(0,0,0,0,0);if(second>=365*24*3600){time[0]=parseInt(second/(365*24*3600));second%=365*24*3600}if(second>=24*3600){time[1]=parseInt(second/(24*3600));second%=24*3600}if(second>=3600){time[2]=parseInt(second/3600);second%=3600}if(second>=60){time[3]=parseInt(second/60);second%=60}if(second>0){time[4]=second}currentTimeHtml='小破站已经安全运行 '+time[0]+' 年 '+time[1]+' 天 '+time[2]+' 时 '+time[3]+' 分 '+time[4]+' 秒';var elementById=document.getElementById('running-time');if(elementById){elementById.innerHTML=currentTimeHtml}},1000);</script>   
+    - <script>setInterval(()=>{let create_time=Math.round(new Date("2021-12-1-20:14:00").getTime()/1000);let timestamp=Math.round((new Date().getTime()+8*60*60*1000)/1000);let second=timestamp-create_time;let time=new Array(0,0,0,0,0);if(second>=365*24*3600){time[0]=parseInt(second/(365*24*3600));second%=365*24*3600}if(second>=24*3600){time[1]=parseInt(second/(24*3600));second%=24*3600}if(second>=3600){time[2]=parseInt(second/3600);second%=3600}if(second>=60){time[3]=parseInt(second/60);second%=60}if(second>0){time[4]=second}currentTimeHtml='小破站已经安全运行 '+time[0]+' 年 '+time[1]+' 天 '+time[2]+' 时 '+time[3]+' 分 '+time[4]+' 秒';var elementById=document.getElementById('running-time');if(elementById){elementById.innerHTML=currentTimeHtml}},1000);</script>   
 # CDN
 # Don't modify the following settings unless you know how they work
 # 非必要請不要修改

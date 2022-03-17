@@ -19,6 +19,11 @@ pretty_urls:
 abbrlink:
   alg: crc32  # 算法：crc16(default) and crc32
   rep: dec    # 进制：dec(default) and hex
+# 自动生成sitemap
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
 # Directory
 source_dir: source
 public_dir: public
