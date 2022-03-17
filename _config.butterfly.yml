@@ -10,16 +10,16 @@ menu:
   首页: / || fas fa-home
   分类: /categories/ || fas fa-folder-open
   时光机||fas fa-heart:
-    时间轴: /archives/ || fas fa-clock-o
+    时间轴: /archives/ || fas fa-paper-plane
     标签: /tags/ || fas fa-tags
   访问足迹||fas fa-paw:
-    文章统计: /charts/ || fas fa-paper-plane
+    文章统计: /charts/ || fas fa-boombox
     网站统计: /census/ || fas fa-globe
   留言板: /comments/ || fas fa-comments
   媒体||fas fa-photo-video:
     音乐: /music/ || fas fa-music
     视频: /movies/ || fas fa-video
-    书籍: /books || fas fa-book
+    书籍: /books/ || fas fa-book
     图册: /gallery/ || fas fa-camera-retro
     游戏: /games/ || fas fa-gamepad
 # envelope_comment
@@ -144,9 +144,9 @@ categoryBar:
     - Vue&React的世界
     - 前端工程化
     - 浏览器的渲染
+    - bidaoTalk
     - 计算机基础
     - 项目总结
-    - bidaoTalk
   cover:
     - url('https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/categories1.png')
     - url('https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/categories2.png')
@@ -192,14 +192,14 @@ post_meta:
     date_type: both # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
     date_format: date # date/relative 顯示日期還是相對日期
     categories: true # true or false 主頁是否顯示分類
-    tags: true # true or false 主頁是否顯示標籤
-    label: false # true or false 顯示描述性文字
+    tags: false # true or false 主頁是否顯示標籤
+    label: true # true or false 顯示描述性文字
   post:
     date_type: both # created or updated or both 文章頁日期是創建日或者更新日或都顯示
     date_format: date # date/relative 顯示日期還是相對日期
     categories: true # true or false 文章頁是否顯示分類
-    tags: true # true or false 文章頁是否顯示標籤
-    label: false # true or false 顯示描述性文字
+    tags: false # true or false 文章頁是否顯示標籤
+    label: true # true or false 顯示描述性文字
 
 # wordcount (字數統計)
 wordcount:
@@ -457,7 +457,7 @@ crisp:
 footer:
   owner:
     enable: true
-    since: 2020
+    since: 2021
   custom_text: <p><a style="margin-inline:5px"target="_blank" href="https://hexo.io/"><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&logo=hexo" title="博客框架为 Hexo" alt="HEXO"></a><a style="margin-inline:5px"target="_blank" href="https://butterfly.js.org/"><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&logo=bitdefender" title="主题采用 Butterfly" alt="Butterfly"></a><a style="margin-inline:5px"target="_blank" href="https://www.jsdelivr.com/"><img src="https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr" title="本站使用 Jsdelivr 为静态资源提供CDN加速" alt="Jsdelivr"></a><a style="margin-inline:5px"target="_blank" href="https://github.com/"><img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&logo=GitHub" title="本站项目由 GitHub 托管" alt="GitHub"></a><a style="margin-inline:5px"target="_blank"href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&logo=Claris" alt="img" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"></a></p>
   copyright: false  #Hexo那句不显示
   ICP: # Chinese ICP License   #最后一句
@@ -898,7 +898,7 @@ inject:
     - '<div id="live3d" class="live3d" style="position: fixed; left: -100px; bottom: 30px; width: 500px !important;height: 437.5px !important;z-index: 98;"><canvas id="live2dm" class="live3d"style="max-width:500px;max-height:437.5px;"></canvas></div>'
     # - <script defer src="https://cdn.jsdelivr.net/gh/milkdue/cdn@2.2/js/live2dcubismcore.min.js"></script> # live3d的核心js
     - <script defer src="https://cdn.jsdelivr.net/npm/hexo-beautiful-page@latest/lib/asyncmodel.min.js"></script> # 异步加载live3d模型
-    - <script>setInterval(()=>{let create_time=Math.round(new Date("2021-12-1-20:14:00").getTime()/1000);let timestamp=Math.round((new Date().getTime()+8*60*60*1000)/1000);let second=timestamp-create_time;let time=new Array(0,0,0,0,0);if(second>=365*24*3600){time[0]=parseInt(second/(365*24*3600));second%=365*24*3600}if(second>=24*3600){time[1]=parseInt(second/(24*3600));second%=24*3600}if(second>=3600){time[2]=parseInt(second/3600);second%=3600}if(second>=60){time[3]=parseInt(second/60);second%=60}if(second>0){time[4]=second}currentTimeHtml='小破站已经安全运行 '+time[0]+' 年 '+time[1]+' 天 '+time[2]+' 时 '+time[3]+' 分 '+time[4]+' 秒';var elementById=document.getElementById('running-time');if(elementById){elementById.innerHTML=currentTimeHtml}},1000);</script>   
+    - <script>setInterval(()=>{let create_time=Math.round(new Date("2021-12-01-20:14:00").getTime()/1000);let timestamp=Math.round((new Date().getTime()+8*60*60*1000)/1000);let second=timestamp-create_time;let time=new Array(0,0,0,0,0);if(second>=365*24*3600){time[0]=parseInt(second/(365*24*3600));second%=365*24*3600}if(second>=24*3600){time[1]=parseInt(second/(24*3600));second%=24*3600}if(second>=3600){time[2]=parseInt(second/3600);second%=3600}if(second>=60){time[3]=parseInt(second/60);second%=60}if(second>0){time[4]=second}currentTimeHtml='小破站已经安全运行 '+time[0]+' 年 '+time[1]+' 天 '+time[2]+' 时 '+time[3]+' 分 '+time[4]+' 秒';var elementById=document.getElementById('running-time');if(elementById){elementById.innerHTML=currentTimeHtml}},1000);</script>   
 # CDN
 # Don't modify the following settings unless you know how they work
 # 非必要請不要修改
