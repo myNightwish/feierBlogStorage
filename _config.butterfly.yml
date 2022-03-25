@@ -148,17 +148,17 @@ categoryBar:
     - 计算机基础
     - 项目总结
   cover:
+    - url('https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/categories3.png')
     - url('https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/categories1.png')
     - url('https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/categories2.png')
-    - url('https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/categories3.png')
     
+    - url('https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/categories6.png')
     - url('https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/categories4.png')
     - url('https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/categories5.png')
-    - url('https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/categories6.png')
-    
+
+    - url('https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/categories9.png')
     - url('https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/categories7.png')
     - url('https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/categories8.png')
-    - url('https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/categories9.png')
     - '#abcdef' # HEX格式色值需要用''包裹，不然会被识别成注释
     - rgba(45,67,89,0.7)
     - linear-gradient(rgba(0, 0, 0, 0.4) 25%, rgba(200,16 , 16, 0) 100%)
