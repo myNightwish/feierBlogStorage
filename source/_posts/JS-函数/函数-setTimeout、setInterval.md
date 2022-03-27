@@ -3,8 +3,7 @@ title: 函数- setTimeout、setInterval
 tags: JS
 categories: JS
 description: 定时器坑真多，用着用着就掉沟里去了
-cover: >-
-  https://images.unsplash.com/photo-1639077567163-f5bcf1c94d06?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
+cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/img/sweet1.avif
 abbrlink: 2747544176
 date: 2021-12-11 00:57:07
 ---
