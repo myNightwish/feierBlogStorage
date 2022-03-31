@@ -8,7 +8,7 @@ copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0
 license_url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
-abbrlink: 1210677085
+abbrlink: 数据管理
 date: 2021-12-11 22:56:21
 ---
 ## Redux ##

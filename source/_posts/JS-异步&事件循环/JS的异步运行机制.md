@@ -8,7 +8,7 @@ tags:
   - 微任务
 categories: JS
 description: 异步与同步、宏任务、微任务
-cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/img/ll.avif
+cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/img/a-hill.avif
 copyright_author: 飞儿
 swiper_index: 2
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'

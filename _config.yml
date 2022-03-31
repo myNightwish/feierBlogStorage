@@ -109,16 +109,24 @@ theme: butterfly
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
+- type: git
   repo: git@github.com:myNightwish/myNightwish.github.io.git
   branch: master
   name: myNightwish
   email: zml_byr@bupt.edu.cn
+- type: baidu_url_submitter 	## 在这里添加新内容即可
 search:
   path: search.xml
   field: post
   format: html
   limit: 10000
+
+baidu_url_submit:
+  count: 10                           # 提交最新的多少个链接
+  host: https://mynightwish.top/    # 在百度站长平台中添加的域名
+  token: sIYpcoGU772cgKl3             	  # 秘钥
+  path: baidu_urls.txt                # 文本文档的地址,新链接会保存在此文本文档里
+
 
 # 新增文章卡片式
 butterfly_article_double_row:

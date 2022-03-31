@@ -1,11 +1,11 @@
 ---
 title: React核心概念系列（1)
-abbrlink: 3522992182
+abbrlink: React's key Concept-1
 date: 2022-03-27 22:02:09
 categories: React&&Vue
 tags: React文档
 description: React文档系列之核心概念
-cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/img/sweet3.avif
+cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/img/a-2.avif
 copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0

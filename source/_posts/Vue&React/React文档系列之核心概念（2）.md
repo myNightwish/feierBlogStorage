@@ -4,12 +4,12 @@ title: React核心概念系列（2）
 categories: React&&Vue
 tags: React文档
 description: React文档系列之核心概念
-cover: 'https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/img/sweet3.avif'
+cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/img/a-2.avif
 copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0
 license_url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
-abbrlink: 1838339628
+abbrlink: React's key Concept-2
 date: 2022-03-28 18:30:11
 ---
 ## <center>React文档系列之核心概念（2）</center>
