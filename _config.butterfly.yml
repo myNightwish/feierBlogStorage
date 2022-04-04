@@ -667,7 +667,7 @@ subtitle:
   # 循环或者只打字一次
   loop: false
   sub:
-    - value yourself and be yourself
+    - value yourself & be yourself
 # Loading Animation (加載動畫)
 preloader: false
 
