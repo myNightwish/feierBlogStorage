@@ -55,7 +55,13 @@ jobs:
           echo "$DEPLOY_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
+          git config --global user.email 'zml_byr@bupt.edu.cn'
+          git config --global user.name 'myNightwish'
+          npm install hexo-cli -g
+          npm install
 
       - name: Deploy
         run: |
-          npx hexo clean && npx hexo generate && gulp && npx hexo deploy
+            hexo clean
+            hexo generate
+            hexo deploy
