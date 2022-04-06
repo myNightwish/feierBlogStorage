@@ -1,3 +1,158 @@
+/* 最差优先级的，比如其他页面的资源 */
+
+#toggle-sidebar {left:100px}
+
+
+div#post-comment.fixedcomment {
+  position: fixed;
+  top: 0;
+  width: 60%;
+  right: 0;
+  padding: 25px 30px 20px 20px;
+  height: 100vh;
+  overflow: scroll;
+  z-index: 90;
+  background: rgba(222, 222, 222, 0.95);
+  box-shadow:3px 2px 14px #464340;
+  animation: fixedright 0.5s linear;
+}
+div#post-comment.fixedcomment::-webkit-scrollbar {
+width: 0;
+}
+div#quit-board{
+display: none;
+}
+div#quit-board.fixedcomment {
+position: fixed;
+display:block!important;
+left: 0;
+top: 0;
+width: 40%;
+height: 100vh;
+z-index: 89!important;
+background: rgba(25,25,25,0.3);
+filter: blur(4px) !important;
+animation: fixedleft 0.5s linear;
+}
+/*手机端样式适配*/
+@media screen and (max-width: 768px) {
+div#post-comment.fixedcomment {
+    width: 90%;
+    right: 0;
+}
+div#quit-board.fixedcomment {
+  width: 10%;
+}
+}
+
+@media screen and (min-width: 768px) {
+#doraemon_to_top {
+  position: fixed;
+  z-index: 1001;
+  right: 30px;
+  transition: 0.3s;
+  opacity: 0;
+  bottom: -187px;
+  transform: scale(1);
+}
+#doraemon_to_top.doraemon_fixed {
+  bottom: -51px;
+  opacity: 1;
+}
+#doraemon_to_top.doraemon_fixed:hover {
+  transform: scale(0.9);
+}
+}
+
+/*动画效果*/
+@keyframes fixedright {
+from {right:-50%;}
+to {right:0;}
+}
+@keyframes fixedleft {
+from {left:-50%;}
+to {left:0;}
+}
+/* 夜间模式匹配 */
+[data-theme="dark"]
+div#post-comment.fixedcomment {
+    background: rgba(35, 35, 35, 0.95);
+    box-shadow:3px 2px 12px #90a1a4;
+}
+[data-theme="dark"]
+div#quit-board.fixedcomment {
+  background: rgba(147, 146, 128, 0.3);
+}
+
+/* 文章页H1-H6图标样式效果 */
+h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
+-webkit-animation: ccc 1.6s linear infinite;
+animation: ccc 1.6s linear infinite;
+}
+@keyframes ccc {
+0% {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+to {
+  -webkit-transform: rotate(-1turn);
+  transform: rotate(-1turn);
+}
+}
+#content-inner.layout h1::before {
+color: #ef50a8;
+margin-left: -1.55rem;
+font-size: 1.3rem;
+margin-top: -0.23rem;
+}
+#content-inner.layout h2::before {
+color: #fb7061;
+margin-left: -1.35rem;
+font-size: 1.1rem;
+margin-top: -0.12rem;
+}
+
+#content-inner.layout h3::before {
+color: #ffbf00;
+margin-left: -1.22rem;
+font-size: 0.95rem;
+margin-top: -0.09rem;
+}
+
+#content-inner.layout h4::before {
+color: #a9e000;
+margin-left: -1.05rem;
+font-size: 0.8rem;
+margin-top: -0.09rem;
+}
+
+#content-inner.layout h5::before {
+color: #57c850;
+margin-left: -0.9rem;
+font-size: 0.7rem;
+margin-top: 0.0rem;
+}
+
+#content-inner.layout h6::before {
+color: #5ec1e0;
+margin-left: -0.9rem;
+font-size: 0.66rem;
+margin-top: 0.0rem;
+}
+
+#content-inner.layout h1:hover, #content-inner.layout h2:hover, #content-inner.layout h3:hover, #content-inner.layout h4:hover, #content-inner.layout h5:hover, #content-inner.layout h6:hover {
+color: #49b1f5;
+}
+
+#content-inner.layout h1:hover::before,#content-inner.layout h2:hover::before, #content-inner.layout h3:hover::before,#content-inner.layout h4:hover::before, #content-inner.layout h5:hover::before,#content-inner.layout h6:hover::before {
+color: #49b1f5;
+-webkit-animation: ccc 3.2s linear infinite;
+animation: ccc 3.2s linear infinite;
+}
+
+
+
+
 /* 自定义twikoo评论输入框高度 */
 .tk-input[data-v-619b4c52] .el-textarea__inner {
   height: 130px !important;

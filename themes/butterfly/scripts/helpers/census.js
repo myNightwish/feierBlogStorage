@@ -31,13 +31,14 @@ hexo.extend.filter.register('after_render:html', async function (locals) {
   }
 }, 15)
 
-const startDate = '20211201' // 开始日期
-const endDate = moment().format('YYYYMMDD') // 结束日期
-const accessToken = '121.38d0ef89a0475f9d3e49bf5001435c36.Y7G-q5W2Ik2wpOy1IjHEPsOdRC37I15VNyx458D.1I8xQA' // accessToken
-const siteId = '17557580' // 网址 id
+const startDate = '20211201'; // 开始日期
+const endDate = moment().format('YYYYMMDD'); // 结束日期
+ // accessToken
+const accessToken = '121.2c77f1fc2e1e6a066de632213c626b55.YH9xu0IL_D_-CRHKknBvLn-ZrH972vkAn_5gS8D.hxP-2A';
+const siteId = '17557580'; // 网址 id
 const dataUrl = 'https://openapi.baidu.com/rest/2.0/tongji/report/getData?access_token=' + accessToken + '&site_id=' + siteId;
-const metrics = 'pv_count' // 统计访问次数 PV 填写 'pv_count'，统计访客数 UV 填写 'visitor_count'，二选一
-const metricsName = (metrics === 'pv_count' ? '访问次数' : (metrics === 'visitor_count' ? '访客数' : ''))
+const metrics = 'pv_count'; // 统计访问次数 PV 填写 'pv_count'，统计访客数 UV 填写 'visitor_count'，二选一
+const metricsName = (metrics === 'pv_count' ? '访问次数' : (metrics === 'visitor_count' ? '访客数' : ''));
 
 // 访问地图
 function mapChart () {
@@ -47,14 +48,14 @@ function mapChart () {
       .then(data => data.json())
       .then(data => {
         monthArr = [];
-        let mapName = data.result.items[0]
-        let mapValue = data.result.items[1]
-        let mapArr = []
-        let max = mapValue[0][0]
+        let mapName = data.result.items[0];
+        let mapValue = data.result.items[1];
+        let mapArr = [];
+        let max = mapValue[0][0];
         for (let i = 0; i < mapName.length; i++) {
-          mapArr.push({ name: mapName[i][0].name, value: mapValue[i][0] })
+          mapArr.push({ name: mapName[i][0].name, value: mapValue[i][0] });
         }
-        const mapArrJson = JSON.stringify(mapArr)
+        const mapArrJson = JSON.stringify(mapArr);
         resolve(`
           <script id="mapChart">
             var color = document.documentElement.getAttribute('data-theme') === 'light' ? '#4c4948' : 'rgba(255,255,255,0.7)'
