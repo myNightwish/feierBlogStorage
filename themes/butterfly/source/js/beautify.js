@@ -21,7 +21,7 @@ document.addEventListener('visibilitychange', function() {
 
 
 // 功能：评论样式更改
-//移除FixedComment类，保持原生样式，确保不与最新评论跳转冲突
+// 移除FixedComment类，保持原生样式，确保不与最新评论跳转冲突
 function RemoveFixedComment() {
     var activedItems = document.querySelectorAll('.fixedcomment');
     if (activedItems) {
@@ -74,6 +74,8 @@ function RemoveFixedComment() {
   }
   //切换页面先初始化一遍，确保开始时是原生状态。所以要加pjax重载。
   RemoveFixedComment();
+
+
 
 
 

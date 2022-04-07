@@ -14,16 +14,11 @@ $code-background = $themeColorEnable && hexo-config('theme_color.code_background
 $theme-toc-color = $themeColorEnable && hexo-config('theme_color.toc_color') ? convert(hexo-config('theme_color.toc_color')) : $strong-cyan
 // font
 @font-face{
-  font-family:'CandyhomeC' ;  /* 字体名自定义即可 */
+  font-family:'CandyC' ;  /* 字体名自定义即可 */
   src:url('/fonts/CandyC.ttf'); /* 字体文件路径 */
   font-display : swap;
 }
-@font-face{
-  font-family:'CandyhomeE' ;  /* 字体名自定义即可 */
-  src:url('/fonts/CandyE.ttf'); /* 字体文件路径 */
-  font-display : swap;
-}
-$dafault-font-family = -apple-system, 'CandyhomeE', 'CandyhomeC', 'Helvetica Neue', Lato, Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif, 'CandyhomeC'
+$dafault-font-family = -apple-system, 'CandyC', 'Helvetica Neue', Lato, Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif,
 $dafault-code-font = consolas, Menlo, 'PingFang SC', 'Microsoft YaHei', sans-serif
 $font-family = hexo-config('font.font-family') ? unquote(hexo-config('font.font-family')) : $dafault-font-family
 $code-font-family = hexo-config('font.code-font-family') ? unquote(hexo-config('font.code-font-family')) : $dafault-code-font

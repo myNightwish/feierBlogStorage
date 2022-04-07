@@ -5,7 +5,7 @@ date: 2022-03-31 20:44:02
 tags: CSS
 categories: CSS
 description: gap属性在开发中的trick
-cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/img/1460000039855201.png
+cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/gap.webp
 copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0

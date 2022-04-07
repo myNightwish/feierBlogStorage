@@ -7,7 +7,7 @@ tags:
   - 动画
   - requestAnimationFrame
 description: 前端动画
-cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/img/4ea44274b6bd448cba69bf2b041a1787~tplv-k3u1fbpfcp-zoom-crop-mark:1956:1956:1956:1101.image
+cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/帧动画.webp
 copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0

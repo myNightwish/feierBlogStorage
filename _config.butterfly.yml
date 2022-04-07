@@ -105,14 +105,18 @@ favicon: /img/favicon.png
 
 # Avatar (頭像)
 avatar:
-  img: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/avartor.webp
+  img: img/avartor.webp
   effect: false
+  width: 110
+  height: 110
 
 # Disable all banner image
 disable_top_img: false
 
 # The banner image of home page
-index_img: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/header.webp
+index_img: /img/test1.webp
+# https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/test1.webp
+# https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/header.webp
 # https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/star.jpg
 # https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/night.webp
 # https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547_1280.jpg
@@ -125,7 +129,7 @@ index_img: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/header.webp
 
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/img/def_top_img.avif
+default_top_img: /img/def_top_img.avif
 # The banner image of archive page
 archive_img: 
 # If the banner of tag page not setting, it will show the top_img
@@ -890,13 +894,14 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    - <link rel="prefetch" href="/css/main.css" as='css'>
     # - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" media="defer">
-    - <link rel="stylesheet" href="/css/custom.css" >
+    - <link rel="stylesheet" href="/css/custom.css" rel="prefetch" onload="this.media='all'">
+    - <link rel="stylesheet" href="/css/double.css" rel="prefetch" onload="this.media='all'">
     - <link rel="stylesheet" href="/css/beautify.css"  media="defer" onload="this.media='all'">
     - <link rel="stylesheet" href="/css/lastLoad.css"  media="defer" onload="this.media='all'">
   bottom:
     # 首页 次要
+    - <script src="/js/main.js"></script>
     - <script src="/js/newAdd.js"></script>
     - '<div id="live3d" class="live3d" style="position: fixed; left: -100px; bottom: 30px; width: 500px !important;height: 437.5px !important;z-index: 98;"><canvas id="live2dm" class="live3d"style="max-width:500px;max-height:437.5px;"></canvas></div>'
     - <script async src="https://cdn.jsdelivr.net/npm/hexo-beautiful-page@latest/lib/asyncmodel.min.js"></script> # 异步加载live3d模型
@@ -905,7 +910,6 @@ inject:
     # - <style type="text/css">#toggle-sidebar {left:100px}</style>
     - <script>setInterval(()=>{let create_time=Math.round(new Date("2021-12-1-20:14:00").getTime()/1000);let timestamp=Math.round((new Date().getTime()+8*60*60*1000)/1000);let second=timestamp-create_time;let time=new Array(0,0,0,0,0);if(second>=365*24*3600){time[0]=parseInt(second/(365*24*3600));second%=365*24*3600}if(second>=24*3600){time[1]=parseInt(second/(24*3600));second%=24*3600}if(second>=3600){time[2]=parseInt(second/3600);second%=3600}if(second>=60){time[3]=parseInt(second/60);second%=60}if(second>0){time[4]=second}currentTimeHtml='小破站已经安全运行 '+time[0]+' 年 '+time[1]+' 天 '+time[2]+' 时 '+time[3]+' 分 '+time[4]+' 秒';var elementById=document.getElementById('running-time');if(elementById){elementById.innerHTML=currentTimeHtml}},1000);</script>
     # 非首页
-    
     - <script defer src="/js/beautify.js"></script>
     - <script src="https://cdn.jsdelivr.net/npm/echarts@4.9.0/dist/echarts.min.js" defer></script>
     - <script src="https://cdn.jsdelivr.net/npm/echarts@4.9.0/map/js/china.js" defer></script> 

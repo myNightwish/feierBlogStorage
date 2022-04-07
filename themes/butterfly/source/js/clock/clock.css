@@ -5,7 +5,7 @@
 }
 #hexo_electric_clock{
     padding: 15px;
-    font-family: 'CandyhomeC'
+    font-family: 'CandyC'
 }
 .card-clock{
     padding: 0 !important;
@@ -18,7 +18,7 @@
     z-index: 2;
 }
 .clock-row{
-    font-family: CandyhomeC;
+    font-family: CandyC;
     font-weight: 400;
     color: #000;
     display: flex;
@@ -40,10 +40,13 @@
 }
 .card-clock-time{
     flex: 1;
-    font-family: CandyhomeC;
+    font-family: CandyC;
     font-size: 38px;
     text-align: center;
     line-height: 1.5;
+}
+.card-clock-ip {
+    text-align: center;
 }
 [data-theme="dark"]
   .card-background{
