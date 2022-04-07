@@ -1,56 +1,56 @@
-# This is a basic workflow to help you get started with Actions
+# 当有改动推送到master分支时，启动Action
+name: 自动部署
 
-name: CI
-
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    branches:
+      - master #2020年10月后github新建仓库默认分支改为main，注意更改
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+  release:
+    types:
+      - published
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  deploy:
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Checkout source
-        uses: actions/checkout@v1
-        with:
-            ref: master
+    - name: 检查分支
+      uses: actions/checkout@v2
+      with:
+        ref: master #2020年10月后github新建仓库默认分支改为main，注意更改
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v1
-        with:
-              node-version: '12'
+    - name: 安装 Node
+      uses: actions/setup-node@v1
+      with:
+        node-version: "12.x"
 
+    - name: 安装 Hexo
+      run: |
+        export TZ='Asia/Shanghai'
+        npm install hexo-cli -g
+    - name: 缓存 Hexo
+      uses: actions/cache@v1
+      id: cache
+      with:
+        path: node_modules
+        key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
 
-      - name: Setup Hexo
-        env: 
-                # HEXO_DEPLOY_PRI_XIAOXIN_WINDOW 这个就是配置hexo仓库secrets的name，一定要对应上
-                ACTION_DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
-        run: |
-                    mkdir -p ~/.ssh/
-                    echo "$ACTION_DEPLOY_KEY"> ~/.ssh/id_rsa
-                    chmod 700 ~/.ssh
-                    chmod 600 ~/.ssh/id_rsa
-                    ssh-keyscan github.com >> ~/.ssh/known_hosts
-                    git config --global user.email 'zml_byr@bupt.edu.cn'
-                    git config --global user.name 'myNightwish'
-                    npm install hexo-cli -g
-                    npm install
-                    npm uninstall hexo-renderer-marked
-                    npm install hexo-renderer-markdown-it
-      - name: Deploy
-        run: |
-            hexo clean
-            hexo generate
-            hexo deploy
+    - name: 安装依赖
+      if: steps.cache.outputs.cache-hit != 'true'
+      run: |
+        npm install --save
+    - name: 生成静态文件
+      run: |
+        hexo clean
+        hexo generate
+        gulp
+    - name: 部署
+      run: |
+        git config --global user.name "myNightwish"
+        git config --global user.email "zml_byr@bupt.edu.cn"
+        git clone https://github.com/myNightwish/myNightwish.github.io.git .deploy_git
+        # 此处务必用HTTPS链接。SSH链接可能有权限报错的隐患
+        # =====注意.deploy_git前面有个空格=====
+        # 这行指令的目的是clone博客静态文件仓库，防止Hexo推送时覆盖整个静态文件仓库，而是只推送有更改的文件
+        gulp
+        hexo deploy
