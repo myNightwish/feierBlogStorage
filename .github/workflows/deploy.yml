@@ -3,67 +3,66 @@ name: Hexo Deploy
 # 只监听 master 分支的改动
 on:
   push:
-    branches: [ master ]
+  branches: [master]
 
 jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
+  build-and-deploy:
+    runs-on: ubuntu-latest
 
     steps:
         # 获取博客源码和主题
-      - name: Checkout
-        uses: actions/checkout@v2
-
+      - name: Checkout
+        uses: actions/checkout@v2
         # 主题文件夹，如果你的主题不是 git submodule 可以不配置
-      - name: Checkout theme repo
-        uses: actions/checkout@v2
-        with:
-          repository: jerryc127/hexo-theme-butterfly
-          ref: master
-          path: themes/butterfly
+      - name: Checkout theme repo
+        uses: actions/checkout@v2 
+        with:
+          repository: jerryc127/hexo-theme-butterfly
+          ref: master
+          path: themes/butterfly
+      
+        
 
       # 这里用的是 Node.js 12.x
-      - name: Set up Node.js
-        uses: actions/setup-node@v1
-        with:
-          node-version: '14.18.2'
-
-      # 缓存 Node 模块，提高构建速度
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
-
-      - name: Use yarn cache
-        uses: actions/cache@v2
-        id: yarn-cache
-        with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+        node-version: '14'
+        # 缓存 Node 模块，提高构建速度
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+      - name: Use yarn cache
+        uses: actions/cache@v2
+        id: yarn-cache
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
 
       # 安装依赖，我这里使用了 pandoc 渲染页面，所以先安装了 pandoc 再安装 Node 模块
-      - name: Install dependencies
-        run: |
-          wget https://github.com/jgm/pandoc/releases/download/2.10.1/pandoc-2.10.1-1-amd64.deb
-          sudo dpkg -i pandoc-2.10.1-1-amd64.deb
-          yarn install --prefer-offline --frozen-lockfile
+      - name: Install dependencies
+      run: 
+          wget https://github.com/jgm/pandoc/releases/download/2.10.1/pandoc-2.10.1-1-amd64.deb
+          sudo dpkg -i pandoc-2.10.1-1-amd64.deb
+          yarn install --prefer-offline --frozen-lockfile
 
       # 从之前设置的 secret 获取部署私钥
-      - name: Set up environment
-        env:
-          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
-        run: |
-          sudo timedatectl set-timezone "Asia/Shanghai"
-          mkdir -p ~/.ssh
-          echo "$DEPLOY_KEY" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan github.com >> ~/.ssh/known_hosts
+      - name: Set up environment
+      env:
+        DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+        run: |
+          sudo timedatectl set-timezone "Asia/Shanghai"
+          mkdir -p ~/.ssh
+          echo "$DEPLOY_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
 
       # 生成并部署
-      - name: Deploy
-        run: |
-          npx hexo clean && npx hexo g && npx hexo d
+      - name: Deploy
+        run: |
+          npx hexo clean && npx hexo g && npx hexo d
 
 
 
