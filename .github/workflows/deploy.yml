@@ -8,9 +8,8 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-
-    steps:
-        # 获取博客源码和主题
+# 获取博客源码和主题
+    steps:
       - name: Checkout
         uses: actions/checkout@v2
         # 主题文件夹，如果你的主题不是 git submodule 可以不配置
