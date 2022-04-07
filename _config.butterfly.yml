@@ -112,7 +112,14 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page
-index_img: https://images.pexels.com/photos/544554/pexels-photo-544554.jpeg?cs=srgb&dl=pexels-k-zoltan-544554.jpg&fm=jpg
+index_img: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/header.webp
+# https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/star.jpg
+# https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/night.webp
+# https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547_1280.jpg
+# https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/testsize.jpg
+# https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/header.webp
+# https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/test2.webp
+# https://images.pexels.com/photos/544554/pexels-photo-544554.jpeg?cs=srgb&dl=pexels-k-zoltan-544554.jpg&fm=jpg
 #https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/face.webp
 # https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/img/index.avif
 
@@ -883,9 +890,9 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    - <link rel="preload" href="/css/main.css" as='css'>
+    - <link rel="prefetch" href="/css/main.css" as='css'>
     # - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" media="defer">
-    - <link rel="stylesheet" href="/css/custom.css" rel="preload" onload="this.media='all'">
+    - <link rel="stylesheet" href="/css/custom.css" >
     - <link rel="stylesheet" href="/css/beautify.css"  media="defer" onload="this.media='all'">
     - <link rel="stylesheet" href="/css/lastLoad.css"  media="defer" onload="this.media='all'">
   bottom:

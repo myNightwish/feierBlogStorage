@@ -28,12 +28,6 @@ jobs:
       run: |
         export TZ='Asia/Shanghai'
         npm install hexo-cli -g
-    - name: 缓存 Hexo
-      uses: actions/cache@v1
-      id: cache
-      with:
-        path: node_modules
-        key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
 
     - name: 安装依赖
       if: steps.cache.outputs.cache-hit != 'true'
@@ -43,7 +37,6 @@ jobs:
       run: |
         hexo clean
         hexo generate
-        gulp
     - name: 部署
       run: |
         git config --global user.name "myNightwish"
