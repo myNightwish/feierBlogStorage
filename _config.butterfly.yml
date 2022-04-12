@@ -114,7 +114,7 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page
-index_img: /img/test1.webp
+index_img: /img/testPic.webp
 # https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/test1.webp
 # https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/header.webp
 # https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/star.jpg
@@ -895,14 +895,13 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" media="defer">
-    - <link rel="stylesheet" href="/css/custom.css" rel="prefetch" onload="this.media='all'">
-    - <link rel="stylesheet" href="/css/double.css" rel="prefetch" onload="this.media='all'">
+    - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
+    - <link rel="stylesheet" href="/css/double.css" media="defer" onload="this.media='all'">
     - <link rel="stylesheet" href="/css/beautify.css"  media="defer" onload="this.media='all'">
     - <link rel="stylesheet" href="/css/lastLoad.css"  media="defer" onload="this.media='all'">
   bottom:
     # 首页 次要
-    - <script src="/js/main.js"></script>
-    - <script src="/js/newAdd.js"></script>
+    - <script async src="/js/newAdd.js"></script>
     - '<div id="live3d" class="live3d" style="position: fixed; left: -100px; bottom: 30px; width: 500px !important;height: 437.5px !important;z-index: 98;"><canvas id="live2dm" class="live3d"style="max-width:500px;max-height:437.5px;"></canvas></div>'
     - <script async src="https://cdn.jsdelivr.net/npm/hexo-beautiful-page@latest/lib/asyncmodel.min.js"></script> # 异步加载live3d模型
     # - <script async src="//at.alicdn.com/t/font_2264842_3izu8i5eoc2.js" media="defer"></script>

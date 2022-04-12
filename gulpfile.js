@@ -83,5 +83,5 @@ gulp.task('mini-font', (cb) => {
 // ))
 
 gulp.task('default', gulp.parallel(
-  'compress','mini-font'
+  'compress', 'mini-font'
 ))
