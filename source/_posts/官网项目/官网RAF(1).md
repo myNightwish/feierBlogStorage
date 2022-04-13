@@ -1,18 +1,17 @@
 ---
 layout: post
-title: requestAnimationFrame的介绍
+title: 官网充电RAF(1)-是什么？
 date: 2022-04-03 14:39:27
 categories: 项目总结
 tags: 
-  - 动画
   - requestAnimationFrame
-description: 前端动画
+description: 官网充电requestAnimationFrame的知识
 cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/帧动画.webp
 copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0
 license_url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
-abbrlink: requestAnimationFrame
+abbrlink: requestAnimationFrame_1
 ---
 
 ## <center>requestAnimationFrame</center>
@@ -273,6 +272,6 @@ requestAnimationFrame(addItems);
 
   ### 小结
 
-  > 下一次，我们将在项目中分享，reequestAnimationFrame是如何解决页面滚动吸顶效果的，以及另一期开发工作中，类似金币转圈圈的效果实现、腾讯云中某一图标的动态旋转实现~
+  > 下一次，我们将在项目中分享，reequestAnimationFrame是如何解决页面滚动吸顶效果的，以及另一期实践中，类似金币转圈圈的效果实现、腾讯云中某一图标的动态旋转实现~
 
   
