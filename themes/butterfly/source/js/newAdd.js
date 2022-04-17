@@ -57,5 +57,7 @@ function setColor(opacity) {
 setColor(opacity);
 
 
+// canvas加载旋转小人
+
 
 

@@ -140,8 +140,7 @@
 }
 
 /* 手机侧边栏默认不展开*/
-#aside_content
-.card-archives
+#aside_content .card-archives
 ul.card-archive-list
 > .card-archive-list-item
 a
@@ -219,12 +218,10 @@ svg.icon {
 }
 /* 鼠标样式*/
 body {
-  cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur),
-      default;
+  cursor: url("img/default.cur"),default;
 }
-a,
-img {
-  cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur),default;
+a, img {
+  cursor: url("/img/pointer.cur"),default;
 }
 #footer {
   background: linear-gradient(-45deg, #ee7752, #ce3e75, #23a6d5, #23d5ab);
