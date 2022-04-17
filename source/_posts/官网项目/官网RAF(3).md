@@ -1,16 +1,171 @@
 ---
 layout: post
-title: 官网充电RAF(3)-优化资源加载
+title: 官网帧动画(1)-优化资源加载
 date: 2022-04-12 20:18:53
 categories: 项目总结
-tags: requestAnimationFrame
-description: RAF替换MP4播放
+tags: 帧动画
+description: 雪碧图替换MP4播放
 cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/帧动画.webp
 copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0
 license_url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
-abbrlink: requestAnimationFrame_3
+abbrlink: animation
 ---
 
+## <center>逐帧动画替换MP4
 
+> 玩过捕鱼达人的小伙伴，可能见过金币旋转的效果。这种旋转的实现方式有很多种：
+>
+> - 使用MP4视频播放
+> - 使用帧动画播放长图，看起来形成动态效果
+> - canvas逐帧画；
+>
+> 今天，要分享的是如何将一个MP4视频，从节省资源大小的角度，将其抽成一个个图，形成一个雪碧图，再通过关键帧控制**移动图片**，使得连贯的显示成视频效果
+>
+> - 例如，点赞、取消赞的效果；
+> - 腾讯云的小图标播放
+>
+> **额外注意：**
+>
+> - 百分比的取值可以是基值的整数倍，不能是小数倍，否则又会看到切换过程
+>
+> demo地址：https://github.com/myNightwish/myCSS-demo-for-practice/tree/main/%E8%A7%86%E9%A2%91%E5%B8%A7%E5%8A%A8%E7%94%BB2
+
+---
+
+### 实现点赞demo：
+
+#### <center>transition实现点赞demo：
+
+> ##### DOM:
+>
+> ```html
+> <div id="heart" class="heart"></div>
+> ```
+>
+> ##### JS
+>
+> ```js
+> const heart = document.getElementById("heart");
+> 
+> heart.addEventListener('click', function () {
+>   this.classList.toggle('clicked');
+> })
+> ```
+>
+> ##### CSS
+>
+> **注意**：如果position的值没把握好，会看到整个长图的切换过程，这肯定不是预期的
+>
+> - ##### 写法1：通过精准大小控制
+>
+>   ```css
+>   .heart {
+>     width: 100px;height: 100px;
+>     background:url(web_heart_animation_edge.png);
+>     background-position: 0 0;
+>     transition: all steps(28);
+>   }
+>   .clicked {
+>     background-position: -2800px 0; // 28份
+>     transition-duration: .8s;  /* 写在.heart中会使得取消的时候有反向的动画 */
+>   }
+>   ```
+>
+> - ##### 写法2：通过属性控制
+>
+>   ```css
+>   .heart {
+>         width: 100px;height: 100px;
+>         background: url(https://abs.twimg.com/a/1511233232/img/animations/web_heart_animation_edge.png) 0 0 no-repeat;
+>         background-position: left;
+>         transition: all steps(28);
+>       }
+>       .clicked {
+>         background-position: right;
+>         transition-duration: 0.8s;  /* 写在.heart中会使得取消的时候有反向的动画 */
+>     }
+>   ```
+
+#### <center>Animation实现点赞demo：
+
+> ##### DOM
+>
+> ```html
+> <div id="heart" class="heart stop"></div>
+> <div><input type="button" id="btn-stop" value="play"></div>
+> ```
+>
+> ##### JS
+>
+> ```js
+> const image = document.getElementById("heart");
+> const button = document.getElementById("btn-stop");
+>    
+> button.onclick = function() {
+>   if (this.value == 'pause') {
+>     image.classList.add('stop');
+>     this.value = 'paly';
+>   } else {
+>     image.classList.remove('stop');
+>     this.value = 'pause';
+>   }
+> };
+> ```
+>
+> ##### CSS
+>
+> ```css
+> .heart {
+>   width: 100px; height: 100px;
+>   background: url(web_heart_animation_edge.png);
+>   // 可以控制播放次数、暂停
+>   animation: heart-burst steps(28) 0.8s infinite both;
+> }
+> .stop {animation-play-state: paused; }
+> @keyframes heart-burst {
+>   0% { background-position: 0%;}
+>   100% { background-position: 100%;}  
+> }
+> 或者
+> @keyframes heart-burst {
+>   0% {background-position: 0 0; }
+>   100% { background-position: -2800px 0;}
+> }
+> ```
+
+### 腾讯云播放demo
+
+> ```jsx
+> <div
+>   className={styles.baseIcon}
+>   style={{background: './testPic.webp'}}
+> />
+> ```
+>
+> #### css
+>
+> ```css
+> .baseIcon {
+>   width: 100px;height: 100px;
+>   will-change: transform;
+>   background-size: cover;
+>   animation: enterAnimation 2s steps(32) forwards infinite;
+> }
+> @keyframes enterAnimation {
+>   0% { background-position: 0 -(动图的全部高度); }// 高6400px
+>   100% {background-position: 0 0;}
+> }
+> 或者
+>   @keyframes enterAnimation {
+>     0% {background-position: 0 0;}
+>     100% {background-position: 0 9600%;} //只要是32*100的整数倍都不会看到切换过程
+> }
+> ```
+
+---
+
+## 视频如何抽帧
+
+？？？待解决的问题

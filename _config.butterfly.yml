@@ -668,8 +668,8 @@ subtitle:
   effect: true
   # 循环或者只打字一次
   loop: false
-  sub:
-    - value yourself && be yourself
+  sub: 
+    - value yourself
 # Loading Animation (加載動畫)
 preloader: false
 
