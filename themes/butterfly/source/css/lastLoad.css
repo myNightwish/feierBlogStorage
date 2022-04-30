@@ -46,32 +46,32 @@ div#quit-board.fixedcomment {
 }
 
 @media screen and (min-width: 768px) {
-#doraemon_to_top {
-  position: fixed;
-  z-index: 1001;
-  right: 30px;
-  transition: 0.3s;
-  opacity: 0;
-  bottom: -187px;
-  transform: scale(1);
-}
-#doraemon_to_top.doraemon_fixed {
-  bottom: -51px;
-  opacity: 1;
-}
-#doraemon_to_top.doraemon_fixed:hover {
-  transform: scale(0.9);
-}
+  #doraemon_to_top {
+    position: fixed;
+    z-index: 1001;
+    right: 30px;
+    transition: 0.3s;
+    opacity: 0;
+    bottom: -187px;
+    transform: scale(1);
+  }
+  #doraemon_to_top.doraemon_fixed {
+    bottom: -51px;
+    opacity: 1;
+  }
+  #doraemon_to_top.doraemon_fixed:hover {
+    transform: scale(0.9);
+  }
 }
 
 /*动画效果*/
 @keyframes fixedright {
-from {right:-50%;}
-to {right:0;}
+  from {right:-50%;}
+  to {right:0;}
 }
 @keyframes fixedleft {
-from {left:-50%;}
-to {left:0;}
+  from {left:-50%;}
+  to {left:0;}
 }
 /* 夜间模式匹配 */
 [data-theme="dark"]

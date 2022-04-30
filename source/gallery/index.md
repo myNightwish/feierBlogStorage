@@ -1,6 +1,7 @@
 ---
 title: gallery
 date: 2022-01-06 02:27:04
+top_img: '/img/special_top.webp'
 ---
 {% gallery %}
 ![](https://i.loli.net/2019/12/25/Fze9jchtnyJXMHN.jpg)

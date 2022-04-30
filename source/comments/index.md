@@ -2,7 +2,6 @@
 title: 想跟我说点什么
 date: 2021-12-11 01:12:17
 type: comments
-top_img: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blog/Skincoments.png
 --- 
 
 # 留言板：
