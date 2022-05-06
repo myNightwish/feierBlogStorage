@@ -2,8 +2,6 @@
 title: JS的EventLoop
 tags:
   - EventLoop
-  - 异步任务
-  - 同步
   - 宏任务
   - 微任务
 categories: JS

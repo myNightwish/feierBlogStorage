@@ -7,7 +7,7 @@ copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0
 license_url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
-abbrlink: 3005677573
+abbrlink: ES6
 date: 2021-12-29 22:54:26
 ---
 ## ES6概括 ##

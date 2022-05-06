@@ -9,7 +9,7 @@ copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0
 license_url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
-abbrlink: 823612856
+abbrlink: prototype
 date: 2021-12-11 20:40:44
 ---
 ## ES5继承 ##

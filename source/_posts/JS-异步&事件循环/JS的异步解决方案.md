@@ -4,8 +4,8 @@ tags:
   - JS
   - Promsie、Async、await
 categories: JS
-description: 从回调->promise->async+await，漫长的前端异步之路
-cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/img/异步.avif
+description: 前端异步之路
+cover: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfnIl0f3oUJLgGFb7Qgi97y1hY9uIQsHizXQ&usqp=CAU
 copyright_author: 飞儿
 swiper_index: 1
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
