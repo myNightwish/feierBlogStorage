@@ -1,4 +1,7 @@
 ---
+abbrlink: 1
+---
+---
 title: CSR、SSR、ISR
 copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
@@ -6,10 +9,11 @@ license: CC BY-NC-SA 4.0
 license_url: 'https://creativecommons.org/licenses/by-nc-sa/4.0'
 tags: CSR、SSR、ISR
 categories: 浏览器
-cover: https://cdn.jsdeliver.net/gh/myNightwish/CDN_res/img/CSR&&SSR.webp
+<!-- cover: https://cdn.jsdeliver.net/gh/myNightwish/CDN_res/img/CSR&&SSR.webp -->
+cover: https://images.unsplash.com/photo-1638913971789-66…VlZHw0MHx8fGVufDB8fHx8&auto=format&fit=crop&w=600
 abbrlink: CSR_SSR_ISR
 date: 2022-05-06 23:07:56
----
+--
 
 ## SSR ##
 

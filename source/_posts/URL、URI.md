@@ -6,7 +6,8 @@ license: CC BY-NC-SA 4.0
 license_url: 'https://creativecommons.org/licenses/by-nc-sa/4.0'
 tags: URL、URI
 categories: 计算机基础
-cover: https://cdn.jsdeliver.net/gh/myNightwish/CDN_res/img/URI&URL.webp
+# cover: https://cdn.jsdeliver.net/gh/myNightwish/CDN_res/img/URI&URL.webp
+cover: https://images.unsplash.com/photo-1648737966636-2f…ZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800
 abbrlink: URL_URI
 date: 2022-05-06 23:07:56
 ---
