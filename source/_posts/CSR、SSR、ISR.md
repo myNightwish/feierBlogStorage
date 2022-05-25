@@ -1,0 +1,319 @@
+---
+title: CSR、SSR、ISR
+copyright_author: 飞儿
+copyright_url: 'https://www.nesxc.com/post/hexocc.html'
+license: CC BY-NC-SA 4.0
+license_url: 'https://creativecommons.org/licenses/by-nc-sa/4.0'
+tags: CSR、SSR、ISR
+categories: 浏览器
+cover: https://cdn.jsdeliver.net/gh/myNightwish/CDN_res/img/CSR&&SSR.webp
+abbrlink: CSR_SSR_ISR
+date: 2022-05-06 23:07:56
+---
+
+## SSR ##
+
+### SSR是什么？ ###
+
+> SSR（Server Side Rendering），一种传统的渲染方式。与客户端渲染不同的是，SSR输出的是一个渲染完成的html，整个渲染过程是在服务器端进行的。例如传统的JSP，PHP都是服务端渲染
+>
+> 由于服务端把渲染的完整的页面吐给客户端。这样减少了一次客户端到服务端的一次http请求，加快相应速度，一般用于首屏的性能优化。
+
+### SSR如何工作的？ ###
+
+> SSR将一个完整的HTML发送给客户端，客户端只负责HTML的解析。只不过它会被网速，在线活跃人数，服务器的物理位置等等客观因素所约束造成用户体验不佳的情况。
+>
+> 而且如果面临客户端和服务器多次交互的情况就显得非常吃亏，即使在页面只是有稍加改动的地方都需要重新请求到一个完整页面并且重新进行渲染，对服务器的压力更大
+>
+> 假设你需要访问的域名叫： example.testsite.com.
+>
+> ```html
+> <html>
+>   <head>
+>     <meta charset="utf-8">
+>     <title>Example Website</title>
+>   </head>
+>   <body>
+>     <h1>My Website</h1>
+>     <p>This is an example of my new website</p>
+>     <a href="http://example.testsite.com/other.html.">Link</a>
+>   </body>
+> </html>
+> ```
+>
+> 点击 ##Link## 这个链接，弹出来下面这个页面 other.html:
+>
+> * 两个页面的差异就只有一行，但是渲染过程时将整个页面重新渲染，而不仅仅只是发生更改的一行，在当今越加复杂的页面来看动辄几百行的代码来看，要是每次发生少量更改都需要重新渲染整个页面显然是不符合潮流的。
+> * **页面特征来看，使用服务器端渲染的返回的页面是完整的HTML页面。**
+>
+> ```html
+> <!DOCTYPE html>
+> <html>
+>   <head>
+>     <meta charset="utf-8">
+>     <title>Example Website</title>
+>   </head>
+>   <body>
+>     <h1>My Website</h1>
+>     <p>This is an example of my new website</p>
+>     <p>This is some more content from the other.html</p>
+>   </body>
+> </html>
+> ```
+
+### SSR优缺点 ###
+
+#### 优点 ####
+
+1. 有利于SEO，由于页面在服务器生成，搜索引擎直接抓取到最终页面结果。
+
+2. 有利于首屏渲染：
+
+   简单来讲它不需要来回多次往返于客户端和服务端。
+
+   html所需要的数据都在服务器处理好，直接生成html，首屏渲染时间变短。但是其性能等众多因素会影响用户体验，比如说：网速，在线活跃人数，服务器的物理位置等等。
+
+#### 缺点 ####
+
+1. **占用服务器资源**，渲染工作都在服务端渲染
+2. 用户体验不好，每次跳转到新页面都需要在重新服务端渲染整个页面，**不能只渲染可变区域**
+
+## CSR ##
+
+### 什么是CSR？ ###
+
+> CSR（Client Side Rendering）指的是：页面的渲染工作在客户端（浏览器）上进行的，并不是在服务端把页面渲染好，再把页面响应回来，直接用完整的页面去展示。
+>
+> 比如：Vue、React框架开发中，会先下载空的HTML模版（不是最终的完全的html），然后由浏览器通过加载js后，由js动态渲染页面结果。
+
+### CSR如何工作的？ ###
+
+以react为例，客户端渲染初始化的html一般如下
+
+* 可以看出当前页面除了 `<div id="root"></div>` 元素，没有其他的元素，
+
+* 然后通过加载 `bundle.js` , `main.chunk.js` 来执行渲染。如果需要成功展示出页面原有的样子就需要这2个文件下载到本地，如果通过直接访问的方式页面只会一片空白。
+
+* 整个渲染过程包括，生成DOM节点，注入样式，交互事件绑定，数据获取等等。
+
+当补充上`bundle.js` , `main.chunk.js` ，从显示效果来看：
+
+* 能够展示和之前SSR一样的效果，不同的是，当点击Link链接的时候，页面不会和服务器之间又交互。此时只对Link那一行的代码做了修改，其余位置保持不变。而不是像SSR做了整个页面的重新渲染。
+
+* 但控制页面的所有js文件如果没有完全加载的话，整个页面是渲染不出来的，这才是导致客户端渲染弱于首屏渲染的原因。
+* **客户端渲染的页面特征是包含有js链接的script标签**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+ <head> 
+  <title data-react-helmet="true">react app</title> 
+  <noscript> </noscript>
+ </head>
+ <body>
+  <noscript>
+   You need to enable JavaScript to run this app.
+  </noscript> 
+  <div id="root"></div>
+  <script type="text/javascript" src="/static/js/bundle.js" defer=""></script> 
+  <script type="text/javascript" src="/static/js/main.chunk.js" defer=""></script> 
+ </body>
+</html>
+```
+
+### CSR的优缺点 ###
+
+#### 优点 ####
+
+1. 符合前后端分离的开发模式：
+
+   前端专注于界面开发，后端专注于api开发，且前端有更多的选择性，可以使用vue，react框架开发，而不需要遵循后端特定的模板。
+
+2. 服务器压力变轻：渲染工作在客户端进行，服务器直接返回不加工的html
+
+3. 用户后续访问操作体验好：
+
+   为啥是后续，因为首屏加载的过程中渲染做的事情很多，并可能发生阻塞等问题。但是可以将网站做成SPA，可以增量渲染
+
+   因为多次和服务器的交互导致首屏加载速度慢。但一旦这些请求完成之后，用户和页面之间的交互时用户体验就会好很多。
+
+#### 缺点 ####
+
+1. 不利于SEO，因为搜索引擎不执行JS相关操作，无法获取渲染后的最终html。
+2. 首屏渲染时间比较长，因为需要页面执行ajax获取数据来渲染页面，如果请求接口多，不利于首屏渲染
+
+## SSG  ##
+
+### SSG是什么 ###
+
+> SSG（Static Site Generation），代表的是静态站点生成。在构建的时候直接把结果页面输出html到磁盘，每次访问直接把html返回给客户端，相当于一个静态资源
+>
+> Next.js支持该种渲染模式
+
+### SSG的优缺点 ###
+
+#### 优点 ####
+
+1. 减轻服务器压力，可以把生成的静态资源（html）放到CDN上，合理利用缓存
+
+   预先渲染的静态页面可以被推送到CDN，并在几秒钟内全球可用。静态内容速度快，对停机时间有弹性
+
+2. 有利于SEO，由于html已经提前生成好，不需要服务端和客户端去渲染，能立即被爬虫索引
+
+#### 缺点 ####
+
+1. 只适用于静态数据，对于经常改动的数据，需要每次重新生成页面。
+
+   考虑到一个有100,000种产品的电子商务商店。产品价格经常变化。当一个内容编辑将耳机的价格从100美元改为75美元作为促销的一部分时，他们的CMS使用网络钩子来重建整个网站。等待几个小时来反映新的价格是不可行的。
+
+2. 用户体验不好，每次打开新页面都需要重新渲染整个页面，**不能只渲染可变区域**
+
+   理想的情况是，你的应用程序足够聪明，能够理解哪些产品发生了变化，并_逐步_更新这些页面**，而不需要全面重建**。
+
+3. 不适合大规模静态网站：
+
+   即使每个页面都在不现实的1毫秒内静态生成，**重建整个网站**仍然需要**几个小时**。对于大型网络应用，选择完全的静态网站生成是不可行的
+
+## ISR ##
+
+### 什么是ISR？ ###
+
+> ISR（Incremental Site Rendering），增量式的网站渲染。使开发人员和内容编辑人员能够在每个页面的基础上使用静态生成，**而不需要重建整个网站**。
+>
+> [Next.js](https://link.juejin.cn/?target=https%3A%2F%2Fnextjs.org%2F)允许你在建立网站后创建或更新静态页面。增量静态再生（ISR）通过ISR，你可以保留静态的好处，同时扩展到数百万个页面。
+>
+> 静态页面可以在运行时（按需）生成，而不是用ISR在构建时生成。使用分析、A/B测试或其他指标，你可以灵活地对构建时间做出自己的权衡。
+
+1. 
+2. 。
+
+> 
+
+### ISR的优缺点 ###
+
+#### 优点 ####
+
+考虑一下有10万个产品的电子商务商店。在一个现实的50ms静态生成每个产品页面的情况下，**如果没有ISR**，这将需要**将近2小时**。有了ISR，
+
+1. **更快的构建**
+    在构建时生成**最受欢迎**的1,000种产品。对其他产品的请求将是一个缓存缺失，按需静态生成。1分钟的构建。
+
+   总结：
+
+   * **关键性页面**（如网站首页、热点数据等）预渲染为静态页面，缓存至 CDN，保证最佳访问性能
+   * **非关键性页面**（如流量很少的老旧内容）先响应 fallback 内容，然后浏览器渲染（CSR）为实际数据；同时对页面进行异步预渲染，之后缓存至 CDN，提升后续用户访问的性能
+   * 页面的更新遵循 stale-while-revalidate 的逻辑，即始终返回 CDN 的缓存数据（无论是否过期）；如果数据已经过期，那么触发异步的预渲染，异步更新 CDN 的缓存。
+
+2. **更高的缓存命中率**
+    在构建时生成10,000个产品，确保更多的产品在用户的请求前被缓存
+
+   <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/30229b64d10f493b82adf820ac258ce3~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0.awebp" alt="img" style="zoom: 33%;" />
+
+
+
+#### 缺点 ####
+
+1. 对于没有预渲染的页面，用户首次访问将会看到一个 fallback 页面，此时服务端才开始渲染页面，直到渲染完毕。这就导致用户体验上的不一致。
+2. 对于已经被预渲染的页面，用户直接从 CDN 加载，但这些页面可能是已经过期的，甚至过期很久的，只有在用户刷新一次，第二次访问之后，才能看到新的数据。对于电商这样的场景而言，是不可接受的（比如商品已经卖完了，但用户看到的过期数据上显示还有）。
+
+### ISR例子 ###
+
+> 比如：一个电子商务产品页面
+
+#### 1、抓取数据 ####
+
+<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/11860107454b4ade8d627bf3958cfe02~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0.awebp" alt="img" style="zoom:33%;" />
+
+1. Next.js可以为每个页面定义一个重新验证的时间。让我们把它设置为60秒。
+2. 对产品页面的初始请求将显示带有原始价格的缓存页面。
+3. 产品的数据会在CMS中更新。
+4. 在初始请求之后和60秒之前，对该页面的任何请求都会被缓存并即时生效。
+5. 在60秒的窗口之后，下一次请求仍然会显示缓存的（陈旧的）页面。Next.js会在后台触发页面的再生。
+6. 一旦页面成功生成，Next.js将使缓存失效并显示更新的产品页面。如果后台再生失败，旧的页面就不会被改变。
+
+```js
+// pages/products/[id].js
+export async function getStaticProps({ params }) {
+  return {
+    props: {
+      product: await getProductFromDatabase(params.id)
+    },
+    revalidate: 60
+  }
+}
+```
+
+#### 2、生成路径 ####
+
+Next.js定义了哪些产品要在构建时生成，哪些要按需生成。让我们**在构建时只生成最受欢迎的1000种产**品，向`getStaticPaths` ，提供前1000种产品ID的列表。
+
+我们需要配置Next.js在初始构建后请求任何其他产品时的 "回退 "方式。有两个选项可以选择：`blocking` 和`true` 。
+
+* `fallback: blocking` （首选）
+
+  * 当请求到一个尚未生成的页面时，Next.js将在第一次请求中对该页面进行服务器渲染。
+  * 以后的请求将从缓存中提供静态文件。
+
+* `fallback: true`
+
+  *  当向一个尚未生成的页面发出请求时，Next.js将在**第一次请求时**立即提供一个具有加载状态的静态页面。
+
+  * 当数据加载完毕后，页面将以**新的数据重新渲染并被缓存**。
+
+  * 未来的请求将从缓存中提供静态文件。
+
+```js
+// pages/products/[id].js
+export async function getStaticPaths() {
+  const products = await getTop1000Products()
+  const paths = products.map((product) => ({
+    params: { id: product.id }
+  }))
+
+  return { paths, fallback: ‘blocking’ }
+}
+```
+
+### ISR的局限性： ###
+
+> Next.js首先关注的是终端用户。最佳解决方案 "是相对的，并因行业、受众和应用程序的性质而异。它允许开发者在不离开框架的情况下在不同的解决方案之间转换，让你为项目挑选合适的工具
+
+#### 1、缓存过期 ####
+
+> ISR并不总是正确的解决方案。例如，Facebook的新闻源不能显示陈旧的内容。
+>
+> 在这种情况下，你会想使用SSR和可能是你自己的`cache-control` headers，用[代理键来](https://link.juejin.cn?target=https%3A%2F%2Fwww.fastly.com%2Fblog%2Fsurrogate-keys-part-1)使内容失效。由于Next.js是一个混合框架，你能够自己做出这种权衡，并保持在框架内
+>
+> ```js
+> // You can cache SSR pages at the edge using Next.js
+> // inside both getServerSideProps and API Routes
+> res.setHeader('Cache-Control', 's-maxage=60, stale-while-revalidate');
+> ```
+
+> SSR和边缘缓存与ISR类似（尤其是在使用`stale-while-revalidate` 缓存头的情况下），主要区别在于第一个请求：
+>
+> * 使用ISR，如果预先渲染，第一个请求可以保证是静态的。即使你的数据库发生故障，或者与API的通信出现问题，你的用户仍然会看到正确提供的静态页面。
+> * 然而，SSR将允许你根据传入的请求定制你的页面。
+> * **注意**在没有缓存的情况下使用SSR会导致性能下降。在阻止用户看到你的网站时，每一毫秒都很重要，这对你的[TTFB](https://link.juejin.cn?target=https%3A%2F%2Fweb.dev%2Ftime-to-first-byte%2F)（第一个字节的时间）会有很大的影响。
+
+#### 不适用小型网站 ####
+
+> ISR对于小型网站来说并不总是有意义的。如果你的重新验证期大于重建整个网站所需的时间，你还不如使用传统的静态网站生成。
+
+## DPR ##
+
+### DPR是什么？ ###
+
+> DPR（Distributed Persistent Rendering）：分布式的持续渲染。运行模式如下：
+>
+> 1. 去除了 fallback 行为，而是直接用 On-demand Builder（按需构建器）来响应未经过预渲染的页面，然后将结果缓存至 CDN；
+> 2. 数据页面过期时，不再响应过期的缓存页面，而是 CDN 回源到 Builder 上，渲染出最新的数据；
+> 3. 每次发布新版本时，自动清除 CDN 的缓存数据。
+
+<img src="https://cdn.jsdeliver.net/gh/myNightwish/CDN_res/img/006z7Mergy1gx1o8tslizj31400mmtcu.jpg" alt="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ca10e209725443599b2bbeb1a13800d5~tplv-k3u1fbpfcp-zoom-1.image" style="zoom:33%;" />
+
+### 缺点 ###
+
+1. 新页面的访问可能会触发 On-demand Builder 同步渲染，导致当次请求的响应时间比较长；
+2. 比较难防御 DoS 攻击，因为攻击者可能会大量访问新页面，导致 Builder 被大量并行地运行，这里需要平台方实现 Builder 的归一化和串行运行。
+

@@ -18,8 +18,6 @@ document.addEventListener('visibilitychange', function() {
 });
 
 
-
-
 // 功能：评论样式更改
 // 移除FixedComment类，保持原生样式，确保不与最新评论跳转冲突
 function RemoveFixedComment() {
