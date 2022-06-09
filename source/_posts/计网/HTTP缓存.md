@@ -2,7 +2,7 @@
 title: 我不允许你还不知道啥是HTTP缓存
 categories: 浏览器
 description: Http缓存原理
-cover: https://cdn.jsdeliver.net/gh/myNightwish/CDN_res/img/http_cache.webp
+cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/Project/http_cache.webp
 copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0

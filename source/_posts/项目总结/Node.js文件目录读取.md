@@ -1,13 +1,13 @@
 ---
-title: '官网-需求总结19日'
+title: 'Node.js文件目录读取'
 tags: Node、Antd
 categories: 项目总结
-cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/img/aa.avif
+cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/Project/文件读取.png
 copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0
 license_url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
-abbrlink: 113841060
+abbrlink: file-read
 date: 2022-01-19 23:50:26
 ---
 ## 文件读取

@@ -2,7 +2,7 @@
 title: ES6的新特性
 categories: JS
 description: 好家伙，面试届的扛把子，内容过多!
-cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/img/cc.avif
+cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/Project/ES6.png
 copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0

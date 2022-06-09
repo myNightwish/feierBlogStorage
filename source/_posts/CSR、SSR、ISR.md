@@ -6,7 +6,7 @@ license: CC BY-NC-SA 4.0
 license_url: 'https://creativecommons.org/licenses/by-nc-sa/4.0'
 tags: CSR、SSR、ISR
 categories: 浏览器
-cover: https://cdn.jsdeliver.net/gh/myNightwish/CDN_res/img/CSR&&SSR.webp
+cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/Project/CSR&&SSR.webp
 abbrlink: CSR_SSR_ISR
 date: 2022-05-06 23:07:56
 ---
