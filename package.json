@@ -13,7 +13,7 @@
     "version": "5.4.2"
   },
   "dependencies": {
-    "cheerio": "^1.0.0-rc.10",
+    "cheerio": "^1.0.0-rc.11",
     "gulp": "^4.0.2",
     "hexo": "^5.0.0",
     "hexo-abbrlink": "^2.2.1",
