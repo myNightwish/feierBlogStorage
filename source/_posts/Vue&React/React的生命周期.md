@@ -4,12 +4,12 @@ tags: 生命周期
 categories: React&&Vue
 description: 生命周期是什么，与库本身的关系
 swiper_index: 3
-cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/img/sweet3.avif
+cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/Project/react-lifecycle.png
 copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0
 license_url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
-abbrlink: 593377043
+abbrlink: React_lifecycle
 date: 2021-12-11 22:55:07
 ---
 ## React生命周期 ##

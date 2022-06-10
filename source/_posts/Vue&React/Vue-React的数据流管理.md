@@ -3,12 +3,12 @@ title: Vue&&React的数据流管理
 tags: 数据流管理
 categories: React&&Vue
 description: 一起学习下主流的数据管理思想：Flux、redux、Vuex
-cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/img/sweet2.avif
+cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/Project/react-data.png
 copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0
 license_url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
-abbrlink: 数据管理
+abbrlink: react_vue_data
 date: 2021-12-11 22:56:21
 ---
 ## Redux ##

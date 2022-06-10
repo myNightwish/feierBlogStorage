@@ -4,7 +4,7 @@ tags: 虚拟DOM
 categories: React&&Vue
 description: 兄弟篇React的虚拟DOM，包括了栈调和
 swiper_index: 5
-cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/img/ff.avif
+cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/Project/react-virtualDom.png
 copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0

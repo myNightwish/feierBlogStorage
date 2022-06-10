@@ -4,12 +4,12 @@ tags: 组件通信
 categories: React&&Vue
 description: 数据是如何在react组件上流动
 swiper_index: 6
-cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/img/mm.avif
+cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/Project/react-component-communication.png
 copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0
 license_url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
-abbrlink: 2559768829
+abbrlink: react_components
 date: 2021-12-11 22:59:46
 ---
 ## 数据是如何在react组件上流动 ##

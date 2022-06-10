@@ -3,13 +3,12 @@ title: Vue的生命周期
 tags: 生命周期
 categories: React&&Vue
 description: Vue的生命周期及常见问题
-cover: >-
-  https://images.unsplash.com/photo-1633040245231-1ae5f7f51392?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
+cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/Project/vue-lifecycle.png
 copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0
 license_url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
-abbrlink: 生命周期
+abbrlink: vue_lifeCycle
 date: 2021-12-11 22:55:23
 ---
 ## 生命周期 ##
