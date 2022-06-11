@@ -1,7 +1,7 @@
 ---
 title: CSS的盒模型
 tags: 盒模型
-categories: CSS
+categories: 1.1-CSS
 description: 盒子模型的分类
 cover: >-
   https://img-blog.csdnimg.cn/20200718094809469.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNDc1MzM2,size_16,color_FFFFFF,t_70

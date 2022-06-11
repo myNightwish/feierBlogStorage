@@ -1,7 +1,7 @@
 ---
 title: Vue的双向绑定
 tags: 双向绑定
-categories: React&&Vue
+categories: 1.4-框架
 description: Vue中的双向绑定原理实现
 cover: >-
   https://images.unsplash.com/photo-1639330721108-fcce4394f608?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80

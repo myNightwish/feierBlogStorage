@@ -1,7 +1,7 @@
 ---
 title: 'Node.js文件目录读取'
 tags: Node、Antd
-categories: 项目总结
+categories: 2.3-实现Tricks
 cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/Project/文件读取.png
 copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'

@@ -3,7 +3,7 @@ title: JS的DOM+BOM
 tags:
   - DOM
   - BOM
-categories: JS
+categories: 1.2-JS
 description: JS的DOM、BOM、事件
 cover: >-
   https://images.unsplash.com/photo-1639297221211-d95dfe290342?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80

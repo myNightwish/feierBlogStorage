@@ -1,6 +1,6 @@
 ---
 title: 我不允许你还不知道啥是HTTP缓存
-categories: 浏览器
+categories: 3.2-浏览器
 description: Http缓存原理
 cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/Project/http_cache.webp
 copyright_author: 飞儿

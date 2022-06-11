@@ -1,7 +1,7 @@
 ---
 title: Vue监听数组和对象
 tags: 响应式更新
-categories: React&&Vue
+categories: 1.4-框架
 description: Vue如何检测数组、对象的变更
 cover: >-
   https://images.unsplash.com/photo-1639301643974-0ff1efaeff87?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80

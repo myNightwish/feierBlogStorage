@@ -1,7 +1,7 @@
 ---
 title: React的组件通信
 tags: 组件通信
-categories: React&&Vue
+categories: 1.4-框架
 description: 数据是如何在react组件上流动
 swiper_index: 6
 cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/Project/react-component-communication.png

@@ -3,7 +3,7 @@ title: CSS的选择器
 tags:
   - 选择器
   - 选择器优先级
-categories: CSS
+categories: 1.1-CSS
 description: 常见的选择器及其优先级
 cover: >-
   https://images.unsplash.com/photo-1607165124139-a8c46d126f44?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80

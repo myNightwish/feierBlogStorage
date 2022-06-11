@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 类组件vs函数组件
-categories: React&&Vue
+categories: 1.4-框架
 tags:
   - 函数组件
   - 类组件

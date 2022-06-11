@@ -2,7 +2,7 @@
 title: React核心概念系列（1)
 abbrlink: React's key Concept-1
 date: 2022-03-27 22:02:09
-categories: React&&Vue
+categories: 1.4-框架
 tags: React文档
 description: React文档系列之核心概念
 cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/img/a-2.avif

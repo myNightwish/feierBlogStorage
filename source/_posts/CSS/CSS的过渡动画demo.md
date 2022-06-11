@@ -1,7 +1,7 @@
 ---
 title: transform动画的demo
 tags: CSS动画
-categories: CSS
+categories: 1.1-CSS
 description: 'CSS动画2:transform之demo'
 cover: >-
   https://images.unsplash.com/photo-1640398251733-33c23a4c36f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80

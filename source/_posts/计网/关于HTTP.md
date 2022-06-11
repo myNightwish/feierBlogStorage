@@ -1,7 +1,7 @@
 ---
 title: 关于HTTP
 tags: HTTP
-categories: 计算机基础
+categories: 3.3-基础
 description: HTTP....
 cover: >-
   https://images.unsplash.com/photo-1639254399161-9d6d729132d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80

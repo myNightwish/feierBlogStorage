@@ -1,6 +1,6 @@
 ---
 title: ES6的新特性
-categories: JS
+categories: 1.2-JS
 description: 好家伙，面试届的扛把子，内容过多!
 cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/Project/ES6.png
 copyright_author: 飞儿

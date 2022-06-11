@@ -2,7 +2,7 @@
 title: CSS的定位
 tags:
   - position
-categories: CSS
+categories: 1.1-CSS
 description: 关于css中的定位
 cover: >-
   https://images.unsplash.com/photo-1633113093730-47449a1a9c6e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80

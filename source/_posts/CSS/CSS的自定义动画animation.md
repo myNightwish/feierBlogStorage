@@ -1,7 +1,7 @@
 ---
 title: animation动画基本使用
 tags: CSS动画
-categories: CSS
+categories: 1.1-CSS
 description: CSS动画3：animation基本使用
 cover: >-
   https://images.unsplash.com/photo-1640404880570-2b61bf155ebf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80

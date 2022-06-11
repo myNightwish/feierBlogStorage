@@ -1,7 +1,7 @@
 ---
 title: webpack基础-插件编写
 tags: webpack
-categories: 前端工程化
+categories: 2.2-基建
 description: '为什么会有webpack,loader在做什么'
 cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/Project/webpack-basic.png
 copyright_author: 飞儿

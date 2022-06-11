@@ -5,7 +5,7 @@ tags:
   - 高度塌陷
   - BFC
   - IFC
-categories: CSS
+categories: 1.1-CSS
 description: 浮动、常见问题、BFC、IFC
 cover: >-
   https://images.unsplash.com/photo-1638217335430-24415af7c2af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=399&q=80

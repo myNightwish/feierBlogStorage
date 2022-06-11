@@ -1,7 +1,7 @@
 ---
 title: Vue的生命周期
 tags: 生命周期
-categories: React&&Vue
+categories: 1.4-框架
 description: Vue的生命周期及常见问题
 cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/Project/vue-lifecycle.png
 copyright_author: 飞儿

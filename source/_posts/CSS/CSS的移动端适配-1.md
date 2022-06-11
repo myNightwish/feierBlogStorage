@@ -1,7 +1,7 @@
 ---
 title: 移动端适配
 tags: 移动端适配
-categories: CSS
+categories: 1.1-CSS
 description: 移动端适配方案及基础
 cover: >-
   https://images.unsplash.com/photo-1638914130169-5bd5240f6ea2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80

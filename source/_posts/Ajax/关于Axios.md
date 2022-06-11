@@ -1,6 +1,6 @@
 ---
 title: Axios的源码的一些妙用
-categories: Ajax、Axios
+categories: 1.3-Ajax
 tags:
   - ajax
   - 网络请求

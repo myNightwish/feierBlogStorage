@@ -1,7 +1,7 @@
 ---
 title: JS的Symbol特性
 tags: JS
-categories: JS
+categories: 1.2-JS
 description: symbol解决了什么
 cover: >-
   https://images.unsplash.com/photo-1639084695940-40546c3262c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: RAF(1)-是什么？
+title: RAF是什么？
 date: 2022-04-03 14:39:27
-categories: 项目总结
+categories: 2.4-项目
 tags: 
   - requestAnimationFrame
-description: 官网充电requestAnimationFrame的知识
-cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/帧动画.webp
+description: 充电requestAnimationFrame
+cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/CSS/逐帧动画.webp
 copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0

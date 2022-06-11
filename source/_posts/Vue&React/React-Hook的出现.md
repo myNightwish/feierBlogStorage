@@ -1,7 +1,7 @@
 ---
 title: React-Hook的出现
 tags: Hooks
-categories: React&&Vue
+categories: 1.4-框架
 description: 为何Hooks是React的未来
 swiper_index: 4
 cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/Project/hook1.png

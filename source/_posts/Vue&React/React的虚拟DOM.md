@@ -1,7 +1,7 @@
 ---
 title: React的虚拟DOM
 tags: 虚拟DOM
-categories: React&&Vue
+categories: 1.4-框架
 description: 兄弟篇React的虚拟DOM，包括了栈调和
 swiper_index: 5
 cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/Project/react-virtualDom.png

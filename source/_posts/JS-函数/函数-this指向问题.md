@@ -1,7 +1,7 @@
 ---
 title: 函数- this指向问题
 tags: JS
-categories: JS
+categories: 1.2-JS
 description: this的4大指向归纳
 cover: >-
   https://images.unsplash.com/photo-1633113088942-99089f4abffa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMTZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60

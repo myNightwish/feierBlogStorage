@@ -1,7 +1,7 @@
 ---
 title: 对象 - new操作符
 tags: JS
-categories: JS
+categories: 1.2-JS
 description: new 一个对象的过程都发生了什么？注意与class有区别喔
 cover: >-
   https://images.unsplash.com/photo-1638824886045-783ca980bf11?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80

@@ -1,7 +1,7 @@
 ---
 title: 函数-let、const、var
 tags: JS
-categories: JS
+categories: 1.2-JS
 description: let、const俩兄弟一脚踢开了var，并说该我出场了
 cover: >-
   https://images.unsplash.com/photo-1639048759250-47646c3f3c0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80

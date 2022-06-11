@@ -1,7 +1,7 @@
 ---
 title: JS的数据类型
 tags: JS
-categories: JS
+categories: 1.2-JS
 description: JS的数据类型2大类及其特点
 cover: >-
   https://images.unsplash.com/photo-1638984849684-e646e7d9659c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80

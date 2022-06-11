@@ -1,7 +1,7 @@
 ---
 title: JS的数据类型判断
 tags: JS
-categories: JS
+categories: 1.2-JS
 description: 常见的数据类型判断
 cover: >-
   https://images.unsplash.com/photo-1639128107506-21cb4c6a2f90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80

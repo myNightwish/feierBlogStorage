@@ -1,7 +1,7 @@
 ---
 title: 跨域中的CORS、JSONP
 tags: 跨域解决方案
-categories: Ajax、Axios
+categories: 1.3-Ajax
 description: 跨域解决方案中的CORS、JSONP
 cover: >-
   https://images.unsplash.com/photo-1593642532871-8b12e02d091c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1112&q=80

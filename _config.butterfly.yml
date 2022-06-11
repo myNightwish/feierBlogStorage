@@ -136,36 +136,42 @@ category_img:
 category_per_img:
 categoryBar:
   enable: true
-  column: odd # 显示列数,odd：3列 | even：4列
+  column: even # 显示列数,odd：3列 | even：4列
   row: 3 #显示行数，默认两行，超过行数切换为滚动显示
   descr:
-    - Ajax的诞生
     - CSS的酷炫多彩
     - 数据、函数、异步
+    - Ajax的诞生
     - Vue&React的世界
+
+    - 组件库开发
     - 前端工程化
-    - 浏览器的渲染
-    - bidaoTalk
-    - 计算机基础
+    - 功能实现积累
     - 项目总结
+
+    - bidaoTalk
+    - 浏览器渲染
+    - 计算机基础
+    - 小工具
   cover:
-    - url('https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/Ajax.webp')
     - url('https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/css.webp')
     - url('https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/JS.webp')
-    
+    - url('https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/Ajax.png')
     - url('https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/框架.webp')
-    - url('https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/工程化.webp')
-    - url('https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/browser.webp')
 
-    - url('https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/碎碎念.webp')
-    - url('https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/计算机基础.webp')
+    - url('https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/组件库.png')
+    - url('https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/工程化.webp')
+    - url('https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/功能实现.png')
     - url('https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/总结.webp')
 
-    # - '#abcdef' # HEX格式色值需要用''包裹，不然会被识别成注释
-    # - rgba(45,67,89,0.7)
-    # - linear-gradient(rgba(0, 0, 0, 0.4) 25%, rgba(200,16 , 16, 0) 100%)
-    # - url('https://cdn.jsdelivr.net/npm/akilar-candyassets/image/cover5.webp')
+    - url('https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/碎碎念.webp')    
+    - url('https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/browser.webp')
+    - url('https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/计算机基础.webp')
+    - url('https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/tools&shell.png')
 
+    - '#abcdef' # HEX格式色值需要用''包裹，不然会被识别成注释
+    - rgba(45,67,89,0.7)
+    - linear-gradient(rgba(0, 0, 0, 0.4) 25%, rgba(200,16 , 16, 0) 100%)
 ver:
   # display the cover or not (是否顯示文章封面)
   index_enable: true
@@ -314,7 +320,7 @@ comments:
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
-  lazyload: false
+  lazyload: true
   count: false # Display comment count in post's top_img
   card_post_count: false # Display comment count in Home Page
 
@@ -854,9 +860,10 @@ pangu:
 # Lazyload (圖片懶加載)
 # https://github.com/verlok/vanilla-lazyload
 lazyload:
-  enable: false
-  field: site # site/post
-  placeholder:
+  enable: true
+  post: /img/loading.gif
+  field: site/post
+  placeholder: /img/loading.gif
   blur: false
 
 # PWA
@@ -884,17 +891,18 @@ inject:
   head:
     # - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" media="defer">
     - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
-    - <link rel="stylesheet" href="/css/double.css" media="defer" onload="this.media='all'">
-    - <link rel="stylesheet" href="/css/beautify.css"  media="defer" onload="this.media='all'">
-    - <link rel="stylesheet" href="/css/lastLoad.css"  media="defer" onload="this.media='all'">
-  bottom:
     # 首页 次要
     - <script async src="/js/newAdd.js"></script>
-    - '<div id="live3d" class="live3d" style="position: fixed; left: -100px; bottom: 30px; width: 500px !important;height: 437.5px !important;z-index: 98;"><canvas id="live2dm" class="live3d"style="max-width:500px;max-height:437.5px;"></canvas></div>'
-    - <script defer src="https://cdn.jsdelivr.net/npm/hexo-beautiful-page@latest/lib/asyncmodel.min.js"></script> # 异步加载live3d模型
+  bottom:
     # - <script async src="//at.alicdn.com/t/font_2264842_3izu8i5eoc2.js" media="defer"></script>
+    - <link rel="stylesheet" href="/css/double.css" media="defer" onload="this.media='all'">
+    - <link rel="stylesheet" href="/css/beautify.css"  media="defer" onload="this.media='all'">
+
+    - <link rel="stylesheet" href="/css/lastLoad.css"  media="defer" onload="this.media='all'">
     - <div defer class="aplayer no-destroy" data-id="31872922" data-server="netease" data-type="artist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="false" muted></div>
     - <script>setInterval(()=>{let create_time=Math.round(new Date("2021-12-1-20:14:00").getTime()/1000);let timestamp=Math.round((new Date().getTime()+8*60*60*1000)/1000);let second=timestamp-create_time;let time=new Array(0,0,0,0,0);if(second>=365*24*3600){time[0]=parseInt(second/(365*24*3600));second%=365*24*3600}if(second>=24*3600){time[1]=parseInt(second/(24*3600));second%=24*3600}if(second>=3600){time[2]=parseInt(second/3600);second%=3600}if(second>=60){time[3]=parseInt(second/60);second%=60}if(second>0){time[4]=second}currentTimeHtml='小破站已经安全运行 '+time[0]+' 年 '+time[1]+' 天 '+time[2]+' 时 '+time[3]+' 分 '+time[4]+' 秒';var elementById=document.getElementById('running-time');if(elementById){elementById.innerHTML=currentTimeHtml}},1000);</script>
+    - <script defer src="https://cdn.jsdelivr.net/npm/hexo-beautiful-page@latest/lib/asyncmodel.min.js"></script> # 异步加载live3d模型
+    - '<div id="live3d" class="live3d" style="position: fixed; left: -100px; bottom: 30px; width: 500px !important;height: 437.5px !important;z-index: 98;"><canvas id="live2dm" class="live3d"style="max-width:500px;max-height:437.5px;"></canvas></div>'
     # 非首页
     - <script defer src="/js/beautify.js"></script>
     - <script defer src="https://cdn.jsdelivr.net/npm/echarts@4.9.0/dist/echarts.min.js"></script>

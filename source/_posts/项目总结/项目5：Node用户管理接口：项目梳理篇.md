@@ -1,7 +1,7 @@
 ---
 title: 项目5：Node用户管理接口：项目梳理篇
 tags: Node、MySQL2
-categories: 项目总结
+categories: 2.4-项目
 cover: >-
   https://images.unsplash.com/photo-1638645671264-82cae622dada?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDUwfHhIeFlUTUhMZ09jfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60
 copyright_author: 飞儿

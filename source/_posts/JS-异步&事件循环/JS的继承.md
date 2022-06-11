@@ -1,7 +1,7 @@
 ---
 title: JS的继承
 tags: JS
-categories: JS
+categories: 1.2-JS
 description: 原型链的结构
 cover: >-
   https://images.unsplash.com/photo-1616362657885-73baafe81a3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80

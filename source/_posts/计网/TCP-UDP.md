@@ -3,7 +3,7 @@ title: TCP && UDP传输
 tags:
   - TCP
   - UDP
-categories: 计算机基础
+categories: 3.3-基础
 description: 传输层的TCP、UDP介绍
 cover: >-
   https://images.unsplash.com/photo-1639044678744-d3a0ed8a53c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8aG1lbnZRaFVteE18fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60

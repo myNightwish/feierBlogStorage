@@ -1,7 +1,7 @@
 ---
 title: Vue的虚拟DOM
 tags: 虚拟DOM
-categories: React&&Vue
+categories: 1.4-框架
 description: Vue的虚拟DOM，还有兄弟篇React的虚拟DOM
 cover: >-
   https://images.unsplash.com/photo-1639327771356-e2bde8814883?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1333&q=80

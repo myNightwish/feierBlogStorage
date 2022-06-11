@@ -1,7 +1,7 @@
 ---
 title: 对象 - Object.create
 tags: JS
-categories: JS
+categories: 1.2-JS
 description: Object.create用途、实现
 cover: >-
   https://images.unsplash.com/photo-1638990590633-f67f3a8dbed5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMzZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60

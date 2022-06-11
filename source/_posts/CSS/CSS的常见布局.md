@@ -1,7 +1,7 @@
 ---
 title: CSS的常见布局
 tags: CSS
-categories: CSS
+categories: 1.1-CSS
 description: 常见布局样式
 cover: >-
   https://images.unsplash.com/photo-1639016618259-523caef3a860?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80

@@ -3,7 +3,7 @@ layout: post
 title: CSS中的gap属性
 date: 2022-03-31 20:44:02
 tags: CSS
-categories: CSS
+categories: 1.1-CSS
 description: gap属性在开发中的trick
 cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/gap.webp
 copyright_author: 飞儿

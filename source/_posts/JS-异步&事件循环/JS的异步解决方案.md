@@ -3,7 +3,7 @@ title: JS的异步解决方案
 tags:
   - JS
   - Promsie、Async、await
-categories: JS
+categories: 1.2-JS
 description: 前端异步之路
 cover: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfnIl0f3oUJLgGFb7Qgi97y1hY9uIQsHizXQ&usqp=CAU
 copyright_author: 飞儿

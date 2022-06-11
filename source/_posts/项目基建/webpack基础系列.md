@@ -1,7 +1,7 @@
 ---
 title: webpack基础-使用
 tags: webpack
-categories: 前端工程化
+categories: 2.2-基建
 description: '为什么会有webpack,loader在做什么'
 cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/Project/webpack-basic.png
 copyright_author: 飞儿
@@ -1594,7 +1594,7 @@ npm install --save-dev @babel/plugin-transform-runtime
     ```html
     <!doctype html>
     <html lang="en">
-    <link rel="icon" href="./" favicon.ico>  // 已生效
+    <link rel="测试icon" href="./" favicon.ico>  // 已生效
     <title>html-webpack-plugin自定义</title>
     <script defer="defer" src="/dist/build.js"></script>
     

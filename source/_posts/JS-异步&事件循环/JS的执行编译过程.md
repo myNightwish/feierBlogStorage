@@ -2,7 +2,7 @@
 title: JS的执行编译过程
 tags:
   - 编译执行
-categories: JS
+categories: 1.2-JS
 description: 关于JS引擎的编译、执行阶段
 cover: >-
   https://images.unsplash.com/photo-1554727267-c24af00c3253?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=509&q=80

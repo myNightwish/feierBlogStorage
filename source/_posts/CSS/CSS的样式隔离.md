@@ -4,7 +4,7 @@ tags:
   - 样式污染
   - cssModule
   - CSS-in-JS
-categories: CSS
+categories: 1.1-CSS
 description: 关于样式污染的解决方案
 cover: >-
   https://images.unsplash.com/photo-1605525933485-647411098629?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80

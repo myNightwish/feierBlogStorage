@@ -4,7 +4,7 @@ tags:
   - 数组API
   - 去重
   - 扁平化
-categories: JS
+categories: 1.2-JS
 description: 关于数组API、去重方式、扁平化
 cover: >-
   https://images.unsplash.com/photo-1608488174658-40421bc6ce98?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80

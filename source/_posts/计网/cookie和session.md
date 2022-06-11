@@ -1,14 +1,13 @@
 ---
 title: cookie、session、Token
-categories: 浏览器
+categories: 3.2-浏览器
 description: cookie与session的故事
-cover: >-
-  https://images.unsplash.com/photo-1640054126065-15efda7aa16e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80
+cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/Project/cookie&session.png
 copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0
 license_url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
-abbrlink: 1155884232
+abbrlink: cookie&&session
 date: 2021-12-21 23:11:27
 ---
 

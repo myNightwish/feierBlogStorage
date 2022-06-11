@@ -1,6 +1,6 @@
 ---
 title: 关于Ajax
-categories: Ajax、Axios
+categories: 1.3-Ajax
 tags:
   - ajax
   - 网络请求
