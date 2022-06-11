@@ -998,7 +998,7 @@ CDN:
 electric_clock:
   enable: true # 开关
   priority: 5 #过滤器优先权
-  enable_page: / # 应用页面
+  enable_page: all # 应用页面
   exclude:
     # - /posts/
     # - /about/
@@ -1016,7 +1016,7 @@ electric_clock:
 swiper:
   enable: true # 开关
   priority: 1 #过滤器优先权
-  enable_page: / # 应用页面
+  enable_page: all # 应用页面
   timemode: date #date/updated
   layout: # 挂载容器类型
     type: id
