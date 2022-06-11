@@ -34,7 +34,13 @@ hexo.extend.filter.register('after_render:html', async function (locals) {
 const startDate = '20211201'; // 开始日期
 const endDate = moment().format('YYYYMMDD'); // 结束日期
  // accessToken
-const accessToken = '121.2c77f1fc2e1e6a066de632213c626b55.YH9xu0IL_D_-CRHKknBvLn-ZrH972vkAn_5gS8D.hxP-2A';
+
+//  刷新token的方法：http://openapi.baidu.com/oauth/2.0/token?grant_type=refresh_token&refresh_token={REFRESH_TOKEN}&client_id={CLIENT_ID}&client_secret={CLIENT_SECRET}
+// API Key：XAw4G5nH3377exQq1gqtiCTRLSNkBifO
+// Secret Key：9XTgG9BTgMFNuTNYMXZIR60vyagnGTUL
+// refreshToken: 122.dca4578c805c1740bbd9811fc9f405cf.Y5nJmSj2eeuPf3Lv0kIRYY3XwdLRsfqInoss2J8.LJOaRQ
+// accessToken每个月都会过期需要刷新,需要用refreshToken去刷新（十年过期）
+const accessToken = '121.e47ea4b6621875a610fe5f1e3dc8fb8f.YCyhW-0eHPPTduMA3zOszb1rTrLzrvuMQ-DI0jD.9NRPTw';
 const siteId = '17557580'; // 网址 id
 const dataUrl = 'https://openapi.baidu.com/rest/2.0/tongji/report/getData?access_token=' + accessToken + '&site_id=' + siteId;
 const metrics = 'pv_count'; // 统计访问次数 PV 填写 'pv_count'，统计访客数 UV 填写 'visitor_count'，二选一
@@ -48,6 +54,7 @@ function mapChart () {
       .then(data => data.json())
       .then(data => {
         monthArr = [];
+        console.log('data', data.result.items)
         let mapName = data.result.items[0];
         let mapValue = data.result.items[1];
         let mapArr = [];

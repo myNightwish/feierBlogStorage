@@ -24,7 +24,6 @@
     "hexo-butterfly-envelope": "^1.0.7",
     "hexo-butterfly-fcircle": "^1.0.5",
     "hexo-butterfly-swiper": "^1.0.11",
-    "hexo-butterfly-tag-plugins-plus": "^1.0.15",
     "hexo-deployer-git": "^3.0.0",
     "hexo-filter-gitcalendar": "^1.0.8",
     "hexo-generator-archive": "^1.0.0",

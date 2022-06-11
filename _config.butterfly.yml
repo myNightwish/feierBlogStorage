@@ -889,26 +889,21 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    # - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" media="defer">
     - <link rel="stylesheet" href="/css/custom.css" media="async" onload="this.media='all'">
-    # 首页 次要
-    - <script async src="/js/newAdd.js"></script>
-  bottom:
-    # - <script async src="//at.alicdn.com/t/font_2264842_3izu8i5eoc2.js" media="defer"></script>
     - <link rel="stylesheet" href="/css/double.css" media="async" onload="this.media='all'">
     - <link rel="stylesheet" href="/css/beautify.css"  media="async" onload="this.media='all'">
-    - <script async src="/js/beautify.js"></script>
+    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" media="async">
     - <link rel="stylesheet" href="/css/lastLoad.css"  media="defer" onload="this.media='all'">
+  bottom:
+  # 首页 次要
+    - <script async src="/js/newAdd.js"></script>
     - <div defer class="aplayer no-destroy" data-id="31872922" data-server="netease" data-type="artist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="false" muted></div>
     - <script defer src="https://cdn.jsdelivr.net/npm/hexo-beautiful-page@latest/lib/asyncmodel.min.js"></script> # 异步加载live3d模型
     - '<div id="live3d" class="live3d" style="position: fixed; left: -100px; bottom: 30px; width: 500px !important;height: 437.5px !important;z-index: 98;"><canvas id="live2dm" class="live3d"style="max-width:500px;max-height:437.5px;"></canvas></div>'
-    - <script>setInterval(()=>{let create_time=Math.round(new Date("2021-12-1-20:14:00").getTime()/1000);let timestamp=Math.round((new Date().getTime()+8*60*60*1000)/1000);let second=timestamp-create_time;let time=new Array(0,0,0,0,0);if(second>=365*24*3600){time[0]=parseInt(second/(365*24*3600));second%=365*24*3600}if(second>=24*3600){time[1]=parseInt(second/(24*3600));second%=24*3600}if(second>=3600){time[2]=parseInt(second/3600);second%=3600}if(second>=60){time[3]=parseInt(second/60);second%=60}if(second>0){time[4]=second}currentTimeHtml='小破站已经安全运行 '+time[0]+' 年 '+time[1]+' 天 '+time[2]+' 时 '+time[3]+' 分 '+time[4]+' 秒';var elementById=document.getElementById('running-time');if(elementById){elementById.innerHTML=currentTimeHtml}},1000);</script>
-
+    - <script defer src="/js/bottomTime.js"></script>
     # 非首页
-    
     - <script defer src="https://cdn.jsdelivr.net/npm/echarts@4.9.0/dist/echarts.min.js"></script>
     - <script defer src="https://cdn.jsdelivr.net/npm/echarts@4.9.0/map/js/china.js"></script> 
-
 # CDN
 # Don't modify the following settings unless you know how they work
 # 非必要請不要修改
@@ -1003,7 +998,7 @@ CDN:
 electric_clock:
   enable: true # 开关
   priority: 5 #过滤器优先权
-  enable_page: all # 应用页面
+  enable_page: / # 应用页面
   exclude:
     # - /posts/
     # - /about/
@@ -1021,7 +1016,7 @@ electric_clock:
 swiper:
   enable: true # 开关
   priority: 1 #过滤器优先权
-  enable_page: all # 应用页面
+  enable_page: / # 应用页面
   timemode: date #date/updated
   layout: # 挂载容器类型
     type: id
@@ -1032,21 +1027,3 @@ swiper:
   swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js #swiper js依赖
   custom_css: /css/swiperFix.css  #自定义swiper css依赖
   custom_js: /js/swiperFix.js #自定义swiper js依赖
-
-
-# 标签外挂
-# tag-plugins-plus
-# see https://akilar.top/posts/615e2dec/
-tag_plugins:
-  enable: true # 开关
-  priority: 5 #过滤器优先权
-  issues: false #issues标签依赖注入开关
-  link:
-    placeholder: /img/link.png #link_card标签默认的图标图片
-  CDN:
-    anima: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css #动画标签anima的依赖
-    jquery: https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js #issues标签依赖
-    issues: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/issues.js #issues标签依赖
-    iconfont: //at.alicdn.com/t/font_2032782_8d5kxvn09md.js #参看https://akilar.top/posts/d2ebecef/
-    carousel: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js
-    tag_plugins_css: /css/tag_plugins.css
