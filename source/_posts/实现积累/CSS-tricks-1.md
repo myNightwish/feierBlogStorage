@@ -1,10 +1,10 @@
 ---
-title: CSS的属性积累
+title: CSS tricks-1
 copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0
 license_url: 'https://creativecommons.org/licenses/by-nc-sa/4.0'
-abbrlink: css-special-property
+abbrlink: CSStricks-1
 date: 2022-06-11 05:34:45
 tags: CSS属性
 categories: 2.3-实现Tricks
@@ -12,7 +12,7 @@ cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/CSS/CSS-tricks1.webp
 ---
 
 
-## <center>开发中的CSS tricks</center>
+## <center>开发中的CSS tricks-1</center>
 
 ---
 
@@ -173,3 +173,43 @@ https://mynightwish.top/posts/hideElement.html
 ### 9、gap属性 ###
 
 https://mynightwish.top/posts/gap-property.html
+
+### 10、组件库样式生效 ###
+
+- 只有那种原生的span，div可以生效，其他的类粘贴到控制台修改生效；
+
+- 需要加入:global进行包裹：
+
+  ```css
+  :global {
+  	.antd-btn-primary {
+  		color: red
+  	}
+  }
+  ```
+
+* 此外，对于项目中需要全局的组件库样式，我们建议在公共文件中添加，在具体页面中引入，不同的再覆盖；
+
+### 11、Antd的menu
+
+- 多层级嵌套的时候，map的时候不要key都用index，这样会重复问题：
+
+  ```jsx
+   <div className={articleStyles.navContext}>
+      <Menu selectedKeys={[currentKey]}>
+        {ARTICLE_NAV.map((item, index) =>
+            <SubMenu key = {index}>
+             {item.navContext.map((item, index2) => 
+                  <Menu.Item
+                     key = {`${index}-${index2}`} //避免重复
+                     onClick = {() => handleSubmenuClick(item, index2, index)}
+                   >
+                     {item.title}
+                   </Menu.Item>
+                 )}
+          </SubMenu>
+        )}
+     </Menu>
+  </div>
+  ```
+

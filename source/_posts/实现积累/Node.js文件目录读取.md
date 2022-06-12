@@ -1,5 +1,5 @@
 ---
-title: 'Node.js文件目录读取'
+title: 'fs-文件目录读取'
 tags: Node、Antd
 categories: 2.3-实现Tricks
 cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/Project/文件读取.png
@@ -10,22 +10,17 @@ license_url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
 abbrlink: file-read
 date: 2022-01-19 23:50:26
 ---
-## 文件读取
-
-### 1、文件读写
-
 #### 需求：
 
 Article页面有一个menu，其中有5个子menu，点击切换子subMenu，点击menuItem显示对应该Submenu下的.md文档的内容
 
-#### 我的设计思路
+#### 设计思路
 
 - posts文件夹下有很多5个子文件夹，每个文件夹下有4个.md文件
 - .md文档里的内容的目录结构与Article中的menu的subMenu是对应的，切换menu，点击menuItem显示对应该Submenu下的.md文档
 - 我们需要读取每个子文件夹里的.md文档，并按照这种对应关系渲染在页面上
 - 一些额外考虑的点：
-  - 不希望对运营人员写文档时，做过多的约束：
-  - 因此，没有对md文档内容本身做任何限制；
+  - 不希望对运营人员写文档时，做过多的约束。因此，没有对md文档内容本身做任何限制；
   - 存放文档的位置：只需要进入既定的文件夹，填写或更新文档即可，方便后期维护
 
 #### 具体实现：
@@ -105,18 +100,12 @@ Article页面有一个menu，其中有5个子menu，点击切换子subMenu，点
             }
           }
         )
-        return curPageAllPostsData.sort((a, b) => {
-          // 在md文档的文件夹中，我做了限制：每个md文档命名时必须指定第几个文件夹下的第几个文档
+        return curPageAllPostsData.sort((a, b) => a.id - b.id);
+          // 在md文档的文件夹中，做了限制：每个md文档命名时必须指定第几个文件夹下的第几个文档
           // 第几个文件夹下的第几个文档在页面渲染Article中对应哪个Submenu下的menuItem
-  // 二者是匹配的，如果随便写，会导致渲染出来的顺序是乱的   渲染出来的顺序取决于当初文件读取顺序：我们限制了文件名命名就是为了让Article页面拿到的数据是有序对应的。
-          if (a.id > b.id) {
-            return 1
-          } else {
-            return -1
-          }
-        })
+  				// 二者是匹配的，如果随便写，会导致渲染出来的顺序是乱的   渲染出来的顺序取决于当初文件读取顺序：我们限制了文件名命名就是为了让Article页面拿到的数据是有序对应的  
     });
-    return allPageData
+    return allPageData;
   }
   ```
 
@@ -135,75 +124,3 @@ Article页面有一个menu，其中有5个子menu，点击切换子subMenu，点
    ```
    
    ```
-
-   
-
-### 一些小问题：
-
-#### 1. 模块引入支持：
-
-- 为什么我单独写node文件时，不允许import的模块导入
-
-  ```js
-  import fs from 'fs';
-  ```
-
-- 需要改成CommonJS的导入方式：
-
-  ```js
-  const fs = require('fs');
-  ```
-
-- 我曾经在博客中遇到的类似问题：
-
-  node-fetch模块import的方式不行，我采用了require的方式且修改配置：添加type：module
-
-- 解释：
-
-  - 这两种文件的使用有什么不同吗？
-
-## 样式布局
-
-### 1. antd中的样式不生效
-
-- 只有那种原生的span，div可以生效，其他的类粘贴到控制台修改生效；
-
-- 需要加入:global进行包裹：
-
-  ![img](https://im-download.kwaitalk.com/rest/v2/app/download?resourceId=4i52tiwbobyv8fbyzb3xv5nzyakvn2zxzcet38vz7wuqbd0anr1qp3m0vbneot7d3bo60a95ya9ztos9h1fn3kebiezlpa8jrcjeob7kidn48copkom132jnvlwbdpioo19dkvu14zruh0.png&w=1060&h=1060&userId=173410829289133&did=54A3F04A-1BFD-546B-A97E-528461EC272B&kim.api_st=CgpraW0uYXBpLnN0EqABL7BdvKPuoxhXHXVn3JDeqBtvefzHmuHQ1uwiJEwsyzlyNC98yklVfLRdjOqVX-htEUxu4POBPuR6hEFFPcfbRwTDBZhkFOAksKTFpn9Snkv0axVD2ln396OxijulQIMOYk0CsxO-eUoxxrUYguD_sKpTuZLqLSf1ro5EWqbEShE2RDaC0iJHJLqK4R0kCItwvTgYrLM_ctodtU72gtwK8RoSiMqJ8Ub4fDpiTOkdZXsv-4qlIiC9af0d20_jAfAxMkTzvHZu93PCDTAD_PdD9EsAEXGTHigFMAE&kpn=KIM&imsdkver=2.14.5-rc.4&ver=Mac OS 11.4.0&platform=H5)
-
-
-### 2. Antd的menu
-
-- 多层级嵌套的时候，map的时候不要key都用index，这样会重复问题：
-
-  ```jsx
-   <div className={articleStyles.navContext}>
-      <Menu 
-        mode="inline"
-        selectedKeys={[currentKey]}
-        onClick={changeCurrentKey}
-        className={articleStyles.Menu}
-      >
-        {
-          ARTICLE_NAV.map((item, index) =>
-            <SubMenu 
-               key = {index} 
-               title = {item.navTitle} 
-               onClick={() => handleMenuClick(item)}
-             >
-                 {
-                    item.navContext
-                    .map((item, index2) => 
-                        <Menu.Item
-                           key = {`${index}-${index2}`} //避免重复
-                           onClick = {() => handleSubmenuClick(item, index2, index)}
-                         >
-                             {item.title}
-                        </Menu.Item>)
-                 }
-          </SubMenu>)
-        }
-     </Menu>
-  </div>
-  ```

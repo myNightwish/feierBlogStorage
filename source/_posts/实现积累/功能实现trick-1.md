@@ -4,7 +4,7 @@ copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0
 license_url: 'https://creativecommons.org/licenses/by-nc-sa/4.0'
-abbrlink: feature-tricks
+abbrlink: feature-tricks1
 date: 2022-06-11 05:35:11
 tags: 功能实现的tricks
 categories: 2.3-实现Tricks
