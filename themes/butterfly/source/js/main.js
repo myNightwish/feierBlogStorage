@@ -1,4 +1,7 @@
 // 
+let blogNameWidth, menusWidth, searchWidth, $nav
+let mobileSidebarOpen = false
+
 document.addEventListener('DOMContentLoaded', function () {
   const $blogName = document.getElementById('site-name')
   let blogNameWidth = $blogName && $blogName.offsetWidth
@@ -7,29 +10,29 @@ document.addEventListener('DOMContentLoaded', function () {
   const $searchEle = document.querySelector('#search-button')
   let searchWidth = $searchEle && $searchEle.offsetWidth
 
-  const adjustMenu = (change = false) => {
-    if (change) {
-      blogNameWidth = $blogName && $blogName.offsetWidth
-      menusWidth = $menusEle && $menusEle.offsetWidth
-      searchWidth = $searchEle && $searchEle.offsetWidth
-    }
-    const $nav = document.getElementById('nav')
-    let t
-    if (window.innerWidth < 768) t = true
-    else t = blogNameWidth + menusWidth + searchWidth > $nav.offsetWidth - 120
+  // const adjustMenu = (change = false) => {
+  //   if (change) {
+  //     blogNameWidth = $blogName && $blogName.offsetWidth
+  //     menusWidth = $menusEle && $menusEle.offsetWidth
+  //     searchWidth = $searchEle && $searchEle.offsetWidth
+  //   }
+  //   const $nav = document.getElementById('nav')
+  //   let t
+  //   if (window.innerWidth < 768) t = true
+  //   else t = blogNameWidth + menusWidth + searchWidth > $nav.offsetWidth - 120
 
-    if (t) {
-      $nav.classList.add('hide-menu')
-    } else {
-      $nav.classList.remove('hide-menu')
-    }
-  }
+  //   if (t) {
+  //     $nav.classList.add('hide-menu')
+  //   } else {
+  //     $nav.classList.remove('hide-menu')
+  //   }
+  // }
 
   // 初始化header
-  const initAdjust = () => {
-    adjustMenu()
-    document.getElementById('nav').classList.add('show')
-  }
+  // const initAdjust = () => {
+  //   adjustMenu()
+  //   document.getElementById('nav').classList.add('show')
+  // }
 
   // sidebar menus
   const sidebarFn = () => {
@@ -827,20 +830,51 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   }
 
-  const unRefreshFn = function () {
-    window.addEventListener('resize', adjustMenu)
-    window.addEventListener('orientationchange', () => { setTimeout(adjustMenu(true), 100) })
+  // const unRefreshFn = function () {
+  //   window.addEventListener('resize', adjustMenu)
+  //   window.addEventListener('orientationchange', () => { setTimeout(adjustMenu(true), 100) })
 
-    clickFnOfSubMenu()
-    GLOBAL_CONFIG.islazyload && lazyloadImg()
-    GLOBAL_CONFIG.copyright !== undefined && addCopyright()
+  //   clickFnOfSubMenu()
+  //   GLOBAL_CONFIG.islazyload && lazyloadImg()
+  //   GLOBAL_CONFIG.copyright !== undefined && addCopyright()
+  // }
+
+  const unRefreshFn = function () {
+    window.addEventListener('resize', () => {
+      btf.isHidden(document.getElementById('toggle-menu')) && mobileSidebarOpen && sidebarFn.close()
+    })
   }
 
-  window.refreshFn = function () {
-    initAdjust()
+  // window.refreshFn = function () {
+  //   initAdjust()
 
+  //   if (GLOBAL_CONFIG_SITE.isPost) {
+  //     GLOBAL_CONFIG_SITE.isToc && tocFn()
+  //     GLOBAL_CONFIG.noticeOutdate !== undefined && addPostOutdateNotice()
+  //     GLOBAL_CONFIG.relativeDate.post && relativeDate(document.querySelectorAll('#post-meta time'))
+  //   } else {
+  //     GLOBAL_CONFIG.relativeDate.homepage && relativeDate(document.querySelectorAll('#recent-posts time'))
+  //     GLOBAL_CONFIG.runtime && addRuntime()
+  //     addLastPushDate()
+  //     toggleCardCategory()
+  //   }
+
+  //   sidebarFn()
+  //   GLOBAL_CONFIG_SITE.isHome && scrollDownInIndex()
+  //   addHighlightTool()
+  //   GLOBAL_CONFIG.isPhotoFigcaption && addPhotoFigcaption()
+  //   jqLoadAndRun()
+  //   GLOBAL_CONFIG.lightbox === 'mediumZoom' && addMediumZoom()
+  //   scrollFn()
+  //   addTableWrap()
+  //   clickFnOfTagHide()
+  //   tabsFn.clickFnOfTabs()
+  //   tabsFn.backToTop()
+  //   switchComments()
+  // }
+
+  window.refreshFn = function () {
     if (GLOBAL_CONFIG_SITE.isPost) {
-      GLOBAL_CONFIG_SITE.isToc && tocFn()
       GLOBAL_CONFIG.noticeOutdate !== undefined && addPostOutdateNotice()
       GLOBAL_CONFIG.relativeDate.post && relativeDate(document.querySelectorAll('#post-meta time'))
     } else {

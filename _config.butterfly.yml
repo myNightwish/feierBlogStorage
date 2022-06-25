@@ -8,20 +8,16 @@
 
 menu:
   首页: / || fas fa-home
-  分类: /categories/ || fas fa-folder-open
-  时光机||fas fa-heart:
-    时间轴: /archives/ || fas fa-paper-plane
-    标签: /tags/ || fas fa-tags
-  访问足迹||fas fa-paw:
-    文章统计: /charts/ || fas fa-camera-retro
-    网站统计: /census/ || fas fa-globe
-  留言板: /comments/ || fas fa-comments
+  分类: /categories/ || fas fa-tags
+  时间轴: /archives/ || fas fa-paper-plane
+  足迹||fas fa-paw:
+    文章: /charts/ || fas fa-camera-retro
+    访问: /census/ || fas fa-globe
   媒体||fas fa-photo-video:
     音乐: /music/ || fas fa-music
     视频: /movies/ || fas fa-video
     书籍: /books/ || fas fa-book
-    图册: /gallery/ || fas fa-camera-retro
-    游戏: /games/ || fas fa-gamepad
+  留言板: /comments/ || fas fa-comments
 # envelope_comment
 # see https://akilar.top/posts/58900a8/
 envelope_comment:
@@ -143,12 +139,10 @@ categoryBar:
     - 数据、函数、异步
     - Ajax的诞生
     - Vue&React的世界
-
     - 组件库开发
     - 前端工程化
     - 功能实现积累
     - 项目总结
-
     - bidaoTalk
     - 浏览器渲染
     - 计算机基础
@@ -168,7 +162,6 @@ categoryBar:
     - url('https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/browser.webp')
     - url('https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/计算机基础.webp')
     - url('https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/tools&shell.png')
-
     - '#abcdef' # HEX格式色值需要用''包裹，不然会被识别成注释
     - rgba(45,67,89,0.7)
     - linear-gradient(rgba(0, 0, 0, 0.4) 25%, rgba(200,16 , 16, 0) 100%)
@@ -894,6 +887,7 @@ inject:
     - <link rel="stylesheet" href="/css/beautify.css" media="async">
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" media="async">
     - <link rel="stylesheet" href="/css/lastLoad.css" media="defer" onload="this.media='all'">
+    - <link rel="stylesheet" href="https://widget.heweather.net/simple/static/css/he-simple.css?v=2.0" media="defer" onload="this.media='all'">
   bottom:
   # 首页 次要
     - <script async data-pjax src="/js/newAdd.js"></script>
@@ -901,6 +895,11 @@ inject:
     - <script defer data-pjax src="https://cdn.jsdelivr.net/npm/hexo-beautiful-page@latest/lib/asyncmodel.min.js"></script> # 异步加载live3d模型
     - '<div id="live3d" class="live3d" style="position: fixed; left: -100px; bottom: 30px; width: 500px !important;height: 437.5px !important;z-index: 98;"><canvas id="live2dm" class="live3d"style="max-width:500px;max-height:437.5px;"></canvas></div>'
     - <script defer data-pjax src="/js/bottomTime.js"></script>
+    - <script async data-pjax src="/js/custom/nav.js"></script>
+    - '<div id="he-plugin-simple"></div>'
+    #记得将key替换为你自己申请的
+    - <script>WIDGET = {"CONFIG":{"modules":"012","background":"5","tmpColor":"000000","tmpSize":"16","cityColor":"000000","citySize":"16","aqiColor":"FFFFFF","aqiSize":"16","weatherIconSize":"24","alertIconSize":"18","padding":"10px 10px 10px 10px","shadow":"0","language":"auto","fixed":"false","vertical":"top","horizontal":"left","key":"ce3a55579f2c4a929013a45872817ed9"}}</script>
+    - <script defer data-pjax src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
     # 非首页
     - <script data-pjax src="/js/sun_moon.js" async></script>
     - <script defer src="https://cdn.jsdelivr.net/npm/echarts@4.9.0/dist/echarts.min.js"></script>

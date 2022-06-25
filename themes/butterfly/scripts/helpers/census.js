@@ -54,7 +54,7 @@ function mapChart () {
       .then(data => data.json())
       .then(data => {
         monthArr = [];
-        console.log('data', data.result.items)
+        // console.log('data', data.result.items)
         let mapName = data.result.items[0];
         let mapValue = data.result.items[1];
         let mapArr = [];
