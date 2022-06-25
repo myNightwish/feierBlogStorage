@@ -889,19 +889,20 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    - <link rel="stylesheet" href="/css/custom.css" media="async" onload="this.media='all'">
-    - <link rel="stylesheet" href="/css/double.css" media="async" onload="this.media='all'">
-    - <link rel="stylesheet" href="/css/beautify.css"  media="async" onload="this.media='all'">
+    - <link rel="stylesheet" href="/css/custom.css">
+    - <link rel="stylesheet" href="/css/double.css">
+    - <link rel="stylesheet" href="/css/beautify.css" media="async">
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" media="async">
-    - <link rel="stylesheet" href="/css/lastLoad.css"  media="defer" onload="this.media='all'">
+    - <link rel="stylesheet" href="/css/lastLoad.css" media="defer" onload="this.media='all'">
   bottom:
   # 首页 次要
-    - <script async src="/js/newAdd.js"></script>
+    - <script async data-pjax src="/js/newAdd.js"></script>
     - <div defer class="aplayer no-destroy" data-id="31872922" data-server="netease" data-type="artist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="false" muted></div>
-    - <script defer src="https://cdn.jsdelivr.net/npm/hexo-beautiful-page@latest/lib/asyncmodel.min.js"></script> # 异步加载live3d模型
+    - <script defer data-pjax src="https://cdn.jsdelivr.net/npm/hexo-beautiful-page@latest/lib/asyncmodel.min.js"></script> # 异步加载live3d模型
     - '<div id="live3d" class="live3d" style="position: fixed; left: -100px; bottom: 30px; width: 500px !important;height: 437.5px !important;z-index: 98;"><canvas id="live2dm" class="live3d"style="max-width:500px;max-height:437.5px;"></canvas></div>'
-    - <script defer src="/js/bottomTime.js"></script>
+    - <script defer data-pjax src="/js/bottomTime.js"></script>
     # 非首页
+    - <script data-pjax src="/js/sun_moon.js" async></script>
     - <script defer src="https://cdn.jsdelivr.net/npm/echarts@4.9.0/dist/echarts.min.js"></script>
     - <script defer src="https://cdn.jsdelivr.net/npm/echarts@4.9.0/map/js/china.js"></script> 
 # CDN
