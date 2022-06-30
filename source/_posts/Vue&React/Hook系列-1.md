@@ -5,7 +5,7 @@ date: 2022-03-31 16:27:01
 tags: Hook
 categories: 1.4-框架
 description: What is Hook?
-cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/img/react.png
+cover: https://mynightwish.oss-cn-beijing.aliyuncs.com/React/hook1.png
 copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0

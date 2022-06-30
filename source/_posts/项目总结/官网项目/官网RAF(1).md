@@ -6,7 +6,7 @@ categories: 2.4-项目
 tags: 
   - requestAnimationFrame
 description: 充电requestAnimationFrame
-cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/CSS/逐帧动画.webp
+cover: https://mynightwish.oss-cn-beijing.aliyuncs.com/CSS/逐帧动画.webp
 copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0
@@ -80,7 +80,7 @@ abbrlink: requestAnimationFrame_1
 
 - 宽度改变
 
-  ![示例](https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/img/1618f7bc6acd9f5c~tplv-t2oaga2asx-zoom-in-crop-mark:1304:0:0:0-20220403135057109.awebp)
+  ![示例](https://mynightwish.oss-cn-beijing.aliyuncs.com/img/1618f7bc6acd9f5c~tplv-t2oaga2asx-zoom-in-crop-mark:1304:0:0:0-20220403135057109.awebp)
 
   ```js
   function animationWidth() {
@@ -141,7 +141,7 @@ Event Loop（事件循环）是用来协调事件、用户交互、脚本、渲�
 
 #### 3.1 Event Loop的整体过程
 
-<img src="https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/img/ca5ec835c88b4f89b06e0302bfe98a7b~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0-20220403141256079.awebp" alt="img" style="zoom: 50%;" />
+<img src="https://mynightwish.oss-cn-beijing.aliyuncs.com/img/ca5ec835c88b4f89b06e0302bfe98a7b~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0-20220403141256079.awebp" alt="img" style="zoom: 50%;" />
 
 - 大体上来说，event loop 就是不停地找 task queues 里是否有可执行的 task ，如果存在即将其推入到 call stack （执行栈）里执行，并且在合适的时机更新渲染
   1. 在所选 task queue (taskQueue)中约定必须包含一个可运行任务。如果没有此类 task queue，则跳转至下面 microtasks 步骤。
@@ -159,7 +159,7 @@ Event Loop（事件循环）是用来协调事件、用户交互、脚本、渲�
 
 流程基本如下图所示 ：
 
-<img src="https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/img/bee8d1d1e9b1437ebd0fa2ce5e5b795e~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0-20220403141628158.awebp" alt="img" style="zoom: 67%;" />
+<img src="https://mynightwish.oss-cn-beijing.aliyuncs.com/img/bee8d1d1e9b1437ebd0fa2ce5e5b795e~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0-20220403141628158.awebp" alt="img" style="zoom: 67%;" />
 
 浏览器渲染有个**渲染时机**（Rendering opportunity）的问题，也就是浏览器会根据当前的浏览上下文判断是否进行渲染，它会尽量高效，**只有必要的时候才进行渲染**；
 

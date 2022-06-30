@@ -3,7 +3,7 @@ title: Vue&&React的数据流管理
 tags: 数据流管理
 categories: 1.4-框架
 description: 一起学习下主流的数据管理思想：Flux、redux、Vuex
-cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/Project/react-data.png
+cover: https://mynightwish.oss-cn-beijing.aliyuncs.com/React/react-data.png
 copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0

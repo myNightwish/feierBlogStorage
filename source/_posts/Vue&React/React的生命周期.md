@@ -3,8 +3,7 @@ title: React的生命周期
 tags: 生命周期
 categories: 1.4-框架
 description: 生命周期是什么，与库本身的关系
-swiper_index: 3
-cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/Project/react-lifecycle.png
+cover: https://mynightwish.oss-cn-beijing.aliyuncs.com/React/react-lifecycle.png
 copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0

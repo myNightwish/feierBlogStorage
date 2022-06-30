@@ -3,7 +3,7 @@ title: webpack基础-插件编写
 tags: webpack
 categories: 2.2-基建
 description: '为什么会有webpack,loader在做什么'
-cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/Project/webpack-basic.png
+cover: https://mynightwish.oss-cn-beijing.aliyuncs.com/Project/webpack-basic.png
 copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0

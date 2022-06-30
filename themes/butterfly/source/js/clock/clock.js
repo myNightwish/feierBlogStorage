@@ -1,47 +1,47 @@
+// key: 6a436d7ac1013a783445c0641e295d54
+var keyMap = '6a436d7ac1013a783445c0641e295d54';
+// 1. 根据ip地址获取城市名
+const ipAddress = returnCitySN["cip"];
+var adcode = '110000';
+var infoCity = '北京市';
+var temperature = '25';
+var humidity = '50';
+var weather = '晴';
 
-fetch('https://wttr.in/'+returnCitySN["cip"]+'?format="%l+\\+%c+\\+%t+\\+%h"').then(res=>res.text()).then(
-   data => {
-       if(document.getElementById('hexo_electric_clock')){
-        var res_text = data.replace(/nf/g,'nf,nf').replace(/"/g,'').replace(/\+/g,'').replace(/,/g,'\\').replace(/ /g,'').replace(/°C/g,'');
-        res_list = res_text.split('\\');
-        var clock_box = document.getElementById('hexo_electric_clock');
-        clock_box_html = `
-          <div class="clock-row">
-            <span class="card-clock-weather">${res_list[2]||'*'}    ${res_list[3]||'*'}°C</span>
-            <span class="card-clock-humidity">💧${res_list[4]||'*'}</span>
-          </div>
-          <div class="clock-row">
-            <span id="card-clock-time" class="card-clock-time"></span>
-          </div>
-          <div class="clock-row">
-            <span class="card-clock-ip">Ip: ${returnCitySN["cip"]}</span>
-          </div>
-          `;
-        
-        var card_clock_loading_dom = document.getElementById('card-clock-loading');
-        card_clock_loading_dom.innerHTML='';
-        clock_box.innerHTML= clock_box_html;
-        function updateTime() {
-            var cd = new Date();
-            var card_clock_time = zeroPadding(cd.getHours(), 2) + ':' + zeroPadding(cd.getMinutes(), 2) + ':' + zeroPadding(cd.getSeconds(), 2);
-            // 显示时间
-            var card_clock_time_dom = document.getElementById('card-clock-time');
-            if(card_clock_time_dom){
-              card_clock_time_dom.innerHTML= card_clock_time;
-            } else {
-              card_clock_time_dom.innerHTML= '时间迷路了';
-            }
-        }
+fetch('//restapi.amap.com/v3/ip?key='+keyMap+'&ip='+ipAddress)
+.then(res => {
+  adcode = res.adcode;
+})
 
-        function zeroPadding(num, digit) {
-            var zero = '';
-            for(var i = 0; i < digit; i++) {
-                zero += '0';
-            }
-            return (zero + num).slice(-digit);
-        }
-           var timerID = setInterval(updateTime, 1000);
-           updateTime();
-       }
-    }
-)
+fetch('//restapi.amap.com/v3/weather/weatherInfo?key='+keyMap+'&city='+adcode+'&output=JSON&extensions=base')
+.then(res => res.json())
+.then(data => {
+  temperature = data.lives[0].temperature;
+  humidity = data.lives[0].humidity;
+  infoCity = data.lives[0].city;
+  weather = data.lives[0].weather;
+
+  const clock_dispay = document.getElementById('hexo_electric_clock');
+
+  const dispay_HTML =  
+`<div class="clock-row">
+    <span class="card-clock-weather">${weather}</span>
+    <span class="card-clock-temperature">${temperature}°C</span>
+    <span class="card-clock-humidity">💧${humidity}%</span>
+  </div>
+  
+  <div class="clock-row">
+    <span class="card-clock-city">${infoCity}</span>
+  </div>
+  <div class="clock-row">
+    <span class="card-clock-ip">Ip: ${ipAddress}</span>
+  </div>
+  `;
+  clock_dispay.innerHTML = dispay_HTML;
+})
+
+
+
+
+
+

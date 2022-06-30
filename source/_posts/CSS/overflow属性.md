@@ -4,7 +4,7 @@ title: overflow与滚动
 abbrlink: scroll
 date: 2022-04-21 20:09:43
 tags: overflow、滚动
-cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/CSS/overflow-scroll.webp
+cover: https://mynightwish.oss-cn-beijing.aliyuncs.com/CSS/overflow-scroll.webp
 copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0

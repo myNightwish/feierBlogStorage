@@ -1,18 +1,18 @@
 ---
 title: welcome to loveVideo-world~
 date: 2022-03-05 02:13:45
-top_img: '/img/special_top.webp'
+top_img: https://mynightwish.oss-cn-beijing.aliyuncs.com/staticResource/special_top.webp
 ---
 ## <center>Faye's demo</center>
   {% raw %}
     <div style="position: relative; width: 100%; height: 0; padding-bottom: 60%;">
-      <iframe src="https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/faye's video/Faye-心之火demo.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; Left: 0; top: 0;" preload="auto" controls autoplay>
+      <iframe src="https://mynightwish.oss-cn-beijing.aliyuncs.com/faye's video/Faye-心之火demo.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; Left: 0; top: 0;" preload="auto" controls autoplay>
       </iframe>
     </div>
   {% endraw %}
   {% raw %}
     <div style="position: relative; width: 100%; height: 0; padding-bottom: 60%; ">
-      <iframe src="https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/faye's video/Faye-如果你說愛我demo.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; Left: 0; top: 0;" preload="auto" controls autoplay>
+      <iframe src="https://mynightwish.oss-cn-beijing.aliyuncs.com/faye's video/Faye-如果你說愛我demo.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; Left: 0; top: 0;" preload="auto" controls autoplay>
       </iframe>
     </div>
   {% endraw %}

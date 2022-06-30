@@ -6,7 +6,7 @@ license: CC BY-NC-SA 4.0
 license_url: 'https://creativecommons.org/licenses/by-nc-sa/4.0'
 tags: 组件库-antd
 categories: 2.1-组件库
-cover: 'https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/zujianku/antd-data-show.png'
+cover: 'https://mynightwish.oss-cn-beijing.aliyuncs.com/zujianku/antd-data-show.png'
 abbrlink: antd-data-show
 date: 2022-06-11 05:14:55
 ---

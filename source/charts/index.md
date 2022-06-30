@@ -1,7 +1,7 @@
 ---
 title: 文章统计详情
 date: 2022-01-05 23:18:34
-top_img: '/img/special_top.webp'
+top_img: https://mynightwish.oss-cn-beijing.aliyuncs.com/staticResource/special_top.webp
 ---
 <!-- 文章发布时间统计图 -->
 <div id="posts-chart" style="background-color: rgba(119,156,156,0.714); border-radius: 8px; height: 300px; padding: 0.5rem;"></div>

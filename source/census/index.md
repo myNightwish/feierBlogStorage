@@ -1,7 +1,7 @@
 ---
 title: 网站访问统计
 date: 2022-01-06 02:13:45
-top_img: '/img/special_top.webp'
+top_img: https://mynightwish.oss-cn-beijing.aliyuncs.com/staticResource/special_top.webp
 ---
 
 <!-- 访问地图 -->

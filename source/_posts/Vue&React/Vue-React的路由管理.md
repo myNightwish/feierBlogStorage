@@ -3,7 +3,6 @@ title: Vue&&React的路由管理
 tags: 路由管理
 categories: 1.4-框架
 description: 路由到底是什么，主流实现思路
-cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/img/sweet1.avif
 copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0

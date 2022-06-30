@@ -3,8 +3,8 @@ title: React的虚拟DOM
 tags: 虚拟DOM
 categories: 1.4-框架
 description: 兄弟篇React的虚拟DOM，包括了栈调和
-swiper_index: 5
-cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/Project/react-virtualDom.png
+swiper_index: 4
+cover: https://mynightwish.oss-cn-beijing.aliyuncs.com/React/react-virtualDom.png
 copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0

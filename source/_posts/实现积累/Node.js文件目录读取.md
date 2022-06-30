@@ -2,7 +2,7 @@
 title: 'fs-文件目录读取'
 tags: Node、Antd
 categories: 2.3-实现Tricks
-cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/Project/文件读取.png
+cover: https://mynightwish.oss-cn-beijing.aliyuncs.com/Project/文件读取.png
 copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0

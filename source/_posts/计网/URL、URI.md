@@ -6,7 +6,7 @@ license: CC BY-NC-SA 4.0
 license_url: 'https://creativecommons.org/licenses/by-nc-sa/4.0'
 tags: URL、URI
 categories: 3.3-基础
-cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/Project/URI&URL.webp
+cover: https://mynightwish.oss-cn-beijing.aliyuncs.com/Project/URI&URL.webp
 abbrlink: URL_URI
 date: 2022-05-06 23:07:56
 ---

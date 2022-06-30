@@ -6,7 +6,7 @@ tags:
   - 函数组件
   - 类组件
 description: 类组件、函数组件的pk对比
-cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/func hook.webp
+cover: https://mynightwish.oss-cn-beijing.aliyuncs.com/React/func hook.webp
 copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0

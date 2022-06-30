@@ -3,8 +3,7 @@ title: React的组件通信
 tags: 组件通信
 categories: 1.4-框架
 description: 数据是如何在react组件上流动
-swiper_index: 6
-cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/Project/react-component-communication.png
+cover: https://mynightwish.oss-cn-beijing.aliyuncs.com/React/react-component-communication.png
 copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0

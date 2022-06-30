@@ -1,7 +1,7 @@
 ---
 title: welcome to loveMusic's world~
 date: 2022-03-05 02:13:45
-top_img: '/img/special_top.webp'
+top_img: https://mynightwish.oss-cn-beijing.aliyuncs.com/staticResource/special_top.webp
 ---
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css"> 
 <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script> 

@@ -8,7 +8,7 @@ abbrlink: feature-tricks1
 date: 2022-06-11 05:35:11
 tags: 功能实现的tricks
 categories: 2.3-实现Tricks
-cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/Project/实现1.webp
+cover: https://mynightwish.oss-cn-beijing.aliyuncs.com/Project/实现1.webp
 ---
 
 # <center>开发中的功能实现trick</center>
@@ -301,7 +301,7 @@ export default UseCase;
 > - 自己写的方式，优化问题；
 > - 在此过程中，学习到的新的React概念，比如组件复用问题等；
 
-<img src="https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/CSS/css-tab.png" alt="image-css-tab" style="zoom: 100%;" />
+<img src="https://mynightwish.oss-cn-beijing.aliyuncs.com/CSS/css-tab.png" alt="image-css-tab" style="zoom: 100%;" />
 
 待展示的数据设计：
 

@@ -8,7 +8,7 @@ abbrlink: CSStricks-2
 date: 2022-06-12 18:01:08
 tags: CSS属性
 categories: 2.3-实现Tricks
-cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/CSS/CSS-tricks1.webp
+cover: https://mynightwish.oss-cn-beijing.aliyuncs.com/CSS/CSS-tricks1.webp
 ---
 
 ## <center>开发中的CSS tricks-2</center>
@@ -28,7 +28,7 @@ cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/CSS/CSS-tricks1.webp
   }
   ```
 
-  <img src="https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/CSS/100vw-1.webp" style="zoom: 33%;" />
+  <img src="https://mynightwish.oss-cn-beijing.aliyuncs.com/CSS/100vw-1.webp" style="zoom: 33%;" />
 
 * 在容器宽度设置为100vw，高度很大时，内容不能完整显示出来：横向、纵向都出现了滚动条
 
@@ -48,7 +48,7 @@ cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/CSS/CSS-tricks1.webp
   }
   ```
 
-  <img src="https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/CSS/100vw-2.webp" style="zoom:33%;" />
+  <img src="https://mynightwish.oss-cn-beijing.aliyuncs.com/CSS/100vw-2.webp" style="zoom:33%;" />
 
 #### 如何解决：
 
@@ -63,7 +63,7 @@ cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/CSS/CSS-tricks1.webp
   }
   ```
 
-  <img src="https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/CSS/100%-resolve.webp" alt="image-20220612202320476" style="zoom:33%;" />
+  <img src="https://mynightwish.oss-cn-beijing.aliyuncs.com/CSS/100%-resolve.webp" alt="image-20220612202320476" style="zoom:33%;" />
 
 - 方式2：
 

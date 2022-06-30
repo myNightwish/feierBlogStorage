@@ -5,7 +5,7 @@ date: 2022-03-31 20:44:02
 tags: CSS
 categories: 1.1-CSS
 description: gap属性在开发中的trick
-cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/blogskin/gap.webp
+cover: https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/gap.webp
 copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0
@@ -68,7 +68,7 @@ abbrlink: gap-property
 }
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/img/1460000039855201.png" alt="grid 布局" style="zoom:67%;" />
+<img src="https://mynightwish.oss-cn-beijing.aliyuncs.com/img/1460000039855201.png" alt="grid 布局" style="zoom:67%;" />
 
 - 通过给 `grid-container` 添**加 `gap` 属性**，可以设置网格行与列之间的间隙：
 
@@ -110,7 +110,7 @@ abbrlink: gap-property
 }
 ```
 
-![img](https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/img/1460000039855203.png)
+![img](https://mynightwish.oss-cn-beijing.aliyuncs.com/img/1460000039855203.png)
 
 #### 布局demo2：
 
@@ -151,7 +151,7 @@ abbrlink: gap-property
 
 - 效果：
 
-  <img src="https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/img/image-20220331202347208.png" alt="image-20220331202347208" style="zoom:25%;" />
+  <img src="https://mynightwish.oss-cn-beijing.aliyuncs.com/img/image-20220331202347208.png" alt="image-20220331202347208" style="zoom:25%;" />
 
   **flex换行显示：flex-wrap：wrap**
 

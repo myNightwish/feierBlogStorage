@@ -1,3 +1,10 @@
+// font
+@font-face{
+  font-family:'CandyC' ;  /* 字体名自定义即可 */
+  src: url('/fonts/CandyC.ttf'); /* 字体文件路径 */
+  font-display: swap;
+}
+
 //default color:
 :root
   --nav-bar-background-color: rgba(249, 249, 249, 0.79)
@@ -126,8 +133,6 @@
           a
             color: var(--nav-menu-item-hover-font-color)
 
-
-
   .top-bar
     background: var(--nav-bar-background-color);
     height: 50px;
@@ -152,10 +157,10 @@
         width 25%
         .s-sticker-tmp.module
           color: var(--nav-font-color) !important;
-          font-family: 'ZhuZiAYuanJWD' !important;
+          font-family: 'CandyC' !important;
         .s-sticker-city.module
           color: var(--nav-font-color) !important;
-          font-family: 'ZhuZiAYuanJWD' !important;
+          font-family: 'CandyC' !important;
       .message-date
         width 50%
         .message-date-box
@@ -169,8 +174,8 @@
           transform rotateX(0deg)
           transition: all 0.5s cubic-bezier(0.59, 0.01, 0.48, 1.17);
           opacity 1
-          font-family: 'UnidreamLED','ZhuZiAYuanJWD';
-          font-size: 20px;
+          font-family: 'CandyC','UnidreamLED','ZhuZiAYuanJWD';
+          font-size: 28px;
         .message-title-box
           display: flex;
           align-items: center;
@@ -182,7 +187,7 @@
           transform rotateX(-180deg)
           transition: all 0.5s cubic-bezier(0.59, 0.01, 0.48, 1.17);
           opacity 0
-          font-family: 'ZhuZiAYuanJWD';
+          font-family: 'CandyC';
           font-size: 20px;
           a
             color: var(--nav-font-color)
@@ -199,7 +204,7 @@
             transition: all 0.5s cubic-bezier(0.59, 0.01, 0.48, 1.17);
       .message-function
         justify-content: center;
-        width 25%
+        width 50%
         a
           display: flex;
           align-items: center;

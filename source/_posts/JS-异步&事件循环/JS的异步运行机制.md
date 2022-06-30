@@ -6,7 +6,7 @@ tags:
   - 微任务
 categories: 1.2-JS
 description: 异步与同步、宏任务、微任务
-cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/CSS/浏览器异步.webp
+cover: https://mynightwish.oss-cn-beijing.aliyuncs.com/CSS/浏览器异步.webp
 copyright_author: 飞儿
 swiper_index: 2
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'

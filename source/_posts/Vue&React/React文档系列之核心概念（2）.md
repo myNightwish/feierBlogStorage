@@ -4,7 +4,6 @@ title: React核心概念系列（2）
 categories: 1.4-框架
 tags: React文档
 description: React文档系列之核心概念
-cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/img/a-2.avif
 copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0
@@ -289,7 +288,7 @@ date: 2022-03-28 18:30:11
 
 - 当你在 UI 中发现错误时，可以使用 [React 开发者工具](https://github.com/facebook/react/tree/main/packages/react-devtools) 来检查问题组件的 props，并且按照组件树结构逐级向上搜寻，直到定位到负责更新 state 的那个组件。这使得你能够追踪到产生 bug 的源头：
 
-![Monitoring State in React DevTools](https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/img/react-devtools-state.gif)
+![Monitoring State in React DevTools](https://mynightwish.oss-cn-beijing.aliyuncs.com/img/react-devtools-state.gif)
 
 ### 8、组合 vs 继承
 
@@ -401,7 +400,7 @@ React 有十分强大的组合模式。并**推荐使用组合而非继承**来�
         - `ProductCategoryRow`
         - `ProductRow`
 
-    <img src="https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/img/thinking-in-react-components.png" alt="组件嵌套图示" style="zoom:50%;" />
+    <img src="https://mynightwish.oss-cn-beijing.aliyuncs.com/img/thinking-in-react-components.png" alt="组件嵌套图示" style="zoom:50%;" />
 
 #### 9.3 构建应用
 

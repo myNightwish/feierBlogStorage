@@ -5,7 +5,7 @@ date: 2022-04-03 17:29:51
 tags: Hook
 categories: 1.4-框架
 description: Why Hook?
-cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/img/react.png
+cover: https://mynightwish.oss-cn-beijing.aliyuncs.com/React/hook1.png
 copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0
@@ -179,7 +179,7 @@ export default useWindowScroll = () => {
 
   current的id从初始的0 直接蹦到了2。这是为啥呢？？？？？
 
-  <img src="https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/img/image-20220403162430758.png" alt="image-20220403162430758" style="zoom:50%;" />
+  <img src="https://mynightwish.oss-cn-beijing.aliyuncs.com/img/image-20220403162430758.png" alt="image-20220403162430758" style="zoom:50%;" />
 
 ### 4、日志打点
 

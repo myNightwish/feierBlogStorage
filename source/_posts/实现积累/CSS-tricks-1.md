@@ -8,7 +8,7 @@ abbrlink: CSStricks-1
 date: 2022-06-11 05:34:45
 tags: CSS属性
 categories: 2.3-实现Tricks
-cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/CSS/CSS-tricks1.webp
+cover: https://mynightwish.oss-cn-beijing.aliyuncs.com/CSS/CSS-tricks1.webp
 ---
 
 
@@ -89,7 +89,7 @@ cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/CSS/CSS-tricks1.webp
 
 ### 4、负定位的用法
 
-![image-20220402170005923](https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/img/image-20220402170005923.png)
+![image-20220402170005923](https://mynightwish.oss-cn-beijing.aliyuncs.com/img/image-20220402170005923.png)
 
 - 定位值为负数，且为自身宽度，将伪元素定位到组件外部：
 
@@ -137,7 +137,7 @@ cover: https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/CSS/CSS-tricks1.webp
     <div class="box" style="width: 400px; height: 300px;">
       // 多句嘴：img的alt对SEO有帮助
       <img object-fit = 'cover' width="400px" height="300px"
-      src="https://cdn.jsdelivr.net/gh/myNightwish/CDN_res/img/a-icehill.avif" />
+      src="https://mynightwish.oss-cn-beijing.aliyuncs.com/img/a-icehill.avif" />
       <!-- 遮罩 -->
       <div class="cover">
         遮罩来了
