@@ -2,18 +2,22 @@
 var keyMap = '6a436d7ac1013a783445c0641e295d54';
 // 1. 根据ip地址获取城市名
 const ipAddress = returnCitySN["cip"];
-var adcode = '110000';
-var infoCity = '北京市';
-var temperature = '25';
-var humidity = '50';
-var weather = '晴';
+let adcode = '110000';
+let infoCity = '北京市';
+let temperature = '25';
+let humidity = '50';
+let weather = '晴';
 
 fetch('//restapi.amap.com/v3/ip?key='+keyMap+'&ip='+ipAddress)
-.then(res => {
-  adcode = res.adcode;
+.then(res => res.json())
+.then(data => {
+  console.log('data', data)
+  adcode = data.adcode;
+  getWeather();
 })
 
-fetch('//restapi.amap.com/v3/weather/weatherInfo?key='+keyMap+'&city='+adcode+'&output=JSON&extensions=base')
+
+const getWeather = () => fetch('//restapi.amap.com/v3/weather/weatherInfo?key='+keyMap+'&city='+adcode+'&output=JSON&extensions=base')
 .then(res => res.json())
 .then(data => {
   temperature = data.lives[0].temperature;
