@@ -132,8 +132,8 @@ lazyload:
   loadingImg: /img/loading.gif
 
 # 新增文章卡片式
-# butterfly_article_double_row:
-#   enable: true
+butterfly_article_double_row:
+  enable: true
 
 # 豆瓣
 douban:

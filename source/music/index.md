@@ -1,11 +1,12 @@
 ---
 title: welcome to loveMusic's world~
 date: 2022-03-05 02:13:45
-top_img: https://mynightwish.oss-cn-beijing.aliyuncs.com/staticResource/special_top.webp
+top_img: https://mynightwish.oss-cn-beijing.aliyuncs.com/source/Images/special_top.webp
 ---
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css"> 
-<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script> 
-<script src="https://cdn.jsdelivr.net/npm/meting@1.2/dist/Meting.min.js"></script>
+
+<link rel="stylesheet" async href="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css"> 
+<script async src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script> 
+<script async src="https://cdn.jsdelivr.net/npm/meting@1.2/dist/Meting.min.js"></script>
 
 <div align='center' ><font size='40'>YoungsoKim</font></div>
 {% meting "31872922" "netease" "artist" "theme:#555" "mutex:true" "listmaxheight:1000px" "preload:auto" %}

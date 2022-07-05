@@ -1,7 +1,7 @@
 ---
 title: welcome to loveVideo-world~
 date: 2022-03-05 02:13:45
-top_img: https://mynightwish.oss-cn-beijing.aliyuncs.com/staticResource/special_top.webp
+top_img: https://mynightwish.oss-cn-beijing.aliyuncs.com/source/Images/special_top.webp
 ---
 ## <center>Faye's demo</center>
   {% raw %}
