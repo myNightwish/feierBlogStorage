@@ -49,7 +49,7 @@
     "hexo-wordcount": "^6.0.1",
     "markdown-it-task-lists": "^2.1.1",
     "moment": "^2.29.1",
-    "node-fetch": "^2.6.2"
+    "node-fetch": "^3.2.9"
   },
   "devDependencies": {
     "@babel/core": "^7.17.8",
