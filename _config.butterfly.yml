@@ -7,28 +7,33 @@
 #   name: link || icon
 
 menu:
-  首页: / || fas fa-home
-  分类: /categories/ || fas fa-tags
-  时间轴: /archives/ || fas fa-paper-plane
-  足迹||fas fa-paw:
-    文章: /charts/ || fas fa-camera-retro
-  媒体||fas fa-photo-video:
-    音乐: /music/ || fas fa-music
-    视频: /movies/ || fas fa-video
-    书籍: /books/ || fas fa-book
-  留言板: /comments/ || fas fa-comments
+  首页: / || icon-food-strawberry || faa-tada
+  分类: /categories/ || icon-food-pudding || faa-tada
+  时间轴: /archives/ || icon-food-popcorn || faa-tada
+  足迹 || icon-food-cake || faa-tada || hide:
+    文章: /charts/ || icon-food-pecan
+  媒体 || icon-food-popsicle || faa-tada || hide:
+    音乐: /music/ || icon-food-mochi
+    视频: /movies/ || icon-food-pistachio
+    书籍: /books/ || icon-food-macaron
+  留言板: /comments/ || icon-food-pistachio || faa-tada
+
 # envelope_comment
-# see https://akilar.top/posts/58900a8/
+# see https://akilar.top/posts/e2d3c450/
 envelope_comment:
-  enable: true #开关
-  cover: https://ae01.alicdn.com/kf/U5bb04af32be544c4b41206d9a42fcacfd.jpg #信笺封面图
-  message: #信笺内容，支持多行
+  enable: true #控制开关
+  custom_pic:      
+    cover: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/violet.jpg #信笺头部图片
+    line: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/line.png #信笺底部图片
+    beforeimg: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/before.png # 信封前半部分
+    afterimg: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/after.png # 信封后半部分
+  message: #信笺正文，多行文本，写法如下
     - 有什么想问的？
     - 有什么想说的？
     - 有什么想吐槽的？
     - 哪怕是有什么想吃的，都可以告诉我哦~
-  bottom: 自动书记人偶竭诚为您服务！ #信笺结束语，只能单行
-  height: #调整信笺划出高度，默认1050px
+  bottom: 自动书记人偶竭诚为您服务！ #仅支持单行文本
+  height: #1050px，信封划出的高度
   path: #【可选】comments 的路径名称。默认为 comments，生成的页面为 comments/index.html
   front_matter: #【可选】comments页面的 front_matter 配置
     title: 留言板
@@ -58,8 +63,7 @@ copy:
 # formal:
 #   icon: link || the description
 social:
-  fab fa-github: https://github.com/myNightwish || Github
-  fas fa-envelope: mailto:zml_byr@bupt.edu.cn || Email
+  B站: https://space.bilibili.com || icon-bilibili || faa-tada
 
 # search (搜索)
 # --------------------------------------
@@ -109,7 +113,8 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page
-index_img: https://mynightwish.oss-cn-beijing.aliyuncs.com/staticResource/testPic.jpg
+index_img: 
+# https://mynightwish.oss-cn-beijing.aliyuncs.com/staticResource/testPic.jpg
 
 # If the banner of page not setting, it will show the top_img
 default_top_img: https://mynightwish.oss-cn-beijing.aliyuncs.com/staticResource/def_top_img.webp
@@ -398,6 +403,10 @@ utterances:
   light_theme: github-light
   dark_theme: photon-dark
 
+# 新版的搜索插件
+plugins:
+  - hexo-algoliasearch
+
 # Facebook Comments Plugin
 # https://developers.facebook.com/docs/plugins/comments/
 facebook_comments:
@@ -505,9 +514,6 @@ google_adsense:
   client:
   enable_page_level_ads: true
 
-# 灯笼开关 建议只在过年期间开启
-lantern:
-  enable: true
 # Insert ads manually (手動插入廣告)
 # ad:
 #   index:
@@ -526,23 +532,6 @@ site_verification:
 # Beautify/Effect (美化/效果)
 # --------------------------------------
 
-# Theme color for customize
-# Notice: color value must in double quotes like "#000" or may cause error!
-
-# theme_color:
-#   enable: true
-#   main: "#49B1F5"
-#   paginator: "#00c4b6"
-#   button_hover: "#FF7242"
-#   text_selection: "#00c4b6"
-#   link_color: "#99a9bf"
-#   meta_color: "#858585"
-#   hr_color: "#A4D8FA"
-#   code_foreground: "#F47466"
-#   code_background: "rgba(27, 31, 35, .05)"
-#   toc_color: "#00c4b6"
-#   blockquote_padding_color: "#49b1f5"
-#   blockquote_background_color: "#49b1f5"
 
 # The top_img settings of home page
 # default: top img - full screen, site info - middle (默認top_img全屏，site_info在中間)
@@ -560,7 +549,7 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: url(https://images.unsplash.com/photo-1616423201656-ccafda6b4b8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80）
+# background: url(https://source.fomal.cc/img/home_bg.webp）
 
 # Footer Background
 footer_bg: false
@@ -640,25 +629,48 @@ display_mode: light
 
 # Beautify (美化頁面顯示)
 beautify:
-  enable: true
+  enable: false
   field: post # site/post
   title-prefix-icon: '\f863'
   title-prefix-icon-color: '#F47466'
 
-# Global font settings
-# Don't modify the following settings unless you know how they work (非必要不要修改)
-font:
-  global-font-size: 24px
-  code-font-size:
-  font-family:
-  code-font-family:
 
-# Font settings for the site title and site subtitle
-# 左上角網站名字 主頁居中網站名字
+# 背景由js指定
+background:
+  default: var(--default-bg)
+  darkmode: var(--darkmode-bg)
+  mobileday: var(--mobileday-bg)
+  mobilenight: var(--mobilenight-bg)
+
+# 字体由js指定  
+font:
+  global-font-size: "20px"
+  code-font-size: "16px"
+  font-family: YSHST, var(--global-font), -apple-system, 'Quicksand', 'Nimbus Roman No9 L', 'PingFang SC', 'Hiragino Sans GB', 'Noto Serif SC', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif;
+  code-font-family: Consolas_1, var(--global-font), "Microsoft YaHei", Menlo, "PingFang SC", "Microsoft JhengHei", sans-serif
+
 blog_title_font:
   font_link:
-  font-family:
+  font-family: YSHST, var(--global-font)
 
+# 主题色由js指定，因此部分需要留空，避免冗余加载  
+theme_color:
+  enable: true
+  main: 
+  paginator: 
+  button_hover: 
+  text_selection: 
+  link_color: "#a591e0"
+  meta_color: "#858585"
+  hr_color: "#A4D8FA"
+  code_foreground: 
+  code_background: 
+  toc_color: 
+  blockquote_padding_color: 
+  blockquote_background_color: 
+  scrollbar_color: 
+  meta_theme_color_light: "ffffff"
+  meta_theme_color_dark: "#0d0d0d" 
 # The setting of divider icon (水平分隔線圖標設置)
 hr_icon:
   enable: true
@@ -834,7 +846,6 @@ pjax:
 aplayerInject:
   enable: true
   per_page: true
-
 # Snackbar (Toast Notification 彈窗)
 # https://github.com/polonel/SnackBar
 # position 彈窗位置
@@ -887,11 +898,24 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    - <link rel="stylesheet" href="/css/custom.css">
+    - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
+    - <link rel="stylesheet" href="/statis/css/custom.css">
     - <link rel="stylesheet" href="/css/double.css">
     - <link rel="stylesheet" href="/css/beautify.css" media="async">
-    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" media="async">
+    - <link rel="stylesheet" href="/css/progress_bar.css" media="defer" onload="this.media='all'"> 
+    #动画标签anima的依赖
+    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css"  media="defer" onload="this.media='all'">
     - <link rel="stylesheet" href="/css/lastLoad.css" media="defer" onload="this.media='all'">
+    - <style id="themeColor"></style> # 主题色
+    - <style id="rightSide"></style> # 侧边栏
+    - <style id="transPercent"></style> # 透明度调节
+    - <style id="blurNum"></style> # 模糊半径调节
+    - <style id="settingStyle"></style> # 模糊效果开关
+    - <span id="fps"></span> # 帧率检测
+    - <style id="defineBg"></style> # 自定义背景选项
+    - <link rel="stylesheet" href="/css/universe.css">  # 星空背景
+    - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_3859043_f64c0s5l29b.css" media="defer" onload="this.media='all'">  # 图标
+    
   bottom:
   # 首页 次要
     - <script async data-pjax src="/js/newAdd.js"></script>
@@ -899,13 +923,20 @@ inject:
     - <script async data-pjax src="https://cdn.jsdelivr.net/npm/hexo-beautiful-page@latest/lib/asyncmodel.min.js"></script> # 异步加载live3d模型
     - '<div id="live3d" class="live3d" style="position: fixed; left: -100px; bottom: 30px; width: 500px !important;height: 437.5px !important;z-index: 98;"><canvas id="live2dm" class="live3d"style="max-width:500px;max-height:437.5px;"></canvas></div>'
     - <script defer data-pjax src="/js/bottomTime.js"></script>
+    - <script defer data-pjax src="/js/nav.js"></script>
+    - <canvas id="universe"></canvas> # 星空背景
+    - <script defer src="/js/universe.js"></script>  # 星空背景
+    - <script defer src="/js/cursor.js"></script>
+
     # 非首页
     - <script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script>
-    - <script defer data-pjax src="/js/cat.js"></script>
     - <script defer data-pjax src="/js/emoji.js"></script>
     - <script defer data-pjax src="/js/sun_moon.js" async></script>
     - <script defer src="https://cdn.jsdelivr.net/npm/echarts@4.9.0/dist/echarts.min.js"></script>
-    - <script defer src="https://cdn.jsdelivr.net/npm/echarts@4.9.0/map/js/china.js"></script> 
+    - <script defer src="https://cdn1.tianli0.top/gh/nextapps-de/winbox/dist/winbox.bundle.min.js"></script> # winbox支持
+    - <script defer data-pjax src="/js/meihua.js"></script> # 美化模块
+    - <script async src="//at.alicdn.com/t/c/font_3859043_0hzmua8tfglg.js"></script>
+    - <script async src="//npm.elemecdn.com/pace-js@1.2.4/pace.min.js"></script>
 # CDN
 # Don't modify the following settings unless you know how they work
 # 非必要請不要修改
@@ -995,12 +1026,12 @@ CDN:
   prismjs_lineNumber_js: https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js
   prismjs_autoloader: https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js
 
-# electric_clock
-# see https://akilar.top/posts/4e39cf4a/
+# electric_clock (安知鱼电子钟)
+# see https://anzhiy.cn/posts/fc18.html
 electric_clock:
   enable: true # 开关
   priority: 5 #过滤器优先权
-  enable_page: all # 应用页面
+  enable_page: / # 应用页面
   exclude:
     # - /posts/
     # - /about/
@@ -1008,10 +1039,14 @@ electric_clock:
     type: class
     name: sticky_layout
     index: 0
-  loading: /js/clock/loading.gif #加载动画自定义
-  clock_css: /js/clock/clock.css
-  clock_js: /js/clock/clock.js
-  ip_api: https://pv.sohu.com/cityjson?ie=utf-8
+  loading: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/loading.gif #加载动画自定义
+  clock_css: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.css
+  clock_js: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.js
+  ip_api: https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0
+  qweather_key:  # 和风天气key
+  gaud_map_key:  # 高得地图web服务key
+  default_rectangle: false # 开启后将一直显示rectangle位置的天气，否则将获取访问者的地理位置与天气
+  rectangle: 113.34532,23.15624 # 获取访问者位置失败时会显示该位置的天气，同时该位置为开启default_rectangle后的位置
 
 # hexo-butterfly-swiper
 # see https://akilar.top/posts/8e1264d1/
