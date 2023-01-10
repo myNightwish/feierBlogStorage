@@ -166,6 +166,50 @@ svg.social_icon {
   background-color: #3eb8be;
   border-radius: 8px;
 }
+/* 个人信息卡片背景图 */
+/* TODO:待替换成链接 */
+[data-theme="light"] #aside-content > .card-widget.card-info {
+  background-image: url("/img/snowflower.webp");
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-size: 100%;
+}
+[data-theme="dark"] #aside-content > .card-widget.card-info {
+  background-image: url("/img/snowflower.webp");
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-size: 100%;
+}
+
+/* 头像呼吸灯 */
+[data-theme="light"] .avatar-img {
+  animation: huxi_light 4s ease-in-out infinite;
+}
+[data-theme="dark"] .avatar-img {
+  animation: huxi_dark 4s ease-in-out infinite;
+}
+@keyframes huxi_light {
+  0% {
+    box-shadow: 0px 0px 1px 1px #e9f5fa;
+  }
+  50% {
+    box-shadow: 0px 0px 5px 5px #e9f5fa;
+  }
+  100% {
+    box-shadow: 0px 0px 1px 1px #e9f5fa;
+  }
+}
+@keyframes huxi_dark {
+  0% {
+    box-shadow: 0px 0px 1px 1px #39c5bb;
+  }
+  50% {
+    box-shadow: 0px 0px 5px 5px #39c5bb;
+  }
+  100% {
+    box-shadow: 0px 0px 1px 1px #39c5bb;
+  }
+}
 
 /* winbox样式(这块照抄即可) */
 .winbox {
