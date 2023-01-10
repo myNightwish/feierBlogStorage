@@ -12,7 +12,6 @@ menu:
   时间轴: /archives/ || fas fa-paper-plane
   足迹||fas fa-paw:
     文章: /charts/ || fas fa-camera-retro
-    访问: /census/ || fas fa-globe
   媒体||fas fa-photo-video:
     音乐: /music/ || fas fa-music
     视频: /movies/ || fas fa-video
@@ -900,7 +899,6 @@ inject:
     - <script async data-pjax src="https://cdn.jsdelivr.net/npm/hexo-beautiful-page@latest/lib/asyncmodel.min.js"></script> # 异步加载live3d模型
     - '<div id="live3d" class="live3d" style="position: fixed; left: -100px; bottom: 30px; width: 500px !important;height: 437.5px !important;z-index: 98;"><canvas id="live2dm" class="live3d"style="max-width:500px;max-height:437.5px;"></canvas></div>'
     - <script defer data-pjax src="/js/bottomTime.js"></script>
-    - <script async data-pjax src="/js/custom/nav.js"></script>
     # 非首页
     - <script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script>
     - <script defer data-pjax src="/js/cat.js"></script>
