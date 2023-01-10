@@ -6,12 +6,12 @@ hexo.extend.filter.register('after_render:html', function (locals) {
   const post = $('#posts-chart')
   const tag = $('#tags-chart')
   const category = $('#categories-chart')
-  let htmlEncode = false
+  const htmlEncode = false
 
   if (post.length > 0 || tag.length > 0 || category.length > 0) {
     if (post.length > 0 && $('#postsChart').length === 0) {
       if (post.attr('data-encode') === 'true') htmlEncode = true
-      post.after(postsChart())
+      post.after(postsChart(post.attr('data-start')))
     }
     if (tag.length > 0 && $('#tagsChart').length === 0) {
       if (tag.attr('data-encode') === 'true') htmlEncode = true
@@ -19,8 +19,9 @@ hexo.extend.filter.register('after_render:html', function (locals) {
     }
     if (category.length > 0 && $('#categoriesChart').length === 0) {
       if (category.attr('data-encode') === 'true') htmlEncode = true
-      category.after(categoriesChart())
+      category.after(categoriesChart(category.attr('data-parent')))
     }
+
     if (htmlEncode) {
       return $.root().html().replace(/&amp;#/g, '&#')
     } else {
@@ -31,9 +32,8 @@ hexo.extend.filter.register('after_render:html', function (locals) {
   }
 }, 15)
 
-function postsChart () {
-  const startDate = moment('2021-12') // 博客建站月份或自定义时间
-  // const startDate = moment().subtract(1,'year').format('YYYY-MM'); // 一年前的今日，统计近一年的文章发布
+function postsChart (startMonth) {
+  const startDate = moment(startMonth || '2020-01')
   const endDate = moment()
 
   const monthMap = new Map()
@@ -55,16 +55,14 @@ function postsChart () {
 
   return `
   <script id="postsChart">
+    var color = document.documentElement.getAttribute('data-theme') === 'light' ? '#4c4948' : 'rgba(255,255,255,0.7)'
     var postsChart = echarts.init(document.getElementById('posts-chart'), 'light');
     var postsOption = {
-      textStyle: {
-        color: '#FFF'
-      },
       title: {
         text: '文章发布统计图',
         x: 'center',
         textStyle: {
-          color: '#FFF'
+          color: color
         }
       },
       tooltip: {
@@ -73,13 +71,21 @@ function postsChart () {
       xAxis: {
         name: '日期',
         type: 'category',
+        boundaryGap: false,
+        nameTextStyle: {
+          color: color
+        },
         axisTick: {
           show: false
+        },
+        axisLabel: {
+          show: true,
+          color: color
         },
         axisLine: {
           show: true,
           lineStyle: {
-            color: '#FFF'
+            color: color
           }
         },
         data: ${monthArr}
@@ -87,16 +93,23 @@ function postsChart () {
       yAxis: {
         name: '文章篇数',
         type: 'value',
+        nameTextStyle: {
+          color: color
+        },
         splitLine: {
           show: false
         },
         axisTick: {
           show: false
         },
+        axisLabel: {
+          show: true,
+          color: color
+        },
         axisLine: {
           show: true,
           lineStyle: {
-            color: '#FFF'
+            color: color
           }
         }
       },
@@ -133,91 +146,103 @@ function postsChart () {
         markLine: {
           data: [{
             name: '平均值',
-            type: 'average'
+            type: 'average',
+            label: {
+              color: color
+            }
           }]
         }
       }]
     };
     postsChart.setOption(postsOption);
-    window.addEventListener("resize", () => { 
+    window.addEventListener('resize', () => { 
       postsChart.resize();
     });
-    </script>`
+    postsChart.on('click', 'series', (event) => {
+      if (event.componentType === 'series') window.location.href = '/archives/' + event.name.replace('-', '/');
+    });
+  </script>`
 }
 
 function tagsChart (len) {
   const tagArr = []
   hexo.locals.get('tags').map(function (tag) {
-    tagArr.push({ name: tag.name, value: tag.length })
+    tagArr.push({ name: tag.name, value: tag.length, path: tag.path })
   })
   tagArr.sort((a, b) => { return b.value - a.value })
 
-  let dataLength = Math.min(tagArr.length, len) || tagArr.length
+  const dataLength = Math.min(tagArr.length, len) || tagArr.length
   const tagNameArr = []
-  const tagCountArr = []
   for (let i = 0; i < dataLength; i++) {
     tagNameArr.push(tagArr[i].name)
-    tagCountArr.push(tagArr[i].value)
   }
   const tagNameArrJson = JSON.stringify(tagNameArr)
-  const tagCountArrJson = JSON.stringify(tagCountArr)
+  const tagArrJson = JSON.stringify(tagArr)
 
   return `
   <script id="tagsChart">
+    var color = document.documentElement.getAttribute('data-theme') === 'light' ? '#4c4948' : 'rgba(255,255,255,0.7)'
     var tagsChart = echarts.init(document.getElementById('tags-chart'), 'light');
-    // 标签页面跳转
-    tagsChart.on('click', 'series', (event) => {
-      let href = '/tags/' + event.name;
-      window.location.href = href;
-    });
     var tagsOption = {
-      textStyle: {
-        color: '#FFF'
-      },
       title: {
         text: 'Top ${dataLength} 标签统计图',
         x: 'center',
         textStyle: {
-          color: '#FFF'
+          color: color
         }
       },
       tooltip: {},
-      xAxis: [{
+      xAxis: {
         name: '标签',
         type: 'category',
+        nameTextStyle: {
+          color: color
+        },
         axisTick: {
           show: false
+        },
+        axisLabel: {
+          show: true,
+          color: color,
+          interval: 0
         },
         axisLine: {
           show: true,
           lineStyle: {
-            color: '#FFF'
+            color: color
           }
         },
         data: ${tagNameArrJson}
-      }],
-      yAxis: [{
+      },
+      yAxis: {
         name: '文章篇数',
         type: 'value',
         splitLine: {
           show: false
         },
+        nameTextStyle: {
+          color: color
+        },
         axisTick: {
           show: false
+        },
+        axisLabel: {
+          show: true,
+          color: color
         },
         axisLine: {
           show: true,
           lineStyle: {
-            color: '#FFF'
+            color: color
           }
         }
-      }],
+      },
       series: [{
         name: '文章篇数',
         type: 'bar',
-        data: ${tagCountArrJson},
+        data: ${tagArrJson},
         itemStyle: {
-          opacity: 1,
+          borderRadius: [5, 5, 0, 0],
           color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
             offset: 0,
             color: 'rgba(128, 255, 165)'
@@ -229,7 +254,6 @@ function tagsChart (len) {
         },
         emphasis: {
           itemStyle: {
-            opacity: 1,
             color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
               offset: 0,
               color: 'rgba(128, 255, 195)'
@@ -243,63 +267,114 @@ function tagsChart (len) {
         markLine: {
           data: [{
             name: '平均值',
-            type: 'average'
+            type: 'average',
+            label: {
+              color: color
+            }
           }]
         }
       }]
     };
     tagsChart.setOption(tagsOption);
-    window.addEventListener("resize", () => { 
+    window.addEventListener('resize', () => { 
       tagsChart.resize();
     });
-    </script>`
+    tagsChart.on('click', 'series', (event) => {
+      if(event.data.path) window.location.href = '/' + event.data.path;
+    });
+  </script>`
 }
 
-function categoriesChart () {
+function categoriesChart (dataParent) {
   const categoryArr = []
+  let categoryParentFlag = false
   hexo.locals.get('categories').map(function (category) {
-    categoryArr.push({ name: category.name, value: category.length })
+    if (category.parent) categoryParentFlag = true
+    categoryArr.push({
+      name: category.name,
+      value: category.length,
+      path: category.path,
+      id: category._id,
+      parentId: category.parent || '0'
+    })
   })
-  categoryArr.sort((a, b) => { return b.value - a.value });
+  categoryParentFlag = categoryParentFlag && dataParent === 'true'
+  categoryArr.sort((a, b) => { return b.value - a.value })
+  function translateListToTree (data, parent) {
+    let tree = []
+    let temp
+    data.forEach((item, index) => {
+      if (data[index].parentId == parent) {
+        let obj = data[index];
+        temp = translateListToTree(data, data[index].id);
+        if (temp.length > 0) {
+          obj.children = temp
+        }
+        if (tree.indexOf())
+          tree.push(obj)
+      }
+    })
+    return tree
+  }
+  const categoryNameJson = JSON.stringify(categoryArr.map(function (category) { return category.name }))
   const categoryArrJson = JSON.stringify(categoryArr)
+  const categoryArrParentJson = JSON.stringify(translateListToTree(categoryArr, '0'))
 
   return `
   <script id="categoriesChart">
+    var color = document.documentElement.getAttribute('data-theme') === 'light' ? '#4c4948' : 'rgba(255,255,255,0.7)'
     var categoriesChart = echarts.init(document.getElementById('categories-chart'), 'light');
-    // 分类页面跳转
-    categoriesChart.on('click', 'series', (event) => {
-      let href = '/categories/' + event.name;
-      window.location.href = href;
-    });
+    var categoryParentFlag = ${categoryParentFlag}
     var categoriesOption = {
-      textStyle: {
-        color: '#FFF'
-      },
       title: {
         text: '文章分类统计图',
         x: 'center',
         textStyle: {
-          color: '#FFF'
+          color: color
         }
       },
       legend: {
         top: 'bottom',
+        data: ${categoryNameJson},
         textStyle: {
-          color: '#FFF'
+          color: color
         }
       },
       tooltip: {
-        trigger: 'item',
-        formatter: "{a} <br/>{b} : {c} ({d}%)"
+        trigger: 'item'
       },
-      series: [{
+      series: []
+    };
+    categoriesOption.series.push(
+      categoryParentFlag ? 
+      {
+        nodeClick :false,
+        name: '文章篇数',
+        type: 'sunburst',
+        radius: ['15%', '90%'],
+        center: ['50%', '55%'],
+        sort: 'desc',
+        data: ${categoryArrParentJson},
+        itemStyle: {
+          borderColor: '#fff',
+          borderWidth: 2,
+          emphasis: {
+            focus: 'ancestor',
+            shadowBlur: 10,
+            shadowOffsetX: 0,
+            shadowColor: 'rgba(255, 255, 255, 0.5)'
+          }
+        }
+      }
+      :
+      {
         name: '文章篇数',
         type: 'pie',
         radius: [30, 80],
-        center: ['50%', '50%'],
         roseType: 'area',
         label: {
-          formatter: "{b} : {c} ({d}%)"
+          color: color,
+          formatter: '{b} : {c} ({d}%)'
         },
         data: ${categoryArrJson},
         itemStyle: {
@@ -309,11 +384,14 @@ function categoriesChart () {
             shadowColor: 'rgba(255, 255, 255, 0.5)'
           }
         }
-      }]
-    };
+      }
+    )
     categoriesChart.setOption(categoriesOption);
-    window.addEventListener("resize", () => { 
+    window.addEventListener('resize', () => { 
       categoriesChart.resize();
     });
-    </script>`
+    categoriesChart.on('click', 'series', (event) => {
+      if(event.data.path) window.location.href = '/' + event.data.path;
+    });
+  </script>`
 }

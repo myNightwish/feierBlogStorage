@@ -29,7 +29,7 @@ if theme.aside.card_author.enable
       a#card-info-btn.button--animated(href=theme.aside.card_author.button.link)
         i(class=theme.aside.card_author.button.icon)
         span=theme.aside.card_author.button.text
-  
+
     if(theme.social)
         .card-info-social-icons.is-center
           !=fragment_cache('social', function(){return partial('includes/header/social')}) 

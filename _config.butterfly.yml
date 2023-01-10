@@ -506,6 +506,9 @@ google_adsense:
   client:
   enable_page_level_ads: true
 
+# 灯笼开关 建议只在过年期间开启
+lantern:
+  enable: true
 # Insert ads manually (手動插入廣告)
 # ad:
 #   index:
@@ -899,6 +902,9 @@ inject:
     - <script defer data-pjax src="/js/bottomTime.js"></script>
     - <script async data-pjax src="/js/custom/nav.js"></script>
     # 非首页
+    - <script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script>
+    - <script defer data-pjax src="/js/cat.js"></script>
+    - <script defer data-pjax src="/js/emoji.js"></script>
     - <script defer data-pjax src="/js/sun_moon.js" async></script>
     - <script defer src="https://cdn.jsdelivr.net/npm/echarts@4.9.0/dist/echarts.min.js"></script>
     - <script defer src="https://cdn.jsdelivr.net/npm/echarts@4.9.0/map/js/china.js"></script> 

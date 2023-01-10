@@ -11,7 +11,7 @@ let weather = '晴';
 fetch('//restapi.amap.com/v3/ip?key='+keyMap+'&ip='+ipAddress)
 .then(res => res.json())
 .then(data => {
-  console.log('data', data)
+  console.log('data---1:', data)
   adcode = data.adcode;
   getWeather();
 })
@@ -20,7 +20,8 @@ fetch('//restapi.amap.com/v3/ip?key='+keyMap+'&ip='+ipAddress)
 const getWeather = () => fetch('//restapi.amap.com/v3/weather/weatherInfo?key='+keyMap+'&city='+adcode+'&output=JSON&extensions=base')
 .then(res => res.json())
 .then(data => {
-  temperature = data.lives[0].temperature;
+  console.log("data---:", data)
+  temperature = data.lives[0]?.temperature;
   humidity = data.lives[0].humidity;
   infoCity = data.lives[0].city;
   weather = data.lives[0].weather;

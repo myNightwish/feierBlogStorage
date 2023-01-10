@@ -25,6 +25,8 @@ for (var i = 0; i < card_category_list.length; i++) {
 }
 
 
+
+
 // 透明度
 // function setColor(opacity) {
 //   // style="--light_bg_color: rgb(255, 255, 255,.3);--dark_bg_color: rgba(18,18,18,.2);"

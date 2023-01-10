@@ -10,29 +10,29 @@ document.addEventListener('DOMContentLoaded', function () {
   const $searchEle = document.querySelector('#search-button')
   let searchWidth = $searchEle && $searchEle.offsetWidth
 
-  // const adjustMenu = (change = false) => {
-  //   if (change) {
-  //     blogNameWidth = $blogName && $blogName.offsetWidth
-  //     menusWidth = $menusEle && $menusEle.offsetWidth
-  //     searchWidth = $searchEle && $searchEle.offsetWidth
-  //   }
-  //   const $nav = document.getElementById('nav')
-  //   let t
-  //   if (window.innerWidth < 768) t = true
-  //   else t = blogNameWidth + menusWidth + searchWidth > $nav.offsetWidth - 120
+  const adjustMenu = (change = false) => {
+    if (change) {
+      blogNameWidth = $blogName && $blogName.offsetWidth
+      menusWidth = $menusEle && $menusEle.offsetWidth
+      searchWidth = $searchEle && $searchEle.offsetWidth
+    }
+    const $nav = document.getElementById('nav')
+    let t
+    if (window.innerWidth < 768) t = true
+    else t = blogNameWidth + menusWidth + searchWidth > $nav.offsetWidth - 120
 
-  //   if (t) {
-  //     $nav.classList.add('hide-menu')
-  //   } else {
-  //     $nav.classList.remove('hide-menu')
-  //   }
-  // }
+    if (t) {
+      $nav.classList.add('hide-menu')
+    } else {
+      $nav.classList.remove('hide-menu')
+    }
+  }
 
-  // 初始化header
-  // const initAdjust = () => {
-  //   adjustMenu()
-  //   document.getElementById('nav').classList.add('show')
-  // }
+  初始化header
+  const initAdjust = () => {
+    adjustMenu()
+    document.getElementById('nav').classList.add('show')
+  }
 
   // sidebar menus
   const sidebarFn = () => {
