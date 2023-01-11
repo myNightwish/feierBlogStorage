@@ -549,7 +549,7 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-# background: url(https://source.fomal.cc/img/home_bg.webp）
+# background: url("/img/home_bg.webp"）
 
 # Footer Background
 footer_bg: false
@@ -636,22 +636,29 @@ beautify:
 
 
 # 背景由js指定
+# background: /img/home_bg.webp
+  
+# background:
+#   default:  #【必选】默认背景
+#   darkmode: #【可选】PC端夜间模式背景
+#   mobileday: #【可选】移动端日间默认背景
+#   mobilenight: #【可选】移动端夜间模式背景
+
 background:
   default: var(--default-bg)
   darkmode: var(--darkmode-bg)
   mobileday: var(--mobileday-bg)
   mobilenight: var(--mobilenight-bg)
-
 # 字体由js指定  
 font:
   global-font-size: "20px"
   code-font-size: "16px"
-  font-family: YSHST, var(--global-font), -apple-system, 'Quicksand', 'Nimbus Roman No9 L', 'PingFang SC', 'Hiragino Sans GB', 'Noto Serif SC', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif;
+  font-family: TANG_MEI_REN, var(--global-font), -apple-system, 'Quicksand', 'Nimbus Roman No9 L', 'PingFang SC', 'Hiragino Sans GB', 'Noto Serif SC', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif;
   code-font-family: Consolas_1, var(--global-font), "Microsoft YaHei", Menlo, "PingFang SC", "Microsoft JhengHei", sans-serif
 
 blog_title_font:
   font_link:
-  font-family: YSHST, var(--global-font)
+  font-family: TANG_MEI_REN, var(--global-font)
 
 # 主题色由js指定，因此部分需要留空，避免冗余加载  
 theme_color:
@@ -931,9 +938,9 @@ inject:
     - <script defer data-pjax src="/js/sun_moon.js" async></script>
     - <script defer src="https://cdn.jsdelivr.net/npm/echarts@4.9.0/dist/echarts.min.js"></script>
     - <script defer src="https://cdn1.tianli0.top/gh/nextapps-de/winbox/dist/winbox.bundle.min.js"></script> # winbox支持
-    - <script defer data-pjax src="/js/meihua.js"></script> # 美化模块
     - <script async src="//at.alicdn.com/t/c/font_3859043_rw1ayonelb.js"></script>
     - <script async src="//npm.elemecdn.com/pace-js@1.2.4/pace.min.js"></script>
+    - <script defer data-pjax src="/js/meihua.js"></script> # 美化模块
 # CDN
 # Don't modify the following settings unless you know how they work
 # 非必要請不要修改
