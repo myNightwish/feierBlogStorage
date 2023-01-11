@@ -48,7 +48,7 @@
     "hexo-theme-butterfly": "^4.5.0",
     "hexo-wordcount-fomal": "^1.0.0",
     "markdown-it-task-lists": "^2.1.1",
-    "moment": "^2.29.1",
+    "moment": "^2.29.4",
     "node-fetch": "^2.6.2"
   },
   "devDependencies": {
