@@ -9,14 +9,14 @@
 menu:
   首页: / || icon-food-strawberry || faa-tada
   分类: /categories/ || icon-food-pudding || faa-tada
-  时间轴: /archives/ || icon-food-popcorn || faa-tada
-  足迹 || icon-food-cake || faa-tada || hide:
-    文章: /charts/ || icon-food-pecan
-  媒体 || icon-food-popsicle || faa-tada || hide:
-    音乐: /music/ || icon-food-mochi
-    视频: /movies/ || icon-food-pistachio
-    书籍: /books/ || icon-food-macaron
-  留言板: /comments/ || icon-food-pistachio || faa-tada
+  时间轴: /archives/ || icon-food-popsicle || faa-tada
+  足迹 || icon-food-doughnut || faa-tada || hide:
+    文章: /charts/ || icon-xiangjiB
+  媒体 || icon-diannaoB || faa-tada || hide:
+    音乐: /music/ || icon-erjiB
+    视频: /movies/ || icon-dianshijiB
+    书籍: /books/ || icon-shouyinjiB
+  留言板: /comments/ || icon-food-macaron || faa-tada
 
 # envelope_comment
 # see https://akilar.top/posts/e2d3c450/
@@ -419,7 +419,7 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: https://twikoo-hexo-git-main-mynightwish.vercel.app/
+  envId: https://twikoo-hexo-vert.vercel.app/
   region:
   visitor: false
   option:
@@ -896,7 +896,7 @@ css_prefix: true
 inject:
   head:
     - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
-    - <link rel="stylesheet" href="/statis/css/custom.css">
+    # - <link rel="stylesheet" href="/statis/css/custom.css">
     - <link rel="stylesheet" href="/css/double.css">
     - <link rel="stylesheet" href="/css/beautify.css" media="async">
     - <link rel="stylesheet" href="/css/progress_bar.css" media="defer" onload="this.media='all'"> 
@@ -911,7 +911,7 @@ inject:
     - <span id="fps"></span> # 帧率检测
     - <style id="defineBg"></style> # 自定义背景选项
     - <link rel="stylesheet" href="/css/universe.css">  # 星空背景
-    - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_3859043_f64c0s5l29b.css" media="defer" onload="this.media='all'">  # 图标
+    - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_3859043_rw1ayonelb.css" media="defer" onload="this.media='all'">  # 图标
     
   bottom:
   # 首页 次要
@@ -932,7 +932,7 @@ inject:
     - <script defer src="https://cdn.jsdelivr.net/npm/echarts@4.9.0/dist/echarts.min.js"></script>
     - <script defer src="https://cdn1.tianli0.top/gh/nextapps-de/winbox/dist/winbox.bundle.min.js"></script> # winbox支持
     - <script defer data-pjax src="/js/meihua.js"></script> # 美化模块
-    - <script async src="//at.alicdn.com/t/c/font_3859043_0hzmua8tfglg.js"></script>
+    - <script async src="//at.alicdn.com/t/c/font_3859043_rw1ayonelb.js"></script>
     - <script async src="//npm.elemecdn.com/pace-js@1.2.4/pace.min.js"></script>
 # CDN
 # Don't modify the following settings unless you know how they work
@@ -1022,28 +1022,6 @@ CDN:
   prismjs_js: https://cdn.jsdelivr.net/npm/prismjs/prism.min.js
   prismjs_lineNumber_js: https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js
   prismjs_autoloader: https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js
-
-# electric_clock (安知鱼电子钟)
-# see https://anzhiy.cn/posts/fc18.html
-electric_clock:
-  enable: true # 开关
-  priority: 5 #过滤器优先权
-  enable_page: / # 应用页面
-  exclude:
-    # - /posts/
-    # - /about/
-  layout: # 挂载容器类型
-    type: class
-    name: sticky_layout
-    index: 0
-  loading: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/loading.gif #加载动画自定义
-  clock_css: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.css
-  clock_js: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.js
-  ip_api: https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0
-  qweather_key:  # 和风天气key
-  gaud_map_key:  # 高得地图web服务key
-  default_rectangle: false # 开启后将一直显示rectangle位置的天气，否则将获取访问者的地理位置与天气
-  rectangle: 113.34532,23.15624 # 获取访问者位置失败时会显示该位置的天气，同时该位置为开启default_rectangle后的位置
 
 # hexo-butterfly-swiper
 # see https://akilar.top/posts/8e1264d1/

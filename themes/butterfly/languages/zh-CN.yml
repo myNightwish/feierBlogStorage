@@ -68,10 +68,10 @@ aside:
       name: 已运行时间
       unit: 天
     last_push_date:
-      name: 最后更新时间
-    site_wordcount: 本站总字数
-    site_uv_name: 本站访客数
-    site_pv_name: 本站总访问量
+      name: 最近更新
+    site_wordcount: 总字数
+    site_uv_name: 访客数
+    site_pv_name: 总访问量
   more_button: 查看更多
   card_newest_comments:
     headline: 最新评论

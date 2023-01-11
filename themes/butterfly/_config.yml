@@ -637,7 +637,7 @@ aside:
   mobile: true # display on mobile
   position: right # left or right
   card_author:
-    enable: true
+    enable: /
     description:
     button:
       enable: true
