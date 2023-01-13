@@ -107,7 +107,8 @@ svg.social_icon {
   center#name-container {
     position: absolute !important;
     width: fit-content !important;
-    left: 30% !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
   }
   @media screen and (max-width: 768px) {
     center#name-container {

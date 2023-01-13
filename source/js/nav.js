@@ -16,7 +16,8 @@ function tonav() {
         position = scroll;
     });
     //修复没有弄右键菜单的童鞋无法回顶部的问题
-    document.getElementById("page-name").innerText = document.title.split(" | Fomalhaut🥝")[0];
+    console.log("tjtu----:", document.title.split('| Nightwishのblog🧊'));
+    document.getElementById("page-name").innerText = document.title.split('| Nightwishのblog🧊')[0];
 }
 
 function scrollToTop() {
