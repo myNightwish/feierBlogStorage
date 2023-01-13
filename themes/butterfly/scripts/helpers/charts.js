@@ -62,8 +62,7 @@ function postsChart (startMonth) {
         text: '文章发布统计图',
         x: 'center',
         textStyle: {
-          color: color,
-          fontFamily: 'var(--global-font)'
+          color: color
         }
       },
       tooltip: {
@@ -74,8 +73,7 @@ function postsChart (startMonth) {
         type: 'category',
         boundaryGap: false,
         nameTextStyle: {
-          color: color,
-          fontFamily: 'var(--global-font)'
+          color: color
         },
         axisTick: {
           show: false
@@ -96,8 +94,7 @@ function postsChart (startMonth) {
         name: '文章篇数',
         type: 'value',
         nameTextStyle: {
-          color: color,
-          fontFamily: 'var(--global-font)'
+          color: color
         },
         splitLine: {
           show: false
@@ -169,15 +166,11 @@ function tagsChart (len) {
     var color = document.documentElement.getAttribute('data-theme') === 'light' ? '#4c4948' : 'rgba(255,255,255,0.7)'
     var tagsChart = echarts.init(document.getElementById('tags-chart'), 'light');
     var tagsOption = {
-      textStyle: {
-        fontFamily: 'var(--global-font)'
-      },
       title: {
         text: 'Top ${dataLength} 标签统计图',
         x: 'center',
         textStyle: {
-          color: color,
-          fontFamily: 'var(--global-font)'
+          color: color
         }
       },
       tooltip: {},
@@ -185,8 +178,7 @@ function tagsChart (len) {
         name: '标签',
         type: 'category',
         nameTextStyle: {
-          color: color,
-          fontFamily: 'var(--global-font)'
+          color: color
         },
         axisTick: {
           show: false
@@ -211,8 +203,7 @@ function tagsChart (len) {
           show: false
         },
         nameTextStyle: {
-          color: color,
-          fontFamily: 'var(--global-font)'
+          color: color
         },
         axisTick: {
           show: false
@@ -313,16 +304,14 @@ function categoriesChart (dataParent) {
         text: '文章分类统计图',
         x: 'center',
         textStyle: {
-          color: color,
-          fontFamily: 'var(--global-font)'
+          color: color
         }
       },
       legend: {
         top: 'bottom',
         data: ${categoryNameJson},
         textStyle: {
-          color: color,
-          fontFamily: 'var(--global-font)'
+          color: color
         }
       },
       tooltip: {
