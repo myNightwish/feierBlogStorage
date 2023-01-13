@@ -62,7 +62,8 @@ function postsChart (startMonth) {
         text: '文章发布统计图',
         x: 'center',
         textStyle: {
-          color: color
+          color: color,
+          fontFamily: 'var(--global-font)'
         }
       },
       tooltip: {
@@ -73,7 +74,8 @@ function postsChart (startMonth) {
         type: 'category',
         boundaryGap: false,
         nameTextStyle: {
-          color: color
+          color: color,
+          fontFamily: 'var(--global-font)'
         },
         axisTick: {
           show: false
@@ -94,7 +96,8 @@ function postsChart (startMonth) {
         name: '文章篇数',
         type: 'value',
         nameTextStyle: {
-          color: color
+          color: color,
+          fontFamily: 'var(--global-font)'
         },
         splitLine: {
           show: false
@@ -117,41 +120,23 @@ function postsChart (startMonth) {
         name: '文章篇数',
         type: 'line',
         smooth: true,
+        smoothMonotone: 'x',
         lineStyle: {
-            width: 0
+            width: 1.5,
+            color: '#6600cc',
         },
         showSymbol: false,
-        itemStyle: {
-          opacity: 1,
-          color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-            offset: 0,
-            color: 'rgba(128, 255, 165)'
-          },
-          {
-            offset: 1,
-            color: 'rgba(1, 191, 236)'
-          }])
-        },
         areaStyle: {
-          opacity: 1,
+          opacity: 0.5,
           color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
             offset: 0,
-            color: 'rgba(128, 255, 165)'
+            color: '#a64dff'
           }, {
             offset: 1,
-            color: 'rgba(1, 191, 236)'
+            color: '#f2e5ff'
           }])
         },
-        data: ${monthValueArr},
-        markLine: {
-          data: [{
-            name: '平均值',
-            type: 'average',
-            label: {
-              color: color
-            }
-          }]
-        }
+        data: ${monthValueArr}
       }]
     };
     postsChart.setOption(postsOption);
@@ -184,11 +169,15 @@ function tagsChart (len) {
     var color = document.documentElement.getAttribute('data-theme') === 'light' ? '#4c4948' : 'rgba(255,255,255,0.7)'
     var tagsChart = echarts.init(document.getElementById('tags-chart'), 'light');
     var tagsOption = {
+      textStyle: {
+        fontFamily: 'var(--global-font)'
+      },
       title: {
         text: 'Top ${dataLength} 标签统计图',
         x: 'center',
         textStyle: {
-          color: color
+          color: color,
+          fontFamily: 'var(--global-font)'
         }
       },
       tooltip: {},
@@ -196,7 +185,8 @@ function tagsChart (len) {
         name: '标签',
         type: 'category',
         nameTextStyle: {
-          color: color
+          color: color,
+          fontFamily: 'var(--global-font)'
         },
         axisTick: {
           show: false
@@ -221,7 +211,8 @@ function tagsChart (len) {
           show: false
         },
         nameTextStyle: {
-          color: color
+          color: color,
+          fontFamily: 'var(--global-font)'
         },
         axisTick: {
           show: false
@@ -242,14 +233,15 @@ function tagsChart (len) {
         type: 'bar',
         data: ${tagArrJson},
         itemStyle: {
+          opacity: 1,
           borderRadius: [5, 5, 0, 0],
           color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
             offset: 0,
-            color: 'rgba(128, 255, 165)'
+            color: '#ccccff'
           },
           {
             offset: 1,
-            color: 'rgba(1, 191, 236)'
+            color: '#6666ff'
           }])
         },
         emphasis: {
@@ -263,15 +255,6 @@ function tagsChart (len) {
               color: 'rgba(1, 211, 255)'
             }])
           }
-        },
-        markLine: {
-          data: [{
-            name: '平均值',
-            type: 'average',
-            label: {
-              color: color
-            }
-          }]
         }
       }]
     };
@@ -330,14 +313,16 @@ function categoriesChart (dataParent) {
         text: '文章分类统计图',
         x: 'center',
         textStyle: {
-          color: color
+          color: color,
+          fontFamily: 'var(--global-font)'
         }
       },
       legend: {
         top: 'bottom',
         data: ${categoryNameJson},
         textStyle: {
-          color: color
+          color: color,
+          fontFamily: 'var(--global-font)'
         }
       },
       tooltip: {

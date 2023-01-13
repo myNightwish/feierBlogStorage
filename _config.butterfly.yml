@@ -653,12 +653,12 @@ background:
 font:
   global-font-size: "20px"
   code-font-size: "16px"
-  font-family: TANG_MEI_REN, var(var(--global-font)), -apple-system, 'Quicksand', 'Nimbus Roman No9 L', 'PingFang SC', 'Hiragino Sans GB', 'Noto Serif SC', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif;
+  font-family: var(var(--global-font)), -apple-system, 'Quicksand', 'Nimbus Roman No9 L', 'PingFang SC', 'Hiragino Sans GB', 'Noto Serif SC', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif;
   code-font-family: Consolas_1, var(--global-font), "Microsoft YaHei", Menlo, "PingFang SC", "Microsoft JhengHei", sans-serif
 
 blog_title_font:
   font_link:
-  font-family: TANG_MEI_REN, var(--global-font)
+  font-family: var(--global-font)
 
 # 主题色由js指定，因此部分需要留空，避免冗余加载  
 theme_color:
@@ -713,9 +713,6 @@ aside:
       icon: fab fa-github
       text: Follow Me
       link: https://github.com/myNightwish
-  card_weather:
-    enable: true
-    key: 4b2c0f83fa5f45d6a1331ae4dcba5b3b #你开始获取的key
   card_recent_post:
     enable: false
     exclude: /
@@ -921,7 +918,7 @@ inject:
     - <style id="defineBg"></style> # 自定义背景选项
     - <link rel="stylesheet" href="/css/universe.css">  # 星空背景
     - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_3859043_rw1ayonelb.css" media="defer" onload="this.media='all'">  # 图标
-    
+    - <script async src="https://cdn.jsdelivr.net/npm/echarts@4.9.0/dist/echarts.min.js"></script>
   bottom:
   # 首页 次要
     - <script async data-pjax src="/js/newAdd.js"></script>
@@ -938,7 +935,6 @@ inject:
     - <script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script>
     - <script defer data-pjax src="/js/emoji.js"></script>
     - <script defer data-pjax src="/js/sun_moon.js" async></script>
-    - <script defer src="https://cdn.jsdelivr.net/npm/echarts@4.9.0/dist/echarts.min.js"></script>
     - <script defer src="https://cdn1.tianli0.top/gh/nextapps-de/winbox/dist/winbox.bundle.min.js"></script> # winbox支持
     - <script async src="//at.alicdn.com/t/c/font_3859043_rw1ayonelb.js"></script>
     - <script async src="//npm.elemecdn.com/pace-js@1.2.4/pace.min.js"></script>
