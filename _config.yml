@@ -8,7 +8,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://mynightwish.top/
+url: https://myNightwish.github.io/
 permalink: posts/:abbrlink.html
 permalink_defaults:
 pretty_urls:
@@ -197,7 +197,7 @@ magnet:
     - name: 3.3-基础
       display_name: 网络
       icon: 🧊
-    - name: 3.4-Tool&Shell
+    - name: 3.4-Tool
       display_name: 工具、脚本
       icon: 🍤
   color_setting:

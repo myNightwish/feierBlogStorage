@@ -89,8 +89,6 @@ cover: https://mynightwish.oss-cn-beijing.aliyuncs.com/CSS/CSS-tricks1.webp
 
 ### 4、负定位的用法
 
-![image-20220402170005923](https://mynightwish.oss-cn-beijing.aliyuncs.com/img/image-20220402170005923.png)
-
 - 定位值为负数，且为自身宽度，将伪元素定位到组件外部：
 
   ```css
