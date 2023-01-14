@@ -159,14 +159,14 @@ service_worker:
 # 新增分类
 magnet:
   enable: true
-  priority: 2
-  enable_page: /categories/
+  priority: 1
+  enable_page: /
   type: categories
   devide: 4
   display:
     - name: 1.1-CSS
       display_name: CSS
-      icon: 🍭
+      icon: icon-food-doughnut
     - name: 1.2-JS
       display_name: JS、ES
       icon: 🥑
@@ -206,8 +206,8 @@ magnet:
     background_color: "#f2f2f2"
     background_hover_color: "#b30070"
   layout:
-    type: class
-    name: category-lists
+    type: id
+    name: recent-posts
     index: 0
   temple_html: '<div class="recent-post-item" style="width:100%;height: auto"><div id="catalog_magnet">${temple_html_item}</div></div>'
   plus_style: ""

@@ -8,7 +8,6 @@
 
 menu:
   首页: / || icon-food-strawberry || faa-tada
-  分类: /categories/ || icon-food-pudding || faa-tada
   时间轴: /archives/ || icon-food-popsicle || faa-tada
   足迹 || icon-food-doughnut || faa-tada || hide:
     文章: /charts/ || icon-xiangjiB
@@ -19,7 +18,6 @@ menu:
   留言板: /comments/ || icon-food-macaron || faa-tada
 
 # envelope_comment
-# see https://akilar.top/posts/e2d3c450/
 envelope_comment:
   enable: true #控制开关
   custom_pic:      
@@ -134,44 +132,6 @@ category_img:
 # format:
 #  - category name: JS
 category_per_img:
-
-categoryBar:
-  enable: true
-  enable_page: /
-  priority: 3 # 这里加上参数
-  column: even # 显示列数,odd：3列 | even：4列
-  row: 3 #显示行数，默认两行，超过行数切换为滚动显示
-  descr:
-    - CSS的酷炫多彩
-    - 数据、函数、异步
-    - Ajax的诞生
-    - Vue&React的世界
-    - 组件库开发
-    - 前端工程化
-    - 功能实现积累
-    - 项目总结
-    - bidaoTalk
-    - 浏览器渲染
-    - 计算机基础
-    - 小工具
-  cover:
-    - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/css.webp')
-    - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/JS.webp')
-    - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/Ajax.png')
-    - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/框架.webp')
-
-    - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/组件库.png')
-    - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/工程化.webp')
-    - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/功能实现.png')
-    - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/总结.webp')
-
-    - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/碎碎念.webp')    
-    - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/browser.webp')
-    - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/计算机基础.webp')
-    - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/tools&shell.png')
-    - '#abcdef' # HEX格式色值需要用''包裹，不然会被识别成注释
-    - rgba(45,67,89,0.7)
-    - linear-gradient(rgba(0, 0, 0, 0.4) 25%, rgba(200,16 , 16, 0) 100%)
 cover:
   # display the cover or not (是否顯示文章封面)
   index_enable: false
@@ -921,10 +881,9 @@ inject:
     - <script async src="https://cdn.jsdelivr.net/npm/echarts@4.9.0/dist/echarts.min.js"></script>
   bottom:
   # 首页 次要
-    - <script async data-pjax src="/js/newAdd.js"></script>
     - <div defer class="aplayer no-destroy" data-id="31872922" data-server="netease" data-type="artist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="false" muted></div>
     - <script async data-pjax src="https://cdn.jsdelivr.net/npm/hexo-beautiful-page@latest/lib/asyncmodel.min.js"></script> # 异步加载live3d模型
-    - '<div id="live3d" class="live3d" style="position: fixed; left: -100px; bottom: 30px; width: 500px !important;height: 437.5px !important;z-index: 98;"><canvas id="live2dm" class="live3d"style="max-width:500px;max-height:437.5px;"></canvas></div>'
+    - '<div id="live3d" class="live3d" style="position: fixed; left: -110px; bottom: 30px;z-index: 98;"><canvas id="live2dm" class="live3d"style="max-width:500px;max-height:437.5px;"></canvas></div>'
     - <script defer data-pjax src="/js/bottomTime.js"></script>
     - <script defer data-pjax src="/js/nav.js"></script>
     - <canvas id="universe"></canvas> # 星空背景
@@ -1029,7 +988,6 @@ CDN:
   prismjs_autoloader: https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js
 
 # hexo-butterfly-swiper
-# see https://akilar.top/posts/8e1264d1/
 swiper:
   enable: true # 开关
   priority: 1 #过滤器优先权
@@ -1039,7 +997,6 @@ swiper:
     type: id
     name: recent-posts
     index: 0
-  default_descr: 再怎么看我也不知道怎么描述它的啦！
   swiper_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css #swiper css依赖
   swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js #swiper js依赖
   custom_css: /css/swiperFix.css  #自定义swiper css依赖
