@@ -1,7 +1,6 @@
 ---
 title: 文章统计详情
 date: 2022-01-05 23:18:34
-top_img: https://mynightwish.oss-cn-beijing.aliyuncs.com/staticResource/special_top.webp
 ---
 <script src="https://cdn.jsdelivr.net/npm/echarts@4.9.0/dist/echarts.min.js"></script>
 

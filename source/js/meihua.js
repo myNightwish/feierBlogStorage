@@ -208,7 +208,10 @@ if (localStorage.getItem("reset_2") == undefined) {
   
   // 更换背景(自己的代码)
   if (localStorage.getItem("blogbg") != undefined) {
+
     let curBg = localStorage.getItem("blogbg");
+    console.log("web_bg--:", curBg)
+
     document.getElementById("defineBg").innerText = `:root{
       --default-bg: ${curBg};
       --darkmode-bg: ${curBg};
@@ -219,10 +222,10 @@ if (localStorage.getItem("reset_2") == undefined) {
   } else {
       // 替换你自己的默认背景
     document.getElementById("defineBg").innerText = `:root{
-      --default-bg: url("/img/home_bg.webp");
-      --darkmode-bg: url("/img/home_bg.webp");
-      --mobileday-bg: url("/img/home_bg_mobile.webp");
-      --mobilenight-bg: url("/img/home_bg_mobile.webp");
+      --default-bg: url("https://mynightwish.oss-cn-beijing.aliyuncs.com/CSS/dm11.webp");
+      --darkmode-bg: url("https://mynightwish.oss-cn-beijing.aliyuncs.com/CSS/dm11.webp");
+      --mobileday-bg: url("https://mynightwish.oss-cn-beijing.aliyuncs.com/CSS/mb4.webp");
+      --mobilenight-bg: url("https://mynightwish.oss-cn-beijing.aliyuncs.com/CSS/mb4.webp");
     }`;
   }
   function changeBg(s) {
@@ -236,8 +239,6 @@ if (localStorage.getItem("reset_2") == undefined) {
       defineColor = '#F4D88A';
     };
     localStorage.setItem("blogbg", s);
-    localStorage.setItem("bing", "false");
-    if (document.getElementById("bingSet")) document.getElementById("bingSet").checked = false;
   }
   
   
@@ -452,7 +453,10 @@ if (localStorage.getItem("reset_2") == undefined) {
   <h3>1. 二次元</h3>
   {% folding cyan, 查看二次元背景 %}
   <div class="bgbox">
-  <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://sourcebucket.s3.ladydaily.com/img/home_bg.webp)" class="imgbox" onclick="changeBg('url(https\://sourcebucket.s3.ladydaily.com/img/home_bg.webp)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://mynightwish.oss-cn-beijing.aliyuncs.com/CSS/dm11.webp)" class="imgbox" onclick="changeBg('url(https://mynightwish.oss-cn-beijing.aliyuncs.com/CSS/dm11.webp)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://mynightwish.oss-cn-beijing.aliyuncs.com/CSS/default_cover_198.webp)" class="imgbox" onclick="changeBg('url(https://mynightwish.oss-cn-beijing.aliyuncs.com/CSS/default_cover_198.webp)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://mynightwish.oss-cn-beijing.aliyuncs.com/CSS/default_cover_189.webp)" class="imgbox" onclick="changeBg('url(https://mynightwish.oss-cn-beijing.aliyuncs.com/CSS/default_cover_189.webp)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://mynightwish.oss-cn-beijing.aliyuncs.com/CSS/default_cover_3.webp)" class="imgbox" onclick="changeBg('url(https://mynightwish.oss-cn-beijing.aliyuncs.com/CSS/default_cover_3.webp)')"></a>
   </div>
   {% endfolding %}
   
@@ -502,7 +506,7 @@ if (localStorage.getItem("reset_2") == undefined) {
   <h3>7. 自定义背景</h3>
   {% folding cyan, 设置自定义背景 %}
   <p><center>
-  <input type="text" id="pic-link" size="70%" maxlength="1000" placeholder="请输入有效的图片链接，如 https://source.fomal.cc/img/home_bg.webp">
+  <input type="text" id="pic-link" size="70%" maxlength="1000" placeholder="请输入有效的图片链接，如 https://mynightwish.oss-cn-beijing.aliyuncs.com/CSS/mb4.webp">
   </center></p>
   <p><center>
   <button type="button" onclick="getPicture()" style="background:var(--theme-color);width:35%;padding: 5px 0px 7px 0px;border-radius:30px;color:white;line-height:2;">🌈切换背景🌈</button>
