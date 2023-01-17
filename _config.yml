@@ -8,7 +8,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://myNightwish.github.io/
+url: https://mynightwish.online/
 permalink: posts/:abbrlink.html
 permalink_defaults:
 pretty_urls:
@@ -109,7 +109,7 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
 - type: git
-  repo: git@github.com:myNightwish/myNightwish.github.io.git
+  repo: git@github.com:myNightwish/myNightwish.github.io.git/
   branch: master
   name: myNightwish
   email: zml_byr@bupt.edu.cn
@@ -122,7 +122,7 @@ search:
 
 baidu_url_submit:
   count: 10                           # 提交最新的多少个链接
-  host: https://mynightwish.top/    # 在百度站长平台中添加的域名
+  host: https://mynightwish.online/    # 在百度站长平台中添加的域名
   token: sIYpcoGU772cgKl3             	  # 秘钥
   path: baidu_urls.txt                # 文本文档的地址,新链接会保存在此文本文档里
 
@@ -166,7 +166,7 @@ magnet:
   display:
     - name: 1.1-CSS
       display_name: CSS
-      icon: icon-food-doughnut
+      icon: 🌰
     - name: 1.2-JS
       display_name: JS、ES
       icon: 🥑
