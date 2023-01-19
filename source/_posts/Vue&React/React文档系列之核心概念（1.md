@@ -125,7 +125,7 @@ license_url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
 
 ##### JSX 防止注入攻击 #####
 
-https://mynightwish.top/posts/2062301197.html?_sw-precache=e8cf09069586c0ee9ef7f817de532a71
+https://mynightwish.top/posts/2062301197.html
 
 * React DOM 在渲染所有输入内容之前，默认会进行[转义](https://stackoverflow.com/questions/7381974/which-characters-need-to-be-escaped-on-html)。它可以确保在你的应用中，永远不会注入那些并非自己明确编写的内容。
 

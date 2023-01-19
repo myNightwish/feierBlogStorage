@@ -838,15 +838,15 @@ lazyload:
   blur: false
 
 # PWA
-# See https://github.com/JLHwung/hexo-offline
-# ---------------
-# pwa:
-#   enable: false
-#   manifest: /pwa/manifest.json
-#   apple_touch_icon: /pwa/apple-touch-icon.png
-#   favicon_32_32: /pwa/32.png
-#   favicon_16_16: /pwa/16.png
-#   mask_icon: /pwa/safari-pinned-tab.svg
+pwa:
+  enable: true
+  # manifest: /pwa/manifest.json
+  # apple_touch_icon: /pwa/apple-touch-icon.png
+  # favicon_32_32: /pwa/32.png
+  # favicon_16_16: /pwa/16.png
+  # mask_icon: /pwa/safari-pinned-tab.svg
+
+
 
 # Open graph meta tags
 # https://developers.facebook.com/docs/sharing/webmasters/
@@ -861,7 +861,6 @@ css_prefix: true
 inject:
   head:
     - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
-    # - <link rel="stylesheet" href="/statis/css/custom.css">
     - <link rel="stylesheet" href="/css/double.css">
     - <link rel="stylesheet" href="/css/beautify.css" media="async">
     - <link rel="stylesheet" href="/css/progress_bar.css" media="defer" onload="this.media='all'"> 
@@ -1002,39 +1001,69 @@ swiper:
   custom_js: /js/swiperFix.js #自定义swiper js依赖
 
 categoryBar:
-  enable: false
+  enable: true
   enable_page: /
   priority: 3 # 这里加上参数
-  column: even # 显示列数,odd：3列 | even：4列
   row: 3 #显示行数，默认两行，超过行数切换为滚动显示
-  descr:
-    - CSS的酷炫多彩
-    - 数据、函数、异步
-    - Ajax的诞生
-    - Vue&React的世界
-    - 组件库开发
-    - 前端工程化
-    - 功能实现积累
-    - 项目总结
-    - bidaoTalk
-    - 浏览器渲染
-    - 计算机基础
-    - 小工具
-  cover:
-    - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/css.webp')
-    - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/JS.webp')
-    - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/Ajax.png')
-    - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/框架.webp')
+  layout:
+    type: id
+    name: recent-posts
+    index: 1
+  column: even # 显示列数,odd：3列 | even：4列
+  message: 
+    - descr: Ubuntu指南
+      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover1.webp
+    - descr: 玩转Win10
+      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover2.webp
+    - descr: 长篇小说连载
+      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover3.webp
+    - descr: 个人日记
+      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover4.webp
+    - descr: 诗词歌赋
+      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover5.webp
+    - descr: 杂谈教程
+      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover6.webp
+    - descr: 杂谈教程
+      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover6.webp
+    - descr: 杂谈教程
+      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover6.webp
+    - descr: 杂谈教程
+      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover6.webp
+    - descr: 杂谈教程
+      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover6.webp
+  custom_css: https://npm.elemecdn.com/hexo-butterfly-categories-card/lib/categorybar.css
 
-    - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/组件库.png')
-    - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/工程化.webp')
-    - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/功能实现.png')
-    - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/总结.webp')
 
-    - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/碎碎念.webp')    
-    - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/browser.webp')
-    - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/计算机基础.webp')
-    - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/tools&shell.png')
-    - '#abcdef' # HEX格式色值需要用''包裹，不然会被识别成注释
-    - rgba(45,67,89,0.7)
-    - linear-gradient(rgba(0, 0, 0, 0.4) 25%, rgba(200,16 , 16, 0) 100%)
+
+  # descr:
+  #   - CSS的酷炫多彩
+  #   - 数据、函数、异步
+  #   - Ajax的诞生
+  #   - Vue&React的世界
+  #   - 组件库开发
+  #   - 前端工程化
+  #   - 功能实现积累
+  #   - 项目总结
+  #   - bidaoTalk
+  #   - 浏览器渲染
+  #   - 计算机基础
+  #   - 小工具
+  # cover:
+  #   - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/css.webp')
+  #   - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/JS.webp')
+  #   - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/Ajax.png')
+  #   - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/框架.webp')
+
+  #   - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/组件库.png')
+  #   - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/工程化.webp')
+  #   - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/功能实现.png')
+  #   - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/总结.webp')
+
+  #   - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/碎碎念.webp')    
+  #   - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/browser.webp')
+  #   - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/计算机基础.webp')
+  #   - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/tools&shell.png')
+  #   - '#abcdef' # HEX格式色值需要用''包裹，不然会被识别成注释
+  #   - rgba(45,67,89,0.7)
+  #   - linear-gradient(rgba(0, 0, 0, 0.4) 25%, rgba(200,16 , 16, 0) 100%)
+

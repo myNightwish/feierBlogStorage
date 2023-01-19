@@ -139,29 +139,47 @@ douban:
   user: {252185753}
   builtin: true
   book:
-    title: 'My book title'
-    quote: 'My book quote'
-    meta: true
-    comments: true
-    top_img: https://cdn.jsdelivr.net/gh/Amnesia-f/CDN/img.jpg
-    aside: true
+    title: 'This is my book title' # 页面标题
+    quote: 'This is my book quote' # 页面开头的一段话（支持html语法）
+    meta: true 
+    comments: true # 是否显示评论
+    aside: true # 是否显示侧边栏
+    path: books # 生成的网址地址: 默认为/blog/设定的path  可自定义分级管理
+    limit:
   timeout: 10000
 
-# 博客加速
-# offline config passed to sw-precache.
+# hexo-offline-popup.
 service_worker:
-  maximumFileSizeToCacheInBytes: 5242880
+  maximumFileSizeToCacheInBytes: 3145728 # 缓存的最大文件大小，以字节为单位，此处设置为3MB。
   staticFileGlobs:
-  - public/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff,woff2}
+    - public/**/*.{js,xml,css,png,jpg,gif,svg,webp,eot,ttf,woff,woff2}
+    # - public/**/*.{html,xml} #精简版使用这行即可
+  # 静态文件合集，如果你的站点使用了例如webp格式的文件，请将文件类型添加进去。。
+  # 注意，此处的文件类型就是会缓存下来的所有文件类型，如果不需要缓存那么多，
+  # 而只是想判断网页更新与否，缓存html和xml即可。
   stripPrefix: public
-  verbose: true
-
+  verbose: false
+  runtimeCaching:
+    # CDNs - should be cacheFirst, since they should be used specific versions so should not change
+    - urlPattern: /* # 如果你需要加载CDN資源，请配置该选项，如果沒有，可以不配置。
+      handler: cacheFirst
+      options:
+        origin: unpkg.com # 又拍云
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: cdn.jsdelivr.net # jsdelivr
+    # 更多cdn可自行参照上述格式进行配置。
 # 新增分类
 magnet:
   enable: true
-  priority: 1
+  priority: 2
   enable_page: /
   type: categories
+  layout:
+    type: id
+    name: recent-posts
+    index: 0
   devide: 4
   display:
     - name: 1.1-CSS
@@ -205,10 +223,6 @@ magnet:
     text_hover_color: white
     background_color: "#f2f2f2"
     background_hover_color: "#b30070"
-  layout:
-    type: id
-    name: recent-posts
-    index: 0
   temple_html: '<div class="recent-post-item" style="width:100%;height: auto"><div id="catalog_magnet">${temple_html_item}</div></div>'
   plus_style: ""
 
