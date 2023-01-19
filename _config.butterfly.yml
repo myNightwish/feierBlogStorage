@@ -1011,25 +1011,29 @@ categoryBar:
     index: 1
   column: even # 显示列数,odd：3列 | even：4列
   message: 
-    - descr: Ubuntu指南
+    - descr: CSS的酷炫多彩
       cover: https://npm.elemecdn.com/akilar-candyassets/image/cover1.webp
-    - descr: 玩转Win10
+    - descr: 数据、函数、异步
+      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover1.webp
+    - descr: Ajax的诞生
+      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover1.webp
+    - descr: Vue&React的世界
+      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover1.webp
+    - descr: 组件库开发
       cover: https://npm.elemecdn.com/akilar-candyassets/image/cover2.webp
-    - descr: 长篇小说连载
+    - descr: 前端工程化
+      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover2.webp
+    - descr: 功能实现积累
+      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover2.webp
+    - descr: 项目总结
       cover: https://npm.elemecdn.com/akilar-candyassets/image/cover3.webp
-    - descr: 个人日记
-      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover4.webp
-    - descr: 诗词歌赋
-      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover5.webp
-    - descr: 杂谈教程
+    - descr: bidaoTalk
+      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover3.webp
+    - descr: 浏览器渲染
       cover: https://npm.elemecdn.com/akilar-candyassets/image/cover6.webp
-    - descr: 杂谈教程
+    - descr: 计算机基础
       cover: https://npm.elemecdn.com/akilar-candyassets/image/cover6.webp
-    - descr: 杂谈教程
-      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover6.webp
-    - descr: 杂谈教程
-      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover6.webp
-    - descr: 杂谈教程
+    - descr: 小工具
       cover: https://npm.elemecdn.com/akilar-candyassets/image/cover6.webp
   custom_css: https://npm.elemecdn.com/hexo-butterfly-categories-card/lib/categorybar.css
 

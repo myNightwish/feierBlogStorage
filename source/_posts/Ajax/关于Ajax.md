@@ -1,6 +1,9 @@
 ---
 title: 关于Ajax
-categories: 1.3-Ajax
+categories:
+- [1.3-Ajax, PlayStation]
+- [1.3-Ajax, Games]
+- [2.1-组件库]
 tags:
   - ajax
   - 网络请求

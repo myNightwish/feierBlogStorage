@@ -208,10 +208,7 @@ if (localStorage.getItem("reset_2") == undefined) {
   
   // 更换背景(自己的代码)
   if (localStorage.getItem("blogbg") != undefined) {
-
     let curBg = localStorage.getItem("blogbg");
-    console.log("web_bg--:", curBg)
-
     document.getElementById("defineBg").innerText = `:root{
       --default-bg: ${curBg};
       --darkmode-bg: ${curBg};
