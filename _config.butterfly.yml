@@ -8,6 +8,7 @@
 
 menu:
   首页: / || icon-food-strawberry || faa-tada
+  分类: /categories/ || icon-food-eggyolkcake || faa-tada
   时间轴: /archives/ || icon-food-popsicle || faa-tada
   足迹 || icon-food-doughnut || faa-tada || hide:
     文章: /charts/ || icon-xiangjiB
@@ -999,3 +1000,41 @@ swiper:
   swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js #swiper js依赖
   custom_css: /css/swiperFix.css  #自定义swiper css依赖
   custom_js: /js/swiperFix.js #自定义swiper js依赖
+
+categoryBar:
+  enable: false
+  enable_page: /
+  priority: 3 # 这里加上参数
+  column: even # 显示列数,odd：3列 | even：4列
+  row: 3 #显示行数，默认两行，超过行数切换为滚动显示
+  descr:
+    - CSS的酷炫多彩
+    - 数据、函数、异步
+    - Ajax的诞生
+    - Vue&React的世界
+    - 组件库开发
+    - 前端工程化
+    - 功能实现积累
+    - 项目总结
+    - bidaoTalk
+    - 浏览器渲染
+    - 计算机基础
+    - 小工具
+  cover:
+    - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/css.webp')
+    - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/JS.webp')
+    - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/Ajax.png')
+    - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/框架.webp')
+
+    - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/组件库.png')
+    - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/工程化.webp')
+    - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/功能实现.png')
+    - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/总结.webp')
+
+    - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/碎碎念.webp')    
+    - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/browser.webp')
+    - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/计算机基础.webp')
+    - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/tools&shell.png')
+    - '#abcdef' # HEX格式色值需要用''包裹，不然会被识别成注释
+    - rgba(45,67,89,0.7)
+    - linear-gradient(rgba(0, 0, 0, 0.4) 25%, rgba(200,16 , 16, 0) 100%)
