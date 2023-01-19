@@ -25,7 +25,7 @@ date: 2021-12-11 20:42:15
 
 * 服务端与客户端的交互方式：
 
-<img src="http://www.conardli.top/img/wl/wlqq_1.png" alt="image" style="zoom: 67%;" />
+<!-- <img src="http://www.conardli.top/img/wl/wlqq_1.png" alt="image" style="zoom: 67%;" /> -->
 
 * 缺点：
 
@@ -566,7 +566,7 @@ xhr.onload = function () {
           xhr.onerror = function() {console.log('Network request failed')}
   ```
 
-<img src="http://www.conardli.top/img/wl/wlqq_2.png" alt="image" style="zoom: 67%;" />
+<!-- <img src="http://www.conardli.top/img/wl/wlqq_2.png" alt="image" style="zoom: 67%;" /> -->
 
 ## 四、xhr相关API用法 ##
 

@@ -879,7 +879,7 @@ inject:
     - <script async src="https://cdn.jsdelivr.net/npm/echarts@4.9.0/dist/echarts.min.js"></script>
   bottom:
   # 首页 次要
-    - <div defer class="aplayer no-destroy" data-id="31872922" data-server="netease" data-type="artist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="false" muted></div>
+    - '<div defer class="aplayer no-destroy" data-id="31872922" data-server="netease" data-type="artist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="false" muted></div>'
     - <script async data-pjax src="https://cdn.jsdelivr.net/npm/hexo-beautiful-page@latest/lib/asyncmodel.min.js"></script> # 异步加载live3d模型
     - '<div id="live3d" class="live3d" style="position: fixed; left: -110px; bottom: 30px;z-index: 98;"><canvas id="live2dm" class="live3d"style="max-width:500px;max-height:437.5px;"></canvas></div>'
     - <script defer data-pjax src="/js/bottomTime.js"></script>
@@ -995,10 +995,12 @@ swiper:
     type: id
     name: recent-posts
     index: 0
+  insertposition: afterbegin
+  default_descr: 再怎么看我也不知道怎么描述它的啦！
   swiper_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css #swiper css依赖
   swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js #swiper js依赖
-  custom_css: /css/swiperFix.css  #自定义swiper css依赖
-  custom_js: /js/swiperFix.js #自定义swiper js依赖
+  custom_css: /css/swiperstyle.css # 适配主题样式补丁
+  custom_js: /js/swiper_init.js # swiper初始化方法
 
 categoryBar:
   enable: true
@@ -1026,9 +1028,9 @@ categoryBar:
     - descr: 功能实现积累
       cover: https://npm.elemecdn.com/akilar-candyassets/image/cover2.webp
     - descr: 项目总结
-      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover3.webp
+      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover2.webp
     - descr: bidaoTalk
-      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover3.webp
+      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover6.webp
     - descr: 浏览器渲染
       cover: https://npm.elemecdn.com/akilar-candyassets/image/cover6.webp
     - descr: 计算机基础
@@ -1036,38 +1038,4 @@ categoryBar:
     - descr: 小工具
       cover: https://npm.elemecdn.com/akilar-candyassets/image/cover6.webp
   custom_css: https://npm.elemecdn.com/hexo-butterfly-categories-card/lib/categorybar.css
-
-
-
-  # descr:
-  #   - CSS的酷炫多彩
-  #   - 数据、函数、异步
-  #   - Ajax的诞生
-  #   - Vue&React的世界
-  #   - 组件库开发
-  #   - 前端工程化
-  #   - 功能实现积累
-  #   - 项目总结
-  #   - bidaoTalk
-  #   - 浏览器渲染
-  #   - 计算机基础
-  #   - 小工具
-  # cover:
-  #   - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/css.webp')
-  #   - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/JS.webp')
-  #   - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/Ajax.png')
-  #   - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/框架.webp')
-
-  #   - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/组件库.png')
-  #   - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/工程化.webp')
-  #   - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/功能实现.png')
-  #   - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/总结.webp')
-
-  #   - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/碎碎念.webp')    
-  #   - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/browser.webp')
-  #   - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/计算机基础.webp')
-  #   - url('https://mynightwish.oss-cn-beijing.aliyuncs.com/blogskin/tools&shell.png')
-  #   - '#abcdef' # HEX格式色值需要用''包裹，不然会被识别成注释
-  #   - rgba(45,67,89,0.7)
-  #   - linear-gradient(rgba(0, 0, 0, 0.4) 25%, rgba(200,16 , 16, 0) 100%)
 
