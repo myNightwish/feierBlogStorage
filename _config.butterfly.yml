@@ -860,42 +860,43 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
-    - <link rel="stylesheet" href="/css/double.css">
-    - <link rel="stylesheet" href="/css/beautify.css" media="async">
+    - <link rel="stylesheet" href="/css/custom.css">
+    - <link rel="stylesheet" href="/css/double.css" media="defer" onload="this.media='all'">
+    - <link rel="stylesheet" href="/css/beautify.css" media="async" onload="this.media='all'">
     - <link rel="stylesheet" href="/css/progress_bar.css" media="defer" onload="this.media='all'"> 
     #动画标签anima的依赖
-    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css"  media="defer" onload="this.media='all'">
     - <link rel="stylesheet" href="/css/lastLoad.css" media="defer" onload="this.media='all'">
     - <style id="themeColor"></style> # 主题色
     - <style id="rightSide"></style> # 侧边栏
     - <style id="transPercent"></style> # 透明度调节
     - <style id="blurNum"></style> # 模糊半径调节
     - <style id="settingStyle"></style> # 模糊效果开关
-    - <span id="fps"></span> # 帧率检测
     - <style id="defineBg"></style> # 自定义背景选项
     - <link rel="stylesheet" href="/css/universe.css">  # 星空背景
     - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_3859043_rw1ayonelb.css" media="defer" onload="this.media='all'">  # 图标
-    - <script async src="https://cdn.jsdelivr.net/npm/echarts@4.9.0/dist/echarts.min.js"></script>
+    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css"  media="async" onload="this.media='all'">
+
   bottom:
   # 首页 次要
-    - '<div defer class="aplayer no-destroy" data-id="31872922" data-server="netease" data-type="artist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="false" muted></div>'
+    - <script async src="//at.alicdn.com/t/c/font_3859043_rw1ayonelb.js"></script>
+    - <script async src="//npm.elemecdn.com/pace-js@1.2.4/pace.min.js"></script>
+    - <script async src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script>
     - <script async data-pjax src="https://cdn.jsdelivr.net/npm/hexo-beautiful-page@latest/lib/asyncmodel.min.js"></script> # 异步加载live3d模型
     - '<div id="live3d" class="live3d" style="position: fixed; left: -110px; bottom: 30px;z-index: 98;"><canvas id="live2dm" class="live3d"style="max-width:500px;max-height:437.5px;"></canvas></div>'
-    - <script defer data-pjax src="/js/bottomTime.js"></script>
     - <script defer data-pjax src="/js/nav.js"></script>
     - <canvas id="universe"></canvas> # 星空背景
     - <script defer src="/js/universe.js"></script>  # 星空背景
     - <script defer src="/js/cursor.js"></script>
+    - <div class="aplayer no-destroy" data-id="8074997152" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="false" muted></div>
 
     # 非首页
-    - <script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script>
+    - <script defer data-pjax src="/js/bottomTime.js"></script>
     - <script defer data-pjax src="/js/emoji.js"></script>
     - <script defer data-pjax src="/js/sun_moon.js" async></script>
     - <script defer src="https://cdn1.tianli0.top/gh/nextapps-de/winbox/dist/winbox.bundle.min.js"></script> # winbox支持
-    - <script async src="//at.alicdn.com/t/c/font_3859043_rw1ayonelb.js"></script>
-    - <script async src="//npm.elemecdn.com/pace-js@1.2.4/pace.min.js"></script>
     - <script defer data-pjax src="/js/meihua.js"></script> # 美化模块
+    - <script defer src="https://cdn.jsdelivr.net/npm/echarts@4.9.0/dist/echarts.min.js"></script>
+
 # CDN
 # Don't modify the following settings unless you know how they work
 # 非必要請不要修改
@@ -1002,40 +1003,40 @@ swiper:
   custom_css: /css/swiperstyle.css # 适配主题样式补丁
   custom_js: /js/swiper_init.js # swiper初始化方法
 
-categoryBar:
-  enable: true
-  enable_page: /
-  priority: 3 # 这里加上参数
-  row: 3 #显示行数，默认两行，超过行数切换为滚动显示
-  layout:
-    type: id
-    name: recent-posts
-    index: 1
-  column: even # 显示列数,odd：3列 | even：4列
-  message: 
-    - descr: CSS的酷炫多彩
-      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover1.webp
-    - descr: 数据、函数、异步
-      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover1.webp
-    - descr: Ajax的诞生
-      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover1.webp
-    - descr: Vue&React的世界
-      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover1.webp
-    - descr: 组件库开发
-      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover2.webp
-    - descr: 前端工程化
-      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover2.webp
-    - descr: 功能实现积累
-      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover2.webp
-    - descr: 项目总结
-      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover2.webp
-    - descr: bidaoTalk
-      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover6.webp
-    - descr: 浏览器渲染
-      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover6.webp
-    - descr: 计算机基础
-      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover6.webp
-    - descr: 小工具
-      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover6.webp
-  custom_css: https://npm.elemecdn.com/hexo-butterfly-categories-card/lib/categorybar.css
+# categoryBar:
+#   enable: true
+#   enable_page: /
+#   priority: 3 # 这里加上参数
+#   row: 3 #显示行数，默认两行，超过行数切换为滚动显示
+#   layout:
+#     type: id
+#     name: recent-posts
+#     index: 1
+#   column: even # 显示列数,odd：3列 | even：4列
+#   message: 
+#     - descr: CSS的酷炫多彩
+#       cover: https://npm.elemecdn.com/akilar-candyassets/image/cover1.webp
+#     - descr: 数据、函数、异步
+#       cover: https://npm.elemecdn.com/akilar-candyassets/image/cover1.webp
+#     - descr: Ajax的诞生
+#       cover: https://npm.elemecdn.com/akilar-candyassets/image/cover1.webp
+#     - descr: Vue&React的世界
+#       cover: https://npm.elemecdn.com/akilar-candyassets/image/cover1.webp
+#     - descr: 组件库开发
+#       cover: https://npm.elemecdn.com/akilar-candyassets/image/cover2.webp
+#     - descr: 前端工程化
+#       cover: https://npm.elemecdn.com/akilar-candyassets/image/cover2.webp
+#     - descr: 功能实现积累
+#       cover: https://npm.elemecdn.com/akilar-candyassets/image/cover2.webp
+#     - descr: 项目总结
+#       cover: https://npm.elemecdn.com/akilar-candyassets/image/cover2.webp
+#     - descr: bidaoTalk
+#       cover: https://npm.elemecdn.com/akilar-candyassets/image/cover6.webp
+#     - descr: 浏览器渲染
+#       cover: https://npm.elemecdn.com/akilar-candyassets/image/cover6.webp
+#     - descr: 计算机基础
+#       cover: https://npm.elemecdn.com/akilar-candyassets/image/cover6.webp
+#     - descr: 小工具
+#       cover: https://npm.elemecdn.com/akilar-candyassets/image/cover6.webp
+#   custom_css: https://npm.elemecdn.com/hexo-butterfly-categories-card/lib/categorybar.css
 
