@@ -444,9 +444,20 @@ blockquote {
 #post .post-copyright .post-copyright-meta {
   color: var(--theme-color);
 }
-#post .post-copyright-cc-info {
-  color: var(--theme-color);
-}
+
+[data-theme="dark"]
+  #post .post-copyright {
+    background-color: rgb(7 8 10);
+    text-shadow: #bfbeb8 1px 0 4px;
+  }
+[data-theme="dark"]
+  #post .post-copyright {
+    border: 1px solid rgb(19 18 18 / 35%);
+  }
+[data-theme="dark"]
+  .post-copyright-info {
+    color: #e0e0e4;
+  }
 #waline-wrap {
   --waline-theme-color: var(--theme-color);
 }
