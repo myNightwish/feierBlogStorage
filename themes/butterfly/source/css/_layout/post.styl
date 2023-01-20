@@ -177,11 +177,10 @@ beautify()
     position: relative
     margin: 40px 0 10px
     padding: 10px 16px
-    border: 1px solid var(--light-grey)
+    border: 1px solid #fff
     transition: box-shadow .3s ease-in-out
     overflow: hidden
     border-radius: 12px!important
-    background: linear-gradient(45deg, #f6d8f5, #c2f1f0, #f0debf);
 
     &:before
       background var(--heo-post-blockquote-bg)
@@ -211,9 +210,6 @@ beautify()
           &:hover
             text-decoration: none
 
-  .post-copyright-cc-info
-    color: $theme-color;
-
   .post-outdate-notice
     position: relative
     margin: 0 0 20px
@@ -236,8 +232,10 @@ beautify()
         transform: translateY(-50%)
 
   .ads-wrap
-    margin: 40px 0
+    margin 40px 0
 .post-copyright-m-info
+    display flex
+    justify-content space-between
   .post-copyright-a,
   .post-copyright-c,
   .post-copyright-u
@@ -253,11 +251,14 @@ beautify()
       box-shadow 0 0 5px var(--theme-color)
       animation flashlight 1s linear infinite alternate
   .post-copyright-info
-    color #e0e0e4
+    color $theme-color
 
 #post
   .post-copyright__title
     font-size 22px
+  .post-copyright__type
+    .post-copyright-info
+      color var(--theme-color)
   .post-copyright__notice
     font-size 15px
   .post-copyright

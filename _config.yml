@@ -74,7 +74,7 @@ tag_map:
 meta_generator: true
 
 aplayer:
-  meting: true
+  meting: false
   asset_inject: false
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
