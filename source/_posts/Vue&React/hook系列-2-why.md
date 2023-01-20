@@ -5,7 +5,7 @@ date: 2022-04-03 17:29:51
 tags: Hook
 categories: 1.4-框架
 description: Why Hook?
-cover: https://mynightwish.oss-cn-beijing.aliyuncs.com/React/hook1.png
+cover: https://mynightwish.oss-cn-beijing.aliyuncs.com/React/hook1.webp
 copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0

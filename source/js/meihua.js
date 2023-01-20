@@ -425,9 +425,7 @@ if (localStorage.getItem("reset_2") == undefined) {
   <p id="swfs">
     <a class="swf" id="swf_XIA_WU_WEN_KAI" href="javascript:;" rel="noopener external nofollow" style="font-family:'XIA_WU_WEN_KAI'!important;color:black" onclick="setFont('XIA_WU_WEN_KAI')">霞鹜文楷</a>
     <a class="swf" id="swf_CandyC" href="javascript:;" rel="noopener external nofollow" style="font-family:'CandyC'!important;color:black" onclick="setFont('CandyC')">甜甜圈</a>
-    <a class="swf" id="swf_MiSans" href="javascript:;" rel="noopener external nofollow" style="font-family:'MiSans'!important;color:black" onclick="setFont('MiSans')">MiSans</a>
     <a class="swf" id="swf_TANG_MEI_REN" href="javascript:;" rel="noopener external nofollow" style="font-family:'MiSans'!important;color:black" onclick="setFont('TANG_MEI_REN')">唐美人</a>
-    <a class="swf" id="swf_default" href="javascript:;" rel="noopener external nofollow" style="font-family:'ZhuZiAWan'!important;color:black" onclick="setFont('ZhuZiAWan')">默认</a>
   </p>
   
   <h2>三、主题色设置</h2>

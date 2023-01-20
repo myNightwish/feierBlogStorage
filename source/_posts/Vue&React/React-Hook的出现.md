@@ -4,7 +4,7 @@ tags: Hooks
 categories: 1.4-框架
 description: 为何Hooks是React的未来
 swiper_index: 3
-cover: https://mynightwish.oss-cn-beijing.aliyuncs.com/React/hook1.png
+cover: https://mynightwish.oss-cn-beijing.aliyuncs.com/React/hook1.webp
 copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0

@@ -113,7 +113,7 @@ search:
   path: search.xml
   field: post
   format: html
-  limit: 10000
+  limit: 1000
 
 lazyload:
   enable: true

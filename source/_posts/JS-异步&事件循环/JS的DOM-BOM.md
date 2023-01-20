@@ -263,7 +263,7 @@ date: 2021-12-13 16:58:15
 
 document对象有向**网页输出流**写入内容的能力，write()、 writeln()、open()和 close()
 
-* document.write():向一个已经加载，并且没有调用过 [`document.open()`](https://developer.mozilla.org/zh-CN/docs/Web/API/Document/open) 的文档写入数据时，会自动调用 `document.open`。一旦完成了数据写入，建议调用 [`document.close()`](https://developer.mozilla.org/zh-CN/docs/Web/API/Document/close)，以告诉浏览器当前页面已经加载完毕。写入的数据会被解析到文档结构模型（DOM）里。
+* document.write:向一个已经加载，并且没有调用过 [`document.open()`](https://developer.mozilla.org/zh-CN/docs/Web/API/Document/open) 的文档写入数据时，会自动调用 `document.open`。一旦完成了数据写入，建议调用 [`document.close()`](https://developer.mozilla.org/zh-CN/docs/Web/API/Document/close)，以告诉浏览器当前页面已经加载完毕。写入的数据会被解析到文档结构模型（DOM）里。
 * document.onload()：**页面包含图片等文件在内的所有元素都加载完成**，即页面加载完毕执行的事，会有覆盖性
 
 ##### 功能4：创建元素 #####
