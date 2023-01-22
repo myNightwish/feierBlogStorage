@@ -968,7 +968,7 @@ swiper:
   # canvas_fluttering_ribbon: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js
   # canvas_nest: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js
 
-  # lazyload: https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js
+  lazyload: https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js
   # instantpage: https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js
   # typed: https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js
   # pangu: https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js
