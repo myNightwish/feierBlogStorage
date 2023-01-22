@@ -229,8 +229,6 @@ https://mynightwish.top/posts/2062301197.html
 
 * 尽管每一秒都会**新建一个描述整个 UI 树的元素**，React DOM **只会更新实际改变了的内容，也就是例子中的文本节点。**
 
-  ![img](https://cdn.jsdeliver.net/gh/myNightwish/CDN_res/react/granular-dom-updates.gif)
-
 * 根据我们的经验，考虑 UI 在任意给定时刻的状态，而不是随时间变化的过程，能够消灭一整类的 bug。 啥意思呢？？？？
 
 ### 3、组件 ###

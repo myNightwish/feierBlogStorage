@@ -10,7 +10,7 @@ if(second>=24*3600){
   time[1]=parseInt(second/(24*3600));
   second %=24*3600;
 }
-var currentTimeHtml='小破站已经安全运行 '+time[0]+' 年 '+time[1]+' 天 ';
+var currentTimeHtml='小破站已经运行 '+time[0]+' 年 '+time[1]+' 天 ';
 var elementById=document.getElementById('running-time');
 if(elementById){
   elementById.innerHTML=currentTimeHtml;

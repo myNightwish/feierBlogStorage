@@ -4,8 +4,6 @@ tags:
   - HTTPS
   - 安全
 categories: 3.3-基础
-description: HTTPS的加密方法
-cover: https://cdn.jsdeliver.net/gh/myNightwish/CDN_res/img/HTTPs.webp
 copyright_author: 飞儿
 copyright_url: 'https://www.nesxc.com/post/hexocc.html'
 license: CC BY-NC-SA 4.0
