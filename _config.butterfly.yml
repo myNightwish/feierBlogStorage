@@ -115,7 +115,7 @@ disable_top_img: false
 index_img: 
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: https://mynightwish.oss-cn-beijing.aliyuncs.com/staticResource/def_top_img.webp
+default_top_img: https://mynightwish.oss-cn-beijing.aliyuncs.com/CSS/dm11.webp
 # The banner image of archive page
 archive_img: 
 # If the banner of tag page not setting, it will show the top_img
@@ -141,8 +141,7 @@ cover:
   # left/right/both
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
-  default_cover:
-    - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
+  default_cover: https://mynightwish.oss-cn-beijing.aliyuncs.com/CSS/dm11.webp
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
