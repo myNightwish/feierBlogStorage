@@ -16,6 +16,7 @@
     "cheerio": "^1.0.0-rc.10",
     "font-awesome-animation": "^1.1.1",
     "gulp": "^4.0.2",
+    "gulp-uglify-es": "^3.0.0",
     "hexo": "^5.0.0",
     "hexo-abbrlink": "^2.2.1",
     "hexo-algoliasearch": "^1.0.0",
